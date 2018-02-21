@@ -1,7 +1,7 @@
 Feature: Media Plan- Full Flow
 
   Scenario: Validate 'Add/Create a Task'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "shahbaz@amuratech.com"
     Then Click on password "amura!@#"
     Then Click on sign in button
@@ -25,35 +25,10 @@ Feature: Media Plan- Full Flow
     And Select 'Publish'
     Then Click user name
     And Click 'Sign out'
-#    Then Enter objective- media plan
-#    And Enter budget
-#    And Select start date of campaign
-#    And Select end date of campaign
-#    And Select offers
-#    And Click offers accordion
-#    And Select communication guidelines
-#    And Click guidelines accrdion
-#    Then Select project- media plan
-#    And Select project category
-#    And Select segment- media plan
-#    And Enter micromarket
-#    And Enter number of units- media plan
-#    And Enter min age- media plan
-#    And Enter max age- media plan
-#    And Select gender- media plan
-#    And Select minimum household income
-#    And Enter geos- media plan
-#    And Enter micro geos- media plan
-#    And Enter trying to reach- media plan
-#    And Select tg- media plan
-#    And Click submit button- media plan
-#    Then Select status to publish the task
-#    And Click update the task button
-#    Then Click on user tab
-#    And Click sign out tab
 
+    
   Scenario: Validate 'Review the input brief'
-    Given Launch the url "http://localhost:3000/"
+#    Given Launch the url "http://localhost:3000/"
     Then Click on username/email id "saad@amuratech.com"
     Then Click on password "amura!@#"
     Then Click on sign in button
@@ -65,15 +40,16 @@ Feature: Media Plan- Full Flow
     Then Click review link
     And Rate the input brief- media input
     And Accept
-    Then Select assignee
+    And Select 'Due date'
+    Then Select assignee for Media Planning
 #    And Select 'Start date'
-#    Then Click assign button
-#    Then Click user name
-#    And Click 'Sign out'
+    Then Click assign button
+    Then Click user name
+    And Click 'Sign out'
 
   Scenario: Validate 'Add output'
-    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "apurv@amuratech.com"
+#    Given Launch the url "http://localhost:3000/"
+    Then Click on username/email id "pranav@amuratech.com"
       Then Click on password "amura!@#"
       Then Click on sign in button
       Then Click on task sidebar
@@ -110,8 +86,25 @@ Feature: Media Plan- Full Flow
        And Click on apply
        Then Click review link
        And Rate the output- media plan
-       Then Click deliver button
+       Then Click 'Send for secondary review' button
 
+       When Click on user
+       Then Click 'Sign out'
+
+  Scenario: Validate 'SOR'
+#    Given Launch the url ""
+    Then Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
+    Then Click on sign in button
+    Then Click on task sidebar
+    And Click on media plan
+    Then Click on assigned to me
+    Then Select newest
+    And Click on apply
+    When Click on Edit
+    Then Click 'Approve or Reject the output'
+    And Enter Comments "Testing the task delivered"
+    Then Click 'Accept and Mark Delivered' button
 
 
 

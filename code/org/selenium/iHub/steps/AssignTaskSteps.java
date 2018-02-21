@@ -35,4 +35,50 @@ public class AssignTaskSteps {
     public void selectStartDate() {
         dp.selectStartDate();
     }
+
+    @Then("^Select assignee for Marketing Brief$")
+    public void selectAssigneeForMarketingBrief() {
+        dp.selectAssigneeForMarketingBrief();
+
+    }
+
+    @Then("^Select assignee for Media Planning$")
+    public void selectAssigneeForMediaPlanning(){
+        dp.selectAssigneeForMediaPlanning();
+    }
+
+    @And("^Select 'Due date'$")
+    public void selectDueDate(){
+        dp.selectDueDate();
+    }
+
+    @And("^Select assignee for Content$")
+    public void selectAssigneeForContent() {
+        dp.selectAssigneeForContent();
+    }
+
+    @And("^Select assignee for Design$")
+    public void selectAssigneeForDesign() {
+        dp.selectAssigneeForDesign();
+    }
+
+    @Then("^Select assignee for Web Development$")
+    public void selectAssigneeForWebDevelopment() {
+        dp.selectAssigneeForWebDevelopment();
+    }
+
+    @Then("^Select assignee for Campaign$")
+    public void selectAssigneeForCampaign() {
+        dp.selectAssigneeForCampaign();
+    }
+
+    @Then("^Select assignee for Social$")
+    public void selectAssigneeForSocial() {
+        dp.selectAssigneeForSocial();
+    }
+
+    @Then("^Select assignee for seo$")
+    public void selectAssigneeForSeo(){
+        dp.selectAssigneeForSeo();
+    }
 }

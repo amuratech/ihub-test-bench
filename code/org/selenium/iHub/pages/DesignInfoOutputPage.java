@@ -15,6 +15,7 @@ public class DesignInfoOutputPage extends BasePage {
     UIElement aboutThought = new UIElement(UIType.RadioButton, UILocatorType.Xpath,"//*[@id=\"client_design_review_questions_attributes_3_answer\"]");
     UIElement ifDelayed = new UIElement(UIType.RadioButton, UILocatorType.Xpath,"//*[@id=\"client_design_review_questions_attributes_4_answer\"]");
     UIElement rate = new UIElement(UIType.RadioButton, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[8]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.RadioButton, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[11]/div/div/a[4]");
 
     public void selectRadioThought() {
         tDriver.myclicking(thought);
@@ -50,5 +51,9 @@ public class DesignInfoOutputPage extends BasePage {
 
     public void rateTheOutput() {
         tDriver.myclicking(rate);
+    }
+
+    public void rateTheOutputDesignInfographics() {
+        tDriver.myclicking(rateOutput);
     }
 }

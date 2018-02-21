@@ -11,7 +11,7 @@ public class ContentWebsiteInputPage extends BasePage {
 
     UIElement saveInput =  new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_website\"]/div[11]/input");
     UIElement usps =  new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_website\"]/div[5]/div/div/div/div/div/input");
-    UIElement rateInput =  new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[15]/div/div/a[4]");
+    UIElement rateInput =  new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[16]/div/div/a[4]");
 
     public void selectTagsContent() {
         tDriver.mycontentwebsitetags();

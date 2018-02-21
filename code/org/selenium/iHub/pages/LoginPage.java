@@ -9,8 +9,8 @@ import org.selenium.iHub.utitlities.UIType;
  */
 public class LoginPage extends BasePage{
 
-    UIElement emailID = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"user_email\"]");
-    UIElement password = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[@id=\"user_password\"]");
+    UIElement emailID = new UIElement(UIType.TextBox, UILocatorType.ID,"user_email");
+    UIElement password = new UIElement(UIType.TextBox,UILocatorType.ID,"user_password");
     UIElement signIn = new UIElement(UIType.Button,UILocatorType.Xpath,"//*[@id=\"new_user\"]/div[3]/div/button");
     UIElement menuIcon = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[@id=\"menu-toggle-2\"]/span");
     UIElement unassigned = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div[2]/div[1]/div[3]/a[1]/span[2]");
@@ -32,7 +32,7 @@ public class LoginPage extends BasePage{
     }
 
     public void clickOnSignInButton() {
-        tDriver.mytasktype(signIn);
+        tDriver.myclicking(signIn);
     }
 
     public void clickOnMenuIcon() {
@@ -69,4 +69,15 @@ public class LoginPage extends BasePage{
     }
 
 
+    public void closeTheBrowser() {
+        tDriver.myCancelBrowser();
+    }
+
+    public void getTheTitleAndUrlOfThePage() {
+        tDriver.myTitle();
+    }
+
+    public void enterAnd(String arg0, String arg1) {
+        tDriver.myLogin(arg0,arg1);
+    }
 }

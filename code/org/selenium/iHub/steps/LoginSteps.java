@@ -4,6 +4,7 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.selenium.iHub.pages.LoginPage;
 
 
@@ -74,4 +75,18 @@ public class LoginSteps {
     }
 
 
+    @Then("^Close the browser$")
+    public void closeTheBrowser(){
+        p.closeTheBrowser();
+    }
+
+    @Then("^Get the title and URL of the page$")
+    public void getTheTitleAndUrlOfThePage(){
+        p.getTheTitleAndUrlOfThePage();
+    }
+
+    @When("^Enter \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void enterAnd(String arg0, String arg1){
+        p.enterAnd(arg0, arg1);
+    }
 }

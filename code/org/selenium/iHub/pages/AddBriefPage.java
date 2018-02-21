@@ -27,7 +27,7 @@ public class AddBriefPage extends BasePage {
     UIElement trying = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_target_group_attributes_target_audience')]");//*[@id="client_content_sitemap_target_group_attributes_target_audience"]
     UIElement tgToDo = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_website\"]/div[9]/div[13]/div/div[1]");
     UIElement save = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_website\"]/div[10]/input[1]");
-    UIElement design = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[3]/a");//*[@id="taskLinks"]/li[3]/a
+    UIElement design = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[4]/a");//*[@id="taskLinks"]/li[3]/a
     UIElement actionDesign = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div/div/div[1]/div[1]/table/tbody/tr[1]/td[4]/div/button/i");
     UIElement briefDesign = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div/div/div[2]/div/div[2]/div/ul/li[1]/a");
     UIElement referenceLinks = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[@id=\"new_client_design_website\"]/div[5]/div/div/div/input");//*[@id="client_social_cms_output_reference_link"]
@@ -36,8 +36,8 @@ public class AddBriefPage extends BasePage {
     UIElement updateTask = new UIElement(UIType.Button,UILocatorType.CSS,"#edit_client_design_task_5982c1b65461f40d99c76372 > div:nth-child(12) > input");
     UIElement signOut = new UIElement(UIType.Button,UILocatorType.Xpath,"//*[@id=\"accountLinks\"]/li[3]/a");//*[@id="accountLinks"]/li[3]/a
     UIElement user = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[@id=\"sidebar-wrapper\"]/ul/li[6]/a");
-    UIElement contentSitemap = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[contains(@id,'_website_doc')]");
-    UIElement contentWebsite = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[contains(@id,'_sitemap_doc')]");//*[@id="client_design_website_content_sitemap_doc"]
+    UIElement contentSitemap = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[contains(@id,'content_sitemap_doc')]");//*[@id="client_development_website_development_content_sitemap_doc"]
+    UIElement contentWebsite = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[contains(@id,'_content_website_doc')]");//*[@id="client_development_website_development_content_website_doc"]
     UIElement suffContentWebsite = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[contains(@id,'_11_correct_true')]");//*[@id="client_design_website_content_sitemap_doc"]
     UIElement suffContentSitemap = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[contains(@id,'_12_correct_true')]");//*[@id="client_design_website_content_sitemap_doc"]
     UIElement refContentWebsite = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[contains(@id,'_17_correct_true')]");//*[@id="client_design_website_content_sitemap_doc"]

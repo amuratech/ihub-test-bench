@@ -46,9 +46,9 @@ public class WebWebsiteInputPage extends BasePage{
     UIElement mobileSlices = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_21_correct_true')]");
     UIElement ftp = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_22_correct_true')]");
     UIElement server = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_23_correct_true')]");//*[@id="new_client_development_review"]/div[24]/div[2]/label[1]
-    UIElement contentSitemap = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_24_correct_true')]");//*[@id="new_client_development_review"]/div[25]/div[2]/label[1]
-    UIElement contentWebsite = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_25_correct_true')]");//*[@id="client_development_review_review_fields_attributes_25_correct_true"]
-    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[22]/div/div/a[4]");//*[@id="new_client_development_review"]/div[27]/div/div/a[4]
+    UIElement contentSitemap = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_development_website_development_content_sitemap_doc\"]");//*[@id="new_client_development_review"]/div[25]/div[2]/label[1]
+    UIElement contentWebsite = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_development_website_development_content_website_doc\"]");//*[@id="client_development_review_review_fields_attributes_25_correct_true"]
+    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[23]/div/div/a[4]");//*[@id="new_client_development_review"]/div[27]/div/div/a[4]
     UIElement accept = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[28]/a");//*[@id="new_client_development_review"]/div[28]/a
     UIElement animation = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_development_website_development_animation_guideline\"]");
     UIElement referenceSitemap = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_website_development\"]/div[8]/div[1]/div/div/div/div[1]");
@@ -225,11 +225,11 @@ public class WebWebsiteInputPage extends BasePage{
     }
 
     public void selectContentSitemap() {
-        tDriver.myclicking(contentSitemap);
+        tDriver.mytxtupload(contentSitemap);
     }
 
     public void selectContentWebsite() {
-        tDriver.myclicking(contentWebsite);
+        tDriver.mytxtupload(contentWebsite);
     }
 
     public void selectTaskTypeSuffInfo() {
@@ -242,6 +242,7 @@ public class WebWebsiteInputPage extends BasePage{
 
 
     public void uploadWebsiteDesignDoc() {
-        tDriver.myupload(designDoc);
+        tDriver.mytxtupload(designDoc);
     }
+
 }

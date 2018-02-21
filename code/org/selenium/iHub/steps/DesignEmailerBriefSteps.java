@@ -3,6 +3,7 @@ package org.selenium.iHub.steps;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.selenium.iHub.pages.DesignEmailerBriefPage;
 
 public class DesignEmailerBriefSteps {
@@ -105,4 +106,6 @@ public class DesignEmailerBriefSteps {
     public void showTheCount() {
         dp.showTheCount();
     }
+
+
 }

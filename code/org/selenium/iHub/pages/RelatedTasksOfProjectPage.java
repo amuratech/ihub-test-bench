@@ -9,8 +9,8 @@ import org.selenium.iHub.utitlities.UIType;
  */
 public class RelatedTasksOfProjectPage extends BasePage{
 
-    UIElement initialCampaign = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a");
-    UIElement mediaPlan = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a");
+    UIElement initialCampaign = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a");//*[@id="page-content-wrapper"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a
+    UIElement mediaPlan = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a");//*[@id="page-content-wrapper"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a
     UIElement advertisingInvoice = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a");
     UIElement sitemap = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a");
     UIElement content = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a");

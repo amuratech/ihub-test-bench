@@ -7,7 +7,7 @@ import org.selenium.iHub.utitlities.UIType;
 public class DepartmentTypesPage extends BasePage{
 
     UIElement enterClient = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"task-form-modal\"]/div/div/div[2]/div[1]/div/div[1]/input");
-    UIElement paidMedia = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[7]/a");
+    UIElement paidMedia = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[8]/a");
     UIElement finance = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[4]");
     UIElement content = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[contains(text(),'Content')]");
 

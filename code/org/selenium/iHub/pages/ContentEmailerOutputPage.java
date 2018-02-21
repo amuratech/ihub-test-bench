@@ -13,7 +13,7 @@ public class ContentEmailerOutputPage extends BasePage {
     UIElement design = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_2_answer\"]");
     UIElement tg = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_3_answer\"]");
     UIElement copy = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_4_answer\"]");
-    UIElement rateOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[16]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[17]/div/div/a[4]");
 
     public void enterCallToAction(String arg0) {
         tDriver.mytype(cta, arg0);

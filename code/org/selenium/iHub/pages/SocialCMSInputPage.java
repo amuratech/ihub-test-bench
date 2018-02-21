@@ -6,7 +6,7 @@ import org.selenium.iHub.utitlities.UIType;
 
 public class SocialCMSInputPage extends BasePage{
 
-    UIElement social = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[9]/a");//*[@id="taskLinks"]/li[9]/a
+    UIElement social = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[10]/a");//*[@id="taskLinks"]/li[10]/a
     UIElement currentSentiment = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_plan_output_orm_attributes_current_sentiment_analysis\"]");
     UIElement strategy = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_plan_output_orm_attributes_strategy_to_drive_better_sentiment\"]");
     UIElement save = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_social_post\"]/div[5]/input");//*[@id="new_client_social_cms"]/div[7]/div/input

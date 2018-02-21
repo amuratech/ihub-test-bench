@@ -11,7 +11,7 @@ public class ContentPrintMediaInputPage extends BasePage {
 
     UIElement usp = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_print_medium\"]/div[4]/div/div/div/div/div/input");
     UIElement saveInput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_print_medium\"]/div[9]/input");
-    UIElement rateInput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[13]/div/div/a[4]");
+    UIElement rateInput = new UIElement(UIType.Button, UILocatorType.CSS,"#new_client_content_review > div:nth-child(22) > div > div > a:nth-child(4)");
 
     public void selectTonalityContentPrintMedia() {
         tDriver.mycontentprintmediatonality();

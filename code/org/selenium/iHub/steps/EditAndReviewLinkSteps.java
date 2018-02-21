@@ -3,6 +3,7 @@ package org.selenium.iHub.steps;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.selenium.iHub.pages.EditAndReviewLinkPage;
 
 public class EditAndReviewLinkSteps {
@@ -68,5 +69,20 @@ public class EditAndReviewLinkSteps {
     @Then("^Click View details$")
     public void clickViewDetails() {
         dp.clickViewDetails();
+    }
+
+    @Then("^Click 'All' pagination$")
+    public void clickAllPagination() {
+        dp.clickAllPagination();
+    }
+
+    @When("^Click on task sidebar- Superadmin$")
+    public void clickOnTaskSidebarSuperadmin() {
+        dp.clickOnTaskSidebarSuperadmin();
+    }
+
+    @When("^Click 'Save and add input brief' button$")
+    public void clickSaveAndAddInputBriefButton() {
+        dp.clickSaveAndAddInputBriefButton();
     }
 }

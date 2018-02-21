@@ -23,7 +23,7 @@ public class WebMaintenanceInputPage extends BasePage {
     UIElement radioServer = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_12_correct_true')]");
     UIElement radioImages = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_13_correct_true')]");
     UIElement radioContent = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_10_correct_true')]");
-    UIElement rate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[9]/div/div/a[4]");
+    UIElement rate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[10]/div/div/a[4]");
     UIElement accept = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[17]/a");
     UIElement nameEnter = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_development_maintenance_work_name\"]");
     UIElement briefEnter = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_maintenance_work\"]/div[2]/div/div[3]/div[2]");

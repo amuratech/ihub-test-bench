@@ -177,4 +177,9 @@ public class WebWebsiteOutputSteps {
     public void enterLinkToQAProject(String arg0){
         dp.enterLinkToQAProject(arg0);
     }
+
+    @And("^Enter reason for insuff info$")
+    public void enterReasonForInsuffInfo() {
+        dp.enterReasonForInsuffInfo();
+    }
 }

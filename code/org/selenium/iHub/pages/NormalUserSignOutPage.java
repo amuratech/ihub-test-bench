@@ -18,7 +18,7 @@ public class NormalUserSignOutPage extends BasePage {
     }
 
     public void clickUserName() {
-        tDriver.myclicking(user);
+        tDriver.myUsername(user);
     }
 
     public void clickSignOut() {

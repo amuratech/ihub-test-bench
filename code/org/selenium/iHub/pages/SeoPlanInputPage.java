@@ -12,7 +12,7 @@ public class SeoPlanInputPage extends BasePage {
     UIElement checkBox = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_seo_plan_brand_focus\"]");
     UIElement savePublish = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_seo_plan\"]/div[4]/input[2]");
     UIElement save = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_seo_plan\"]/div[5]/input");
-    UIElement seo = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[8]/a");
+    UIElement seo = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[9]/a");
     UIElement updateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'edit_client_')]/div[9]/input");//*[@id="edit_client_seo_task_599009d95461f40e10dcaba1"]/div[9]/input
     //*[@id="client_media_plan_review_review_fields_attributes_4_correct_true"]
     UIElement radioReq= new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_seo_review_review_fields_attributes_5_correct_true\"]");

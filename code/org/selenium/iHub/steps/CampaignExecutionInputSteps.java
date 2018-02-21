@@ -102,4 +102,8 @@ public class CampaignExecutionInputSteps {
         dp.clickAcceptButtonCampaignExecution();
     }
 
+    @And("^Enter Landing page URL \"([^\"]*)\"$")
+    public void enterLandingPageURL(String arg0) {
+        dp.enterLandingPageURL();
+    }
 }

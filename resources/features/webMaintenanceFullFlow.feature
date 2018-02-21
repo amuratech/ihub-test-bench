@@ -1,9 +1,9 @@
 Feature: Web Development- Maintenance Flow
 
   Scenario: Validate 'Add/Create a Task'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click 'Quick add' link
     And Select 'Task'
@@ -30,9 +30,9 @@ Feature: Web Development- Maintenance Flow
     And Click 'Sign out'
 
   Scenario: Validate 'Review the Input Brief'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "pankit@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     Then Click on web development
@@ -57,16 +57,16 @@ Feature: Web Development- Maintenance Flow
 #    And Select content task suff info
     And Rate brief- webmaintenance
     And Accept
-    Then Select assignee
+    Then Select assignee for Web Development
     And Select 'Start date'
     Then Click assign button
     Then Click user name
     And Click 'Sign out'
 
   Scenario: Validate 'Add output'
-    Given Launch the url "http://localhost:3000/"
+#    Given Launch the url ""
     Then Click on username/email id "ashwin@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     Then Click on web development
@@ -86,9 +86,9 @@ Feature: Web Development- Maintenance Flow
     And Click 'Sign out'
 
   Scenario: Validate 'Review the Output'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "atul.saini@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     Then Click on web development
@@ -99,7 +99,27 @@ Feature: Web Development- Maintenance Flow
 #    Then Select webdev thought process
 #    And Select radio URL- webmaintenance
     Then Rate the output- webmaintenance
-    And Click deliver button
+    And Click 'Send for secondary review' button
+    When Click user name
+    Then Click 'Sign out'
+
+    Scenario: Validate 'SOR'
+#      Given Launch the url ""
+      When Click on username/email id "shahbaz@amuratech.com"
+      And Click on password "amura!@#"
+      Then Click on sign in button
+      When Click on task sidebar
+      Then Click on web development
+      And Click on assigned to me
+      And Select newest
+      When Click on apply
+      Then Click on Edit
+      When Click 'Approve or Reject the output'
+      Then Enter Comments "Testing"
+      And Click 'Accept and Mark Delivered' button
+
+
+
 
 
 

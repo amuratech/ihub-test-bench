@@ -22,8 +22,9 @@ public class CampaignExecutionInputPage extends BasePage {
     UIElement suffDesign = new UIElement(UIType.ListBox, UILocatorType.Xpath,"//*[contains(@id,'_9_correct_true')]");
     UIElement suffMediaPlan = new UIElement(UIType.ListBox, UILocatorType.Xpath,"//*[contains(@id,'_10_correct_true')]");
     UIElement suffContentAd = new UIElement(UIType.ListBox, UILocatorType.Xpath,"//*[contains(@id,'_11_correct_true')]");
-    UIElement rateInput = new UIElement(UIType.ListBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_review\"]/div[21]/div/div/a[4]");
+    UIElement rateInput = new UIElement(UIType.ListBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_review\"]/div[39]/div/div/a[4]");
     UIElement accept = new UIElement(UIType.ListBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_review\"]/div[14]/a");
+    UIElement url = new UIElement(UIType.ListBox, UILocatorType.Xpath,"//*[@id=\"client_campaign_execution_website_url\"]");
 
     public void selectClientProjectCampaign() {
         tDriver.mywait(project);
@@ -97,4 +98,7 @@ public class CampaignExecutionInputPage extends BasePage {
         tDriver.myclicking(accept);
     }
 
+    public void enterLandingPageURL() {
+        tDriver.myEnter(url);
+    }
 }

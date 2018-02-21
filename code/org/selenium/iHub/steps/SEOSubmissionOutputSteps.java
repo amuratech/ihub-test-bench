@@ -1,15 +1,14 @@
 package org.selenium.iHub.steps;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
-import org.selenium.iHub.pages.SEOSubmissionOutputPage;
+import org.selenium.iHub.pages.SeoSubmissionOutputPage;
 
 public class SEOSubmissionOutputSteps {
 
-    SEOSubmissionOutputPage dp;
+    SeoSubmissionOutputPage dp;
 
-    public SEOSubmissionOutputSteps(){dp = new SEOSubmissionOutputPage();}
+    public SEOSubmissionOutputSteps(){dp = new SeoSubmissionOutputPage();}
 
     @And("^Enter Keywords of focus$")
     public void enterKeywordsOfFocus(){

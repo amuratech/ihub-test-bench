@@ -8,7 +8,7 @@ public class ContentBlogInputPage extends BasePage{
 
     UIElement time = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_task_due_date\"]");
     UIElement save = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_task\"]/div[7]/input");
-    UIElement content = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[2]/a");
+    UIElement content = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[3]/a");
     UIElement topic = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_blogpost_blog_topic\"]");
     UIElement tones = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_blogpost\"]/div[1]/div[2]/div/div/div[1]");//*[@id="new_client_content_blogpost"]/div[3]/div/div/div/div[1]
     UIElement contentBrief = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_blogpost_brief\"]");

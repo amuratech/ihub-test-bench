@@ -23,7 +23,7 @@ public class MediaPlanOutputPage extends BasePage {
     UIElement totalInquiries = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_media_plan_review_review_fields_attributes_7_correct_true\"]");//*[@id="edit_client_media_plan_task_599583795461f40e7d63c089"]/div[10]/input
     UIElement averageCPA = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_media_plan_review_review_fields_attributes_8_correct_true\"]");//*[@id="edit_client_media_plan_task_599583795461f40e7d63c089"]/div[10]/input
     UIElement publisher = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_media_plan_review_review_fields_attributes_9_correct_true\"]");//*[@id="edit_client_media_plan_task_599583795461f40e7d63c089"]/div[10]/input
-    UIElement rate = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_media_plan_review\"]/div[13]/div/div/a[4]");//*[@id="edit_client_media_plan_task_599583795461f40e7d63c089"]/div[10]/input
+    UIElement rate = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_media_plan_review\"]/div[14]/div/div/a[4]");//*[@id="edit_client_media_plan_task_599583795461f40e7d63c089"]/div[10]/input
     UIElement deliver = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_media_plan_review\"]/div[12]/input[1]");//*[@id="edit_client_media_plan_task_599583795461f40e7d63c089"]/div[10]/input
 
 

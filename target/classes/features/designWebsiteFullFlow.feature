@@ -1,10 +1,9 @@
 Feature: Design Website- Full Flow
 
-
   Scenario: Validate 'Create a Task'
     Given Launch the url ""
     Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click 'Quick add' link
     And Select 'Task'
@@ -41,12 +40,13 @@ Feature: Design Website- Full Flow
     Then Click 'Update' link
     And Select 'Publish'
 
+    When Click user name
+    Then Click 'Sign out'
+
   Scenario: Validate 'Review the Input Brief'
-    Then Click user name
-    And Click 'Sign out'
-    Given Launch the url ""
+#    Given Launch the url ""
     Then Click on username/email id "rohit.m@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click on design
@@ -55,37 +55,19 @@ Feature: Design Website- Full Flow
     And Click on apply
     And Click review link
     Then Rate
-#    Then Select name
-#    And Select desc
-#    And Select due date
-#    And Select time
-#    And Select task type suff info
-#    And Select task sub-type suff info
-#    And Type with sufficient info
-#    And Devices with info
-#    And Reference info
-#    And CTA info
-#    And Usps info
-#    And Tags info
-#    And Select content website suff info
-#    And Select content sitemap suff info
-#    And Func info
-#    And Reference images
-#    And Target info
-#    And Product
-#    And Select content website reference task suff info
-#    And Select content sitemap reference task suff info
-    And Accept
-    Then Select assignee
-    And Select 'Start date'
-    Then Click assign button
+    When Accept
+    Then Select 'Due date'
+    And Select assignee for Design
+#    And Select 'Start date'
+    And Click assign button
+
+    Then Click user name
+    And Click 'Sign out'
 
   Scenario: Validate 'Add Output'
-#    Then Click user name
-#    And Click 'Sign out'
     Given Launch the url ""
     Then Click on username/email id "varsha.j@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click on design
@@ -107,19 +89,20 @@ Feature: Design Website- Full Flow
     Then Click 'Update' link
     And Select 'Review'
 
-  Scenario: Validate 'Review the Output'
     Then Click user name
     And Click 'Sign out'
-    Given Launch the url ""
-    Then Click on username/email id "shaunak.v@amuratech.com"
-    Then Click on password "amura123"
+
+  Scenario: Validate 'Review the Output'
+#    Given Launch the url ""
+    Then Click on username/email id "rohit.m@amuratech.com"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click on design
     Then Click on assigned to me
     And Select newest
     And Click on apply
-    Then Click review link
+    When Click review link
 #    Then Select thought process suff info
 #    And Select design suff info
     Then Enter 'Have the brand guidelines been followed' "Testing"
@@ -128,7 +111,22 @@ Feature: Design Website- Full Flow
     And Enter 'Has the designer explained his thought process' "Yes"
     And Enter 'If delayed, please comment on the reason for the delay' "Yes"
     And Rate
-    Then Click deliver button
+    And Click 'Send for secondary review' button
 
+    When Click user name
+    Then Click 'Sign out'
 
+  Scenario: Validate the 'SOR'
+     Then Click on username/email id "shahbaz@amuratech.com"
+     Then Click on password "amura!@#"
+     Then Click on sign in button
+     Then Click on task sidebar
+     And Click on design
+     Then Click on assigned to me
+     And Select newest
+     And Click on apply
+     When Click on Edit
+     And Click 'Approve or Reject the output'
+     Then Enter Comments "Testing the task with the SOR"
+     And Click 'Accept and Mark Delivered' button
 

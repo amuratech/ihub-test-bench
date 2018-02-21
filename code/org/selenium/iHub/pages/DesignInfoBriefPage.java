@@ -31,7 +31,7 @@ public class DesignInfoBriefPage extends BasePage{
     UIElement suffImages  = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_attributes_9_correct_true')]");//*[@id="edit_client_social_task_599be1615461f4119acb7835"]/div[2]/input
     UIElement suffProduct  = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_attributes_10_correct_true')]");//*[@id="edit_client_social_task_599be1615461f4119acb7835"]/div[2]/input
     UIElement suffContentTask  = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_attributes_11_correct_true')]");//*[@id="edit_client_social_task_599be1615461f4119acb7835"]/div[2]/input
-    UIElement rateInput  = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[8]/div/div/a[4]");//*[@id="edit_client_social_task_599be1615461f4119acb7835"]/div[2]/input
+    UIElement rateInput  = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[9]/div/div/a[4]");//*[@id="edit_client_social_task_599be1615461f4119acb7835"]/div[2]/input
 
     public void enterProject() {
         tDriver.mywait(project);

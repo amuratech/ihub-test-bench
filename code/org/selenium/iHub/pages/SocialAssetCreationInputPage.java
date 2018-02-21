@@ -17,7 +17,7 @@ public class SocialAssetCreationInputPage extends BasePage{
     UIElement suffEmail = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_review_review_fields_attributes_7_correct_true\"]");
     UIElement suffContactEmail = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_review_review_fields_attributes_8_correct_true\"]");
     UIElement suffNumber = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_review_review_fields_attributes_9_correct_true\"]");
-    UIElement rate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[12]/div/div/a[4]");
+    UIElement rate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[13]/div/div/a[4]");
     UIElement accept = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[12]/a");
     UIElement request = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[12]/input");//*[@id="new_client_seo_review"]/div[12]/input
 

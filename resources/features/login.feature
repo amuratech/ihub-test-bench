@@ -25,19 +25,32 @@ Feature: Login
 
   Scenario: Login with account manager
     Given Launch the url ""
-    Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura123"
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Check for SSL
-    Then Message displayed login successfully
-    And Click on dashboard
-    And Show the task overview counts- Design
+    Then Get the title and URL of the page
+#    Then Check for SSL
+#    Then Message displayed login successfully
+#    And Click on dashboard
+#    And Show the task overview counts- Design
 #    Then Take the screenshot
+
+#------------It can be used in place of all the above scenarios-------------
+  Scenario Outline: Login with different credentials
+    Given Launch the url ""
+    When Enter "<username>" and "<password>"
+    Then Click on sign in button
+    Examples:
+      | username | password |
+      | shahbaz@something.com | amura!@#  |
+      | shahbaz@amuratech.com | amura123  |
+      | shahbaz@amuratech.com | amura!@#  |
 
   Scenario: Login with delivery team
     Given Launch the url ""
-    Then Click on username/email id "anupriya@amuratech.com"
-    Then Click on password "amura123"
+    Then Get the title and URL of the page
+    When Click on username/email id "anupriya@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
     Then Click Unassigned
     And Check the status

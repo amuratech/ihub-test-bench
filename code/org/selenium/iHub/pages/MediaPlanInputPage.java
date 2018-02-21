@@ -6,7 +6,7 @@ import org.selenium.iHub.utitlities.UIType;
 
 public class MediaPlanInputPage extends BasePage {
 
-    UIElement mediaPlan = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[5]");
+    UIElement mediaPlan = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[6]/a");
     UIElement type = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_media_plan_task\"]/div[1]/div[2]/div/div/div[1]");
     UIElement objective = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[contains(@id,'_output_objective')]");//*[@id="client_marketing_brief_output_objective"]
     UIElement budget = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[contains(@id,'_output_budget')]");
@@ -39,7 +39,7 @@ public class MediaPlanInputPage extends BasePage {
     UIElement productSuff = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[contains(@id,'_11_correct_true')]");
     UIElement targetSuff = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[contains(@id,'_12_correct_true')]");
     UIElement analysisSuff = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[contains(@id,'_13_correct_true')]");
-    UIElement rateInput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_media_plan_review\"]/div[7]/div/div/a[4]");
+    UIElement rateInput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_media_plan_review\"]/div[8]/div/div/a[4]");
     UIElement accept = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_media_plan_review\"]/div[16]/a");//*[@id="new_client_media_plan_review"]/div[16]/a
     UIElement refDoc = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_media_plan_campaign_marketing_brief_doc\"]");//*[@id="new_client_media_plan_review"]/div[16]/a
     UIElement saveInput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_media_plan_campaign\"]/div[3]/input");//*[@id="new_client_media_plan_review"]/div[16]/a

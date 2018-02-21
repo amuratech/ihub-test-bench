@@ -20,7 +20,7 @@ public class DesignOutputPage extends BasePage {
     UIElement designer = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_questions_attributes_3_answer\"]");
     UIElement reason = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_questions_attributes_4_answer\"]");
     UIElement uploadDesigns = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[2]/div[1]/div/div[2]/div/input");
-    UIElement rateOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[10]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[11]/div/div/a[4]");//*[@id="new_client_design_review"]/div[11]/div/div/a[4]
 
     public void clickStartWorkingOnThisTask() {
         tDriver.mywait(startWorking);

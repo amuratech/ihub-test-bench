@@ -1,15 +1,16 @@
 Feature: SEO Plan- Full Flow
+
   Scenario: Validate 'Add/Create a Task'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click 'Quick add' link
     And Select 'Task'
     And Enter the client name ""
     And Select the department- seo
     And Click on create task
-    Then Enter task name "Testing SEO Plan"
+    Then Enter task name "Testing SEO Plan for product details and brand guidelines"
     And Enter task type- seo plan
     And Enter Brief "Testing SEO plan brief"
     And Enter Due date
@@ -19,7 +20,7 @@ Feature: SEO Plan- Full Flow
   Scenario: Validate 'Add Input Brief'
 #    Given Launch the url "http://localhost:3000/"
 #    Then Click on username/email id "shahbaz@amuratech.com"
-#    Then Click on password "amura123"
+#    Then Click on password "amura!@#"
 #    Then Click on sign in button
 #    Then Click on task sidebar
 #    And Click SEO
@@ -34,11 +35,13 @@ Feature: SEO Plan- Full Flow
     And Click Save
     Then Click 'Update' link
     And Select 'Publish'
+    When Click user name
+    Then Click 'Sign out'
 
   Scenario: Validate 'Review the Input Brief'
     Given Launch the url "http://localhost:3000/"
     Then Click on username/email id "gaurav.m@amuratech.com"
-    And Click on password "amura123"
+    And Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click SEO
@@ -52,13 +55,13 @@ Feature: SEO Plan- Full Flow
     Then Select assignee
     And Select 'Start date'
     Then Click assign button
-    Then Click user name
-    And Click 'Sign out'
+#    Then Click user name
+#    And Click 'Sign out'
 
   Scenario: Validate 'Add Output'
     Given Launch the url "http://localhost:3000/"
     Then Click on username/email id "minal@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click SEO
@@ -174,7 +177,7 @@ Feature: SEO Plan- Full Flow
   Scenario: Validate 'Review' the Output'
     Given Launch the url ""
     Then Click on username/email id "gaurav.m@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click SEO

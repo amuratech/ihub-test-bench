@@ -8,12 +8,12 @@ import sun.swing.UIAction;
 public class SocialAssetCreationOutputPage extends BasePage {
 
     UIElement linkFB = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_asset_creation_output_asset_creation_links_attributes_0_platform_url\"]");
-    UIElement saveOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_social_asset_creation_output\"]/div[2]/input");
-    UIElement contentPublished = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_1_answer\"]");
+    UIElement saveOutput = new UIElement(UIType.TextBox, UILocatorType.CSS,"#new_client_social_asset_creation_output > div:nth-child(5) > input");
+    UIElement contentPublished = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_0_answer\"]");
     UIElement asset = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_1_answer\"]");
     UIElement creative = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_2_answer\"]");
     UIElement industry = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_3_answer\"]");
-    UIElement rateOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[7]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[10]/div/div/a[4]");
 
     public void enterLinkToFacebook(String arg0) {
         tDriver.mytype(linkFB,arg0);

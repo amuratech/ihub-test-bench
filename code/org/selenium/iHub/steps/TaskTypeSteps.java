@@ -373,4 +373,39 @@ public class TaskTypeSteps {
     public void selectTaskSubTypeContentSitemapSinglePage() {
         dp.selectTaskSubTypeContentSitemapSinglePage();
     }
+
+    @And("^Select task type- Content Case Study$")
+    public void selectTaskTypeContentCaseStudy() {
+        dp.selectTaskTypeContentCaseStudy();
+    }
+
+    @And("^Select task type- Web Development HTML Five$")
+    public void selectTaskTypeWebDevelopmentHTMLFive() {
+        dp.selectTaskTypeWebDevelopmentHTMLFive();
+    }
+
+    @And("^Select task type- Work Review$")
+    public void selectTaskTypeWorkReview() {
+        dp.selectTaskTypeWorkReview();
+    }
+
+    @And("^Enter task type- Marketing Plan$")
+    public void enterTaskTypeMarketingPlan(){
+        dp.enterTaskTypeMarketingPlan();
+    }
+
+    @And("^Select task sub type- Marketing Monthly Plan$")
+    public void selectTaskSubTypeMarketingMonthlyPlan() {
+        dp.selectTaskSubTypeMarketingMonthlyPlan();
+    }
+
+    @And("^Enter task type- Marketing Report$")
+    public void enterTaskTypeMarketingReport() {
+        dp.enterTaskTypeMarketingReport();
+    }
+
+    @And("^Select task sub type- Marketing Monthly Report$")
+    public void selectTaskSubTypeMarketingMonthlyReport() {
+        dp.selectTaskSubTypeMarketingMonthlyReport();
+    }
 }

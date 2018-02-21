@@ -8,7 +8,7 @@ public class ContentHoardingOutputPage extends BasePage {
 
     UIElement title  = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_hoarding_output_title\"]");
     UIElement content = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[contains(@id,'new_client_content_')]/div[3]/div/div/div/div[3]/div[2]");//*[@id="new_client_content_print_medium_output"]/div[3]/div/div/div/div[3]/div[2]
-    UIElement thought = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[contains(@id,'_output_thought_process')]");//*[@id="client_content_website_output_thought_process"]
+    UIElement thought = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[contains(@id,'_output_thought_process')]");//*[@id="client_design_output_thought_process"]
     UIElement saveOutput = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[@id=\"new_client_content_hoarding_output\"]/div[7]/input");
     UIElement contentHoarding = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_0_answer\"]");
     UIElement brief = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_1_answer\"]");

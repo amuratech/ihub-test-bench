@@ -12,7 +12,7 @@ public class SeoSubmissionInputPage extends BasePage {
     UIElement save = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_seo_submission\"]/div[3]/input");
     UIElement upload = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_seo_submission_client_content_task_doc\"]");
     UIElement refDoc = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div/div[2]/div/div/div[3]/div/input");
-    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_seo_review\"]/div[7]/div/div/a[4]");
+    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_seo_review\"]/div[8]/div/div/a[4]");
 
     public void selectType() {
         tDriver.mywait(type);

@@ -1,7 +1,7 @@
 Feature: Web Development- Website Full Flow
 
   Scenario: Validate 'Create a task' and Add input brief
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "shahbaz@amuratech.com"
     Then Click on password "amura!@#"
     Then Click on sign in button
@@ -10,7 +10,7 @@ Feature: Web Development- Website Full Flow
     And Enter the client name ""
     And Select the department- web development
     And Click on create task
-    Then Enter task name "Testing web dev website"
+    Then Enter task name "Testing web dev website for assignee form"
     And Select web task type- Website
     Then Select task sub-type
     And Enter Brief "Testing web website brief"
@@ -20,15 +20,19 @@ Feature: Web Development- Website Full Flow
     And Select CRM
     And Select func req
     And Select CMS
+    And Select content sitemap
+    And Select content website
+    And Upload website design doc
     Then Select hosting
     Then Click Save and publish later button
     Then Click 'Update' link
     And Select 'Publish'
 
-
-  Scenario: Validate Review the input brief
     Then Click user name
     And Click 'Sign out'
+
+  Scenario: Validate Review the input brief
+    Given Launch the url ""
     Then Click on username/email id "pankit@amuratech.com"
     Then Click on password "amura!@#"
     Then Click on sign in button
@@ -66,14 +70,18 @@ Feature: Web Development- Website Full Flow
 #    And Select content website
      And Rate webdev brief
      And Accept
-     Then Select assignee
-     And Select 'Start date'
+     And Select 'Due date'
+     Then Select assignee for Web Development
+#     And Select 'Start date'
      Then Click assign button
 
+    When Click user name
+    Then Click 'Sign out'
 
   Scenario: Validate 'Add output'
-    Then Click on username/email id "pankit@amuratech.com"
-    Then Click on password "amura123"
+     Given Launch the url ""
+    Then Click on username/email id "ashwin@amuratech.com"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     Then Click on web development
@@ -93,20 +101,21 @@ Feature: Web Development- Website Full Flow
 #    Then Click 'Update Task' button
     Then Click 'Update' link
     And Click 'Review'
+
     Then Click user name
     And Click 'Sign out'
 
-   Scenario: Validate 'Review the output'
-     Given Launch the url "http://localhost:3000/"
-     Then Click on username/email id "sanjay@amuratech.com"
-    Then Click on password "amura123"
+  Scenario: Validate 'Review the output'
+     Given Launch the url ""
+     Then Click on username/email id "atul.saini@amuratech.com"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     Then Click on web development
     And Click on assigned to me
     Then Select newest
     And Click on apply
-     Then Click review link
+     When Click review link
 #    Then Select webdev thought process
 #    And Select staging link
 #    And Select QA link
@@ -115,10 +124,30 @@ Feature: Web Development- Website Full Flow
 #    Then Rate the adherence to design
 #    And Rate the usage of libraries
 #    And Rate the adherence to coding
-    Then Enter copy review "Testing copy review"
+     Then Enter link to QA project "www.google.com"
+    And Enter copy review "Testing copy review"
     And Enter design review "Testing design review"
     And Enter desktop page speed score "100 Testing"
     And Enter mobile page speed score "100"
     Then Rate the website output
-    And Click deliver button
+    And Click 'Send for secondary review' button
+
+     When Click user name
+     Then Click 'Sign out'
+
+  Scenario: Validate the 'SOR'
+    Given Launch the url ""
+    Then Click on username/email id "shahbaz@amuratech.com"
+    Then Click on password "amura!@#"
+    Then Click on sign in button
+    Then Click on task sidebar
+    And Click on web development
+    Then Click on assigned to me
+    And Select newest
+    And Click on apply
+    When Click on Edit
+    And Click 'Approve or Reject the output'
+    Then Enter Comments "Testing the task with the SOR"
+    And Click 'Accept and Mark Delivered' button
+
 

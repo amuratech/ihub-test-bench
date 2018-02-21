@@ -6,10 +6,10 @@ import org.selenium.iHub.utitlities.UIType;
 
 public class PPCExecutionInputPage extends BasePage {
 
-    UIElement design = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_campaign_execution_design_ad_doc\"]");//*[@id="client_content_ad_communication_media_plan_campaign_doc"]
+    UIElement design = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_design_ad_doc')]");//*[@id="client_development_html_five_ad_design_ad_doc"]
     UIElement mediaPlan = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_media_plan_campaign_doc')]");
     UIElement adCommunication = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_campaign_execution_content_ad_communication_doc\"]");
-    UIElement saveInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_execution\"]/div[14]/input");
+    UIElement saveInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_execution\"]/div[17]/input");
     UIElement file = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_campaign_execution_campaign_tracking_file\"]");
     UIElement GA = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_campaign_execution_google_analytics_id\"]");
 

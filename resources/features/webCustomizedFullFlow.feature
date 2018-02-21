@@ -5,7 +5,7 @@ Feature: Web Development- Customized Requirements Flow
   Scenario: Validate 'Add/Create a Task'
     Given Launch the url ""
     Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click 'Quick add' link
     And Select 'Task'
@@ -33,7 +33,7 @@ Feature: Web Development- Customized Requirements Flow
   Scenario: Validate 'Review the Input Brief'
     Given Launch the url "http://localhost:3000/"
     Then Click on username/email id "pankit@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     Then Click on web development
@@ -61,7 +61,7 @@ Feature: Web Development- Customized Requirements Flow
   Scenario: Validate 'Add Output'
     Given Launch the url "http://localhost:3000/"
     Then Click on username/email id "ashwin@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     Then Click on web development
@@ -84,7 +84,7 @@ Feature: Web Development- Customized Requirements Flow
   Scenario: Validate 'Review the output'
     Given Launch the url "http://localhost:3000/"
     Then Click on username/email id "atul.saini@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     Then Click on web development
@@ -99,7 +99,23 @@ Feature: Web Development- Customized Requirements Flow
 #    And Select approval doc
     And Give link to QA project "www.google.com"
     Then Rate the output- webcustomized
-    And Click deliver button
+    And Click 'Send for secondary review' button
+
+  Scenario: Validate the 'SOR'
+#    Given Launch the url ""
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
+    Then Click on sign in button
+    When Click on task sidebar
+    And Click on web development
+    Then Click on assigned to me
+    When Select newest
+    And Click on apply
+    Then Click on Edit
+    When Click 'Approve or Reject the output'
+    Then Enter Comments "Testing"
+    And Click 'Accept and Mark Delivered' button
+
 
 
 

@@ -20,4 +20,9 @@ public class ContentEmailerInputSteps {
     public void rateTheBriefContentEmailer() {
         dp.rateTheBriefContentEmailer();
     }
+
+    @And("^Select Tonality- Content Emailer$")
+    public void selectTonalityContentEmailer(){
+        dp.selectTonalityContentEmailer();
+    }
 }

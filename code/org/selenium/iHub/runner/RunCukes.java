@@ -11,11 +11,12 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(dryRun = false,
         strict = false,
-        tags = {"@retesting"},
         features = {"resources/features/"},
-        glue = {"org.selenium.iHub.steps"},
-        format = {"html:target/outputreport/projecttesting/html", "json:target/outputreport/projecttesting/junitrunner.json"},
-        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"}
+        tags = {"@smoke"},
+        glue = {"org.selenium.iHub.steps"}
+//        format = {"html:target/outputreport/Assignment/Marketing-Brief-Output/html", "json:target/outputreport/Marketing-Brief-Output/junitrunner.json"},
+//        plugin = {"com.cucumber.listener.ExtentCucumberFormatter:output/report.html"}
 )
 public class RunCukes {
+
 }

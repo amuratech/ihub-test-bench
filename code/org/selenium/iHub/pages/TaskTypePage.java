@@ -297,4 +297,33 @@ public class TaskTypePage extends BasePage{
 
 
     }
+
+    public void selectTaskTypeContentCaseStudy() {
+        tDriver.myContentCaseStudy();
+    }
+
+    public void selectTaskTypeWebDevelopmentHTMLFive() {
+        tDriver.myWebDevelopmentHTMLFive();
+    }
+
+    public void selectTaskTypeWorkReview() {
+        tDriver.myMarketingWorkReview();
+    }
+
+    public void enterTaskTypeMarketingPlan() {
+        tDriver.myMarketingPlan();
+    }
+
+    public void selectTaskSubTypeMarketingMonthlyPlan() {
+        tDriver.myMarketingMonthlyPlan();
+    }
+
+    public void enterTaskTypeMarketingReport() {
+        tDriver.myMarketingReport();
+    }
+
+    public void selectTaskSubTypeMarketingMonthlyReport() {
+        tDriver.myMarketingReportMonthlyReport();
+    }
+
 }

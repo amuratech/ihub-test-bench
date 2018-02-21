@@ -32,7 +32,7 @@ public class WebWebsiteOutputPage extends BasePage {
     UIElement designReview = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_development_review_questions_attributes_5_answer\"]");
     UIElement desktopScore = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_development_review_questions_attributes_6_answer\"]");
     UIElement mobileScore = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_development_review_questions_attributes_7_answer\"]");
-    UIElement rateWebsite = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[13]/div/div/a[4]");
+    UIElement rateWebsite = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[14]/div/div/a[4]");
     UIElement rework = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[13]/input[2]");
     UIElement deliver = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"move_forward\"]");
     UIElement newStatus = new UIElement(UIType.Link, UILocatorType.Xpath,"");
@@ -41,7 +41,8 @@ public class WebWebsiteOutputPage extends BasePage {
     UIElement start = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[1]/div/div[4]/div/div/ul/li[2]/ul/li[1]");//*[@id="edit_client_development_task_5992c79f5461f40de73cd0bb"]/div[10]/input
     UIElement updateTaskStatusToReview = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[2]/div/div[4]/div/div/ul/li[3]/a/i");//*[@id="page-content-wrapper"]/div[2]/div/div[1]/div[1]/div/div[2]/div/a
     UIElement review = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[2]/div/div[4]/div/div/ul/li[3]/ul/li[1]");//*[@id="edit_client_development_task_5992c79f5461f40de73cd0bb"]/div[10]/input
-    UIElement link = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_development_review_questions_attributes_0_answer\"]");//*[@id="edit_client_development_task_5992c79f5461f40de73cd0bb"]/div[10]/input
+    UIElement link = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_development_review_questions_attributes_0_answer\"]");//*[@id="client_development_review_questions_attributes_0_answer"]
+    UIElement insuff = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_development_review_review_fields_attributes_0_correct_false\"]");//*[@id="edit_client_development_task_5992c79f5461f40de73cd0bb"]/div[10]/input
 
 
     public void clickStartWorkingButtonWebdev() {
@@ -177,4 +178,7 @@ public class WebWebsiteOutputPage extends BasePage {
         tDriver.mytype(link,arg0);
     }
 
+    public void enterReasonForInsuffInfo() {
+        tDriver.myInsuffInfo(insuff);
+    }
 }

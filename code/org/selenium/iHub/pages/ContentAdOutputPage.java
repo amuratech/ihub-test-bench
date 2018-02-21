@@ -16,7 +16,7 @@ public class ContentAdOutputPage extends BasePage{
     UIElement rate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[11]/div/div/a[4]");//*[@id="edit_client_content_task_59967c8b5461f4287c21c3c1"]/div[8]/input
     UIElement deliver = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[4]/input[1]");//*[@id="edit_client_content_task_59967c8b5461f4287c21c3c1"]/div[8]/input
     UIElement rework = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[4]/input[2]");//*[@id="edit_client_content_task_59967c8b5461f4287c21c3c1"]/div[8]/input
-    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[7]/div/div/a[4]");//*[@id="edit_client_content_task_59967c8b5461f4287c21c3c1"]/div[8]/input
+    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[8]/div/div/a[4]");//*[@id="edit_client_content_task_59967c8b5461f4287c21c3c1"]/div[8]/input
 
     public void clickStartWorkingButtonContentAd() {
         tDriver.myclicking(startWorking);

@@ -57,4 +57,8 @@ public class DesignInfoOutputSteps {
     }
 
 
+    @And("^Rate the output- Design Infographics$")
+    public void rateTheOutputDesignInfographics() {
+        dp.rateTheOutputDesignInfographics();
+    }
 }

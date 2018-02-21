@@ -32,6 +32,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
@@ -45,7 +46,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 27, 2017 05:25:29 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Dec 15, 2017 02:57:48 PM</span>
 				</a>
 			</li>
 			<li>
@@ -71,6 +72,8 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -83,7 +86,7 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@retesting</a></li>
+					<li><a href='#'>@assignment</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -131,10 +134,10 @@
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>145</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='57.377%'><span class='strong'>35</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.639%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='40.984%'>25</span> others
 				</div>
 			</div>
 		</div>
@@ -146,10 +149,10 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>145</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='57.377%'><span class='strong'>35</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.639%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='40.984%'>25</span> others
 				</div>
 			</div>
 		</div>
@@ -164,33 +167,33 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Project- Full Flow</span>
-						<span class='test-time'>Nov 27, 2017 05:25:30 PM</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Dec 15, 2017 02:57:49 PM</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Nov 27, 2017 05:25:30 PM</span>
-	<span class='label end-time'>Nov 27, 2017 05:35:00 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 9m 30s+333ms</span>
+	<span class='label start-time'>Dec 15, 2017 02:57:49 PM</span>
+	<span class='label end-time'>Dec 15, 2017 03:02:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 4m 11s+742ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
 				<li class='node level-1  pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Scenario: Validate Mark as Design Approved</div>						
-						<span class='node-time'>Nov 27, 2017 05:25:30 PM</span>
-						<span class='node-duration'>0h 0m 52s+57ms</span>
+						<div class='node-name'>Scenario: Validate 'Add new Project'</div>						
+						<span class='node-time'>Dec 15, 2017 02:57:50 PM</span>
+						<span class='node-duration'>0h 2m 29s+684ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf pass' status='pass' test-id='3'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Given Launch the url ""</div>						
-						<span class='node-time'>Nov 27, 2017 05:25:30 PM</span>
-						<span class='node-duration'>0h 0m 10s+227ms</span>
+						<div class='node-name'>Given Launch the url "http://localhost:3000/"</div>						
+						<span class='node-time'>Dec 15, 2017 02:57:50 PM</span>
+						<span class='node-duration'>0h 0m 55s+994ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -206,7 +209,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:25:41 PM</td>
+													<td class='timestamp'>2:58:46 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -217,8 +220,8 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='4'>
 					<div class='collapsible-header'>
 						<div class='node-name'>When Click on username/email id "shahbaz@amuratech.com"</div>						
-						<span class='node-time'>Nov 27, 2017 05:25:41 PM</span>
-						<span class='node-duration'>0h 0m 1s+633ms</span>
+						<span class='node-time'>Dec 15, 2017 02:58:46 PM</span>
+						<span class='node-duration'>0h 0m 4s+816ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -234,7 +237,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:25:42 PM</td>
+													<td class='timestamp'>2:58:51 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -245,8 +248,8 @@
 				<li class='node level-2 leaf pass' status='pass' test-id='5'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And Click on password "amura!@#"</div>						
-						<span class='node-time'>Nov 27, 2017 05:25:42 PM</span>
-						<span class='node-duration'>0h 0m 1s+228ms</span>
+						<span class='node-time'>Dec 15, 2017 02:58:51 PM</span>
+						<span class='node-duration'>0h 0m 1s+425ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -262,7 +265,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:25:44 PM</td>
+													<td class='timestamp'>2:58:53 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -272,9 +275,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='6'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on sign in button</div>						
-						<span class='node-time'>Nov 27, 2017 05:25:44 PM</span>
-						<span class='node-duration'>0h 0m 21s+464ms</span>
+						<div class='node-name'>And Click on sign in button</div>						
+						<span class='node-time'>Dec 15, 2017 02:58:53 PM</span>
+						<span class='node-duration'>0h 0m 20s+433ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -290,7 +293,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:05 PM</td>
+													<td class='timestamp'>2:59:13 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -300,9 +303,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='7'>
 					<div class='collapsible-header'>
-						<div class='node-name'>When Click on projects</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:05 PM</span>
-						<span class='node-duration'>0h 0m 3s+610ms</span>
+						<div class='node-name'>Then Click 'Quick add' link</div>						
+						<span class='node-time'>Dec 15, 2017 02:59:13 PM</span>
+						<span class='node-duration'>0h 0m 14s+922ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -318,7 +321,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:09 PM</td>
+													<td class='timestamp'>2:59:28 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -328,9 +331,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='8'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Select newest</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:09 PM</span>
-						<span class='node-duration'>0h 0m 2s+366ms</span>
+						<div class='node-name'>And Select 'Project'</div>						
+						<span class='node-time'>Dec 15, 2017 02:59:28 PM</span>
+						<span class='node-duration'>0h 0m 2s+495ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -346,7 +349,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:11 PM</td>
+													<td class='timestamp'>2:59:31 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -356,9 +359,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='9'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Click on apply</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:11 PM</span>
-						<span class='node-duration'>0h 0m 3s+55ms</span>
+						<div class='node-name'>Then Select 'Client'</div>						
+						<span class='node-time'>Dec 15, 2017 02:59:31 PM</span>
+						<span class='node-duration'>0h 0m 7s+881ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -374,7 +377,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:14 PM</td>
+													<td class='timestamp'>2:59:39 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -384,9 +387,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='10'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on Edit</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:14 PM</span>
-						<span class='node-duration'>0h 0m 3s+971ms</span>
+						<div class='node-name'>And Click 'Add Project'</div>						
+						<span class='node-time'>Dec 15, 2017 02:59:39 PM</span>
+						<span class='node-duration'>0h 0m 4s+791ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -402,7 +405,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:18 PM</td>
+													<td class='timestamp'>2:59:43 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -412,9 +415,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='11'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Mark as design approved'</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:18 PM</span>
-						<span class='node-duration'>0h 0m 4s+407ms</span>
+						<div class='node-name'>And Enter Project title "Testing"</div>						
+						<span class='node-time'>Dec 15, 2017 02:59:43 PM</span>
+						<span class='node-duration'>0h 0m 2s+425ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -430,7 +433,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:22 PM</td>
+													<td class='timestamp'>2:59:46 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -438,21 +441,11 @@
 								</div>
 						</div>
 				</li>
-						</ul>
-				</li>
-				<li class='node level-1  pass' status='pass' test-id='12'>
+				<li class='node level-2 leaf pass' status='pass' test-id='12'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Scenario: Validate Testing- Request for Website Development</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:25 PM</span>
-						<span class='node-duration'>0h 3m 34s+328ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2 leaf pass' status='pass' test-id='13'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Given Testing- Request for website development</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:25 PM</span>
-						<span class='node-duration'>0h 0m 2s+862ms</span>
+						<div class='node-name'>And Select Project type</div>						
+						<span class='node-time'>Dec 15, 2017 02:59:46 PM</span>
+						<span class='node-duration'>0h 0m 2s+727ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -468,7 +461,35 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:28 PM</td>
+													<td class='timestamp'>2:59:49 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf pass' status='pass' test-id='13'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Select Billing method</div>						
+						<span class='node-time'>Dec 15, 2017 02:59:49 PM</span>
+						<span class='node-duration'>0h 0m 5s+751ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>2:59:54 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -478,9 +499,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='14'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click 'Add input brief' link</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:28 PM</span>
-						<span class='node-duration'>0h 0m 2s+986ms</span>
+						<div class='node-name'>And Select Due date of project</div>						
+						<span class='node-time'>Dec 15, 2017 02:59:54 PM</span>
+						<span class='node-duration'>0h 0m 0s+838ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -496,7 +517,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:31 PM</td>
+													<td class='timestamp'>2:59:55 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -506,9 +527,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='15'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Select CRM</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:31 PM</span>
-						<span class='node-duration'>0h 0m 2s+209ms</span>
+						<div class='node-name'>And Enter Estimated budget "10000"</div>						
+						<span class='node-time'>Dec 15, 2017 02:59:55 PM</span>
+						<span class='node-duration'>0h 0m 5s+402ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -524,7 +545,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:33 PM</td>
+													<td class='timestamp'>3:00:01 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -534,9 +555,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='16'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Select func req</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:33 PM</span>
-						<span class='node-duration'>0h 0m 5s+304ms</span>
+						<div class='node-name'>And Select website design</div>						
+						<span class='node-time'>Dec 15, 2017 03:00:01 PM</span>
+						<span class='node-duration'>0h 0m 2s+382ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -552,7 +573,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:39 PM</td>
+													<td class='timestamp'>3:00:03 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -562,9 +583,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='17'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Select CMS</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:39 PM</span>
-						<span class='node-duration'>0h 0m 1s+192ms</span>
+						<div class='node-name'>And Select campaign start date- assignment</div>						
+						<span class='node-time'>Dec 15, 2017 03:00:03 PM</span>
+						<span class='node-duration'>0h 0m 0s+371ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -580,7 +601,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:40 PM</td>
+													<td class='timestamp'>3:00:03 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -590,9 +611,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='18'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Select hosting</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:40 PM</span>
-						<span class='node-duration'>0h 0m 2s+255ms</span>
+						<div class='node-name'>And Select campaign end date- assignment</div>						
+						<span class='node-time'>Dec 15, 2017 03:00:03 PM</span>
+						<span class='node-duration'>0h 0m 0s+446ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -608,7 +629,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:42 PM</td>
+													<td class='timestamp'>3:00:04 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -618,9 +639,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='19'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click Save and publish later button</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:42 PM</span>
-						<span class='node-duration'>0h 0m 4s+296ms</span>
+						<div class='node-name'>And Enter Purpose "Testing"</div>						
+						<span class='node-time'>Dec 15, 2017 03:00:04 PM</span>
+						<span class='node-duration'>0h 0m 1s+298ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -636,7 +657,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:46 PM</td>
+													<td class='timestamp'>3:00:05 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -646,9 +667,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='20'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click 'Update' link</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:46 PM</span>
-						<span class='node-duration'>0h 0m 2s+174ms</span>
+						<div class='node-name'>Then Click 'save' button- assignment</div>						
+						<span class='node-time'>Dec 15, 2017 03:00:05 PM</span>
+						<span class='node-duration'>0h 0m 4s+408ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -664,7 +685,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:26:49 PM</td>
+													<td class='timestamp'>3:00:09 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -674,9 +695,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='21'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Select 'Publish'</div>						
-						<span class='node-time'>Nov 27, 2017 05:26:49 PM</span>
-						<span class='node-duration'>0h 0m 13s+547ms</span>
+						<div class='node-name'>And Click 'Initiate campaign'</div>						
+						<span class='node-time'>Dec 15, 2017 03:00:10 PM</span>
+						<span class='node-duration'>0h 0m 10s+62ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -692,7 +713,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:02 PM</td>
+													<td class='timestamp'>3:00:20 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -700,39 +721,21 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='22'>
+						</ul>
+				</li>
+				<li class='node level-1  fail' status='fail' test-id='22'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click user name</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:02 PM</span>
-						<span class='node-duration'>0h 0m 2s+134ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>Scenario: Validate 'Submit initial campaign brief' task</div>						
+						<span class='node-time'>Dec 15, 2017 03:00:37 PM</span>
+						<span class='node-duration'>0h 1m 22s+820ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:04 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
 				<li class='node level-2 leaf pass' status='pass' test-id='23'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Sign out'</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:04 PM</span>
-						<span class='node-duration'>0h 0m 3s+716ms</span>
+						<div class='node-name'>Then Click Submit initial campaign brief task</div>						
+						<span class='node-time'>Dec 15, 2017 03:00:37 PM</span>
+						<span class='node-duration'>0h 0m 9s+90ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -748,7 +751,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:08 PM</td>
+													<td class='timestamp'>3:00:47 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -758,9 +761,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='24'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on username/email id "pankit@amuratech.com"</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:08 PM</span>
-						<span class='node-duration'>0h 0m 1s+222ms</span>
+						<div class='node-name'>When Click 'Add input brief' link</div>						
+						<span class='node-time'>Dec 15, 2017 03:00:47 PM</span>
+						<span class='node-duration'>0h 0m 9s+169ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -776,7 +779,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:09 PM</td>
+													<td class='timestamp'>3:00:56 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -786,9 +789,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='25'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on password "amura!@#"</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:09 PM</span>
-						<span class='node-duration'>0h 0m 1s+147ms</span>
+						<div class='node-name'>Then Enter Brief provided by client "Testing brief provided by the client"</div>						
+						<span class='node-time'>Dec 15, 2017 03:00:56 PM</span>
+						<span class='node-duration'>0h 0m 2s+471ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -804,7 +807,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:10 PM</td>
+													<td class='timestamp'>3:00:58 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -814,9 +817,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='26'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on sign in button</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:10 PM</span>
-						<span class='node-duration'>0h 0m 13s+896ms</span>
+						<div class='node-name'>And Click 'Save' button- Marketing Input</div>						
+						<span class='node-time'>Dec 15, 2017 03:00:58 PM</span>
+						<span class='node-duration'>0h 0m 6s+441ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -832,7 +835,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:24 PM</td>
+													<td class='timestamp'>3:01:05 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -842,9 +845,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='27'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on task sidebar</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:24 PM</span>
-						<span class='node-duration'>0h 0m 2s+139ms</span>
+						<div class='node-name'>Then Select 'Publish'</div>						
+						<span class='node-time'>Dec 15, 2017 03:01:05 PM</span>
+						<span class='node-duration'>0h 0m 7s+394ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -860,7 +863,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:26 PM</td>
+													<td class='timestamp'>3:01:12 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -870,9 +873,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='28'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on web development</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:26 PM</span>
-						<span class='node-duration'>0h 0m 3s+104ms</span>
+						<div class='node-name'>Then Click user name</div>						
+						<span class='node-time'>Dec 15, 2017 03:01:12 PM</span>
+						<span class='node-duration'>0h 0m 14s+231ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -888,7 +891,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:29 PM</td>
+													<td class='timestamp'>3:01:26 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -898,9 +901,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='29'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Click on assigned to me</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:29 PM</span>
-						<span class='node-duration'>0h 0m 1s+88ms</span>
+						<div class='node-name'>And Click 'Sign out'</div>						
+						<span class='node-time'>Dec 15, 2017 03:01:26 PM</span>
+						<span class='node-duration'>0h 0m 4s+227ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -916,7 +919,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:31 PM</td>
+													<td class='timestamp'>3:01:31 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -926,9 +929,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='30'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Select newest</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:31 PM</span>
-						<span class='node-duration'>0h 0m 2s+217ms</span>
+						<div class='node-name'>Then Click on username/email id "jasmine@amuratech.com"</div>						
+						<span class='node-time'>Dec 15, 2017 03:01:31 PM</span>
+						<span class='node-duration'>0h 0m 1s+359ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -944,7 +947,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:33 PM</td>
+													<td class='timestamp'>3:01:32 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -954,9 +957,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='31'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Click on apply</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:33 PM</span>
-						<span class='node-duration'>0h 0m 3s+459ms</span>
+						<div class='node-name'>Then Click on password "amura!@#"</div>						
+						<span class='node-time'>Dec 15, 2017 03:01:32 PM</span>
+						<span class='node-duration'>0h 0m 1s+205ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -972,7 +975,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:36 PM</td>
+													<td class='timestamp'>3:01:33 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -982,9 +985,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='32'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click review link</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:36 PM</span>
-						<span class='node-duration'>0h 0m 5s+150ms</span>
+						<div class='node-name'>Then Click on sign in button</div>						
+						<span class='node-time'>Dec 15, 2017 03:01:33 PM</span>
+						<span class='node-duration'>0h 0m 4s+805ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1000,7 +1003,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:41 PM</td>
+													<td class='timestamp'>3:01:38 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -1010,9 +1013,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='33'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Rate webdev brief</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:41 PM</span>
-						<span class='node-duration'>0h 0m 2s+153ms</span>
+						<div class='node-name'>Then Click on task sidebar</div>						
+						<span class='node-time'>Dec 15, 2017 03:01:38 PM</span>
+						<span class='node-duration'>0h 0m 2s+185ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1028,7 +1031,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:44 PM</td>
+													<td class='timestamp'>3:01:40 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -1038,9 +1041,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='34'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Accept</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:44 PM</span>
-						<span class='node-duration'>0h 0m 2s+162ms</span>
+						<div class='node-name'>And Click Marketing</div>						
+						<span class='node-time'>Dec 15, 2017 03:01:40 PM</span>
+						<span class='node-duration'>0h 0m 4s+904ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1056,7 +1059,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:46 PM</td>
+													<td class='timestamp'>3:01:45 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -1066,9 +1069,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='35'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Select assignee</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:46 PM</span>
-						<span class='node-duration'>0h 0m 4s+212ms</span>
+						<div class='node-name'>And Click on assigned to me</div>						
+						<span class='node-time'>Dec 15, 2017 03:01:45 PM</span>
+						<span class='node-duration'>0h 0m 1s+117ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1084,7 +1087,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:50 PM</td>
+													<td class='timestamp'>3:01:46 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -1094,9 +1097,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='36'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Select 'Start date'</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:50 PM</span>
-						<span class='node-duration'>0h 0m 0s+608ms</span>
+						<div class='node-name'>Then Select newest</div>						
+						<span class='node-time'>Dec 15, 2017 03:01:46 PM</span>
+						<span class='node-duration'>0h 0m 2s+373ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1112,7 +1115,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:27:50 PM</td>
+													<td class='timestamp'>3:01:49 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -1122,9 +1125,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='37'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click assign button</div>						
-						<span class='node-time'>Nov 27, 2017 05:27:50 PM</span>
-						<span class='node-duration'>0h 0m 13s+795ms</span>
+						<div class='node-name'>And Click on apply</div>						
+						<span class='node-time'>Dec 15, 2017 03:01:49 PM</span>
+						<span class='node-duration'>0h 0m 4s+537ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1140,7 +1143,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:04 PM</td>
+													<td class='timestamp'>3:01:53 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -1150,793 +1153,9 @@
 				</li>
 				<li class='node level-2 leaf pass' status='pass' test-id='38'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click user name</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:04 PM</span>
-						<span class='node-duration'>0h 0m 2s+136ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:06 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='39'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Sign out'</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:06 PM</span>
-						<span class='node-duration'>0h 0m 3s+398ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:10 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='40'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on username/email id "sunil@amuratech.com"</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:10 PM</span>
-						<span class='node-duration'>0h 0m 1s+224ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:11 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='41'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on password "amura!@#"</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:11 PM</span>
-						<span class='node-duration'>0h 0m 1s+150ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:12 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='42'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on sign in button</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:12 PM</span>
-						<span class='node-duration'>0h 0m 13s+879ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:26 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='43'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on task sidebar</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:26 PM</span>
-						<span class='node-duration'>0h 0m 2s+146ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:28 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='44'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on web development</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:28 PM</span>
-						<span class='node-duration'>0h 0m 2s+948ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:31 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='45'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click on assigned to me</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:31 PM</span>
-						<span class='node-duration'>0h 0m 0s+662ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:32 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='46'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Select newest</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:32 PM</span>
-						<span class='node-duration'>0h 0m 2s+210ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:34 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='47'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click on apply</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:34 PM</span>
-						<span class='node-duration'>0h 0m 2s+650ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:37 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='48'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on Edit</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:37 PM</span>
-						<span class='node-duration'>0h 0m 3s+884ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:41 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='49'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click 'Update task status' button</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:41 PM</span>
-						<span class='node-duration'>0h 0m 2s+144ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:43 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='50'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Start'</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:43 PM</span>
-						<span class='node-duration'>0h 0m 4s+102ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:47 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='51'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Add your output' link</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:47 PM</span>
-						<span class='node-duration'>0h 0m 2s+671ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:50 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='52'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Enter staging link "https://www.google.co.in"</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:50 PM</span>
-						<span class='node-duration'>0h 0m 1s+294ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:51 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='53'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click Save button</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:51 PM</span>
-						<span class='node-duration'>0h 0m 3s+372ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:54 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='54'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click 'Update' link</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:54 PM</span>
-						<span class='node-duration'>0h 0m 2s+160ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:28:56 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='55'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Select 'Review'</div>						
-						<span class='node-time'>Nov 27, 2017 05:28:56 PM</span>
-						<span class='node-duration'>0h 0m 13s+673ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:10 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='56'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click user name</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:10 PM</span>
-						<span class='node-duration'>0h 0m 2s+141ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:12 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='57'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Sign out'</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:12 PM</span>
-						<span class='node-duration'>0h 0m 3s+316ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:16 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='58'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on username/email id "atul.saini@amuratech.com"</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:16 PM</span>
-						<span class='node-duration'>0h 0m 1s+194ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:17 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='59'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on password "amura!@#"</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:17 PM</span>
-						<span class='node-duration'>0h 0m 1s+151ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:18 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='60'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on sign in button</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:18 PM</span>
-						<span class='node-duration'>0h 0m 13s+999ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:32 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='61'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on task sidebar</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:32 PM</span>
-						<span class='node-duration'>0h 0m 2s+143ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:34 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='62'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on web development</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:34 PM</span>
-						<span class='node-duration'>0h 0m 2s+877ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:37 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='63'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click on assigned to me</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:37 PM</span>
-						<span class='node-duration'>0h 0m 0s+723ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:38 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='64'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Select newest</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:38 PM</span>
-						<span class='node-duration'>0h 0m 2s+202ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:40 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='65'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click on apply</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:40 PM</span>
-						<span class='node-duration'>0h 0m 2s+693ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:43 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='66'>
-					<div class='collapsible-header'>
 						<div class='node-name'>Then Click review link</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:43 PM</span>
-						<span class='node-duration'>0h 0m 4s+897ms</span>
+						<span class='node-time'>Dec 15, 2017 03:01:53 PM</span>
+						<span class='node-duration'>0h 0m 6s+269ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -1952,7 +1171,7 @@
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:47 PM</td>
+													<td class='timestamp'>3:01:59 PM</td>
 													<td class='step-details'>passed</td>
 												</tr>
 										</tbody>
@@ -1960,12 +1179,12 @@
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='67'>
+				<li class='node level-2 leaf fail' status='fail' test-id='39'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Enter link to QA project "www.google.com"</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:47 PM</span>
-						<span class='node-duration'>0h 0m 1s+245ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>Then Rate the input brief- Marketing Brief</div>						
+						<span class='node-time'>Dec 15, 2017 03:01:59 PM</span>
+						<span class='node-duration'>0h 0m 0s+866ms</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -1978,1050 +1197,48 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:49 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="new_client_marketing_review"]/div[8]/div/div/a[4]"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 3.13.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 493 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'amuraqa-Inspiron-3542', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-24-generic', java.version: '1.8.0_141'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4), userDataDir=/tmp/.org.chromium.Chromium.HsNxbL}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: b48f188021f8e8b93bde5e0b8759335f
+*** Element info: {Using=xpath, value=//*[@id="new_client_marketing_review"]/div[8]/div/div/a[4]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.selenium.iHub.driver.TestDriver.myclicking(TestDriver.java:493)
+	at org.selenium.iHub.pages.MarketingBriefInputPage.rateTheInputBriefMarketingBrief(MarketingBriefInputPage.java:32)
+	at org.selenium.iHub.steps.MarketingBriefInputSteps.rateTheInputBriefMarketingBrief(MarketingBriefInputSteps.java:36)
+	at ✽.Then Rate the input brief- Marketing Brief(assignmentFlow.feature:47)
+</pre></td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='68'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Enter copy review "Testing copy review"</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:49 PM</span>
-						<span class='node-duration'>0h 0m 1s+275ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:50 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='69'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Enter design review "Testing design review"</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:50 PM</span>
-						<span class='node-duration'>0h 0m 1s+301ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:51 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='70'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Enter desktop page speed score "100 Testing"</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:51 PM</span>
-						<span class='node-duration'>0h 0m 1s+221ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:52 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='71'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Enter mobile page speed score "100"</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:52 PM</span>
-						<span class='node-duration'>0h 0m 1s+124ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:54 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='72'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Rate the website output</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:54 PM</span>
-						<span class='node-duration'>0h 0m 2s+151ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:29:56 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='73'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click deliver button</div>						
-						<span class='node-time'>Nov 27, 2017 05:29:56 PM</span>
-						<span class='node-duration'>0h 0m 3s+760ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:00 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-						</ul>
-				</li>
-				<li class='node level-1  pass' status='pass' test-id='74'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Scenario: Validate Mark as Client Approved</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:03 PM</span>
-						<span class='node-duration'>0h 0m 37s+242ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2 leaf pass' status='pass' test-id='75'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click user name</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:03 PM</span>
-						<span class='node-duration'>0h 0m 2s+140ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:05 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='76'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Sign out'</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:05 PM</span>
-						<span class='node-duration'>0h 0m 3s+507ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:09 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='77'>
-					<div class='collapsible-header'>
-						<div class='node-name'>When Click on username/email id "shahbaz@amuratech.com"</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:09 PM</span>
-						<span class='node-duration'>0h 0m 1s+216ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:10 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='78'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click on password "amura!@#"</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:10 PM</span>
-						<span class='node-duration'>0h 0m 1s+154ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:11 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='79'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on sign in button</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:11 PM</span>
-						<span class='node-duration'>0h 0m 13s+919ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:25 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='80'>
-					<div class='collapsible-header'>
-						<div class='node-name'>When Click on projects</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:25 PM</span>
-						<span class='node-duration'>0h 0m 3s+113ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:28 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='81'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Select newest</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:28 PM</span>
-						<span class='node-duration'>0h 0m 2s+206ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:31 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='82'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click on apply</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:31 PM</span>
-						<span class='node-duration'>0h 0m 2s+838ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:33 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='83'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on Edit</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:33 PM</span>
-						<span class='node-duration'>0h 0m 3s+816ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:37 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='84'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Mark as client approved'</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:37 PM</span>
-						<span class='node-duration'>0h 0m 3s+312ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:41 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-						</ul>
-				</li>
-				<li class='node level-1  pass' status='pass' test-id='85'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Scenario: Validate Testing- Request for Campaign Execution</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:42 PM</span>
-						<span class='node-duration'>0h 3m 36s+616ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2 leaf pass' status='pass' test-id='86'>
-					<div class='collapsible-header'>
-						<div class='node-name'>When Click Testing- Request for Campaign Execution</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:42 PM</span>
-						<span class='node-duration'>0h 0m 2s+999ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:45 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='87'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click 'Add input brief' link</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:45 PM</span>
-						<span class='node-duration'>0h 0m 3s+61ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:48 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='88'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Upload Campaign tracking file</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:48 PM</span>
-						<span class='node-duration'>0h 0m 1s+290ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:50 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='89'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Select Grant the paid media access to</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:50 PM</span>
-						<span class='node-duration'>0h 0m 2s+191ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:52 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='90'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Enter Google analytics ID "Testing"</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:52 PM</span>
-						<span class='node-duration'>0h 0m 1s+183ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:53 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='91'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Save' button- Paid Media Input</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:53 PM</span>
-						<span class='node-duration'>0h 0m 6s+334ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:30:59 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='92'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click 'Update' link</div>						
-						<span class='node-time'>Nov 27, 2017 05:30:59 PM</span>
-						<span class='node-duration'>0h 0m 2s+168ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:02 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='93'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Select 'Publish'</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:02 PM</span>
-						<span class='node-duration'>0h 0m 16s+530ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:18 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='94'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click user name</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:18 PM</span>
-						<span class='node-duration'>0h 0m 2s+127ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:20 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='95'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Sign out'</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:20 PM</span>
-						<span class='node-duration'>0h 0m 3s+371ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:24 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='96'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on username/email id "madhavi@amuratech.com"</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:24 PM</span>
-						<span class='node-duration'>0h 0m 1s+220ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:25 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='97'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on password "amura!@#"</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:25 PM</span>
-						<span class='node-duration'>0h 0m 1s+145ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:26 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='98'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on sign in button</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:26 PM</span>
-						<span class='node-duration'>0h 0m 14s+49ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:40 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='99'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on task sidebar</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:40 PM</span>
-						<span class='node-duration'>0h 0m 2s+137ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:42 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='100'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click Paid Media</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:42 PM</span>
-						<span class='node-duration'>0h 0m 3s+16ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:45 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='101'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on assigned to me</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:45 PM</span>
-						<span class='node-duration'>0h 0m 0s+811ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:46 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='102'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Select newest</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:46 PM</span>
-						<span class='node-duration'>0h 0m 2s+196ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:48 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='103'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click on apply</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:48 PM</span>
-						<span class='node-duration'>0h 0m 2s+720ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:51 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='104'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click review link</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:51 PM</span>
-						<span class='node-duration'>0h 0m 5s+82ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:56 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='105'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Rate the input brief- campaign execution</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:56 PM</span>
-						<span class='node-duration'>0h 0m 2s+309ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:31:58 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='106'>
+				<li class='node level-2 leaf skip' status='skip' test-id='40'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And Accept</div>						
-						<span class='node-time'>Nov 27, 2017 05:31:58 PM</span>
-						<span class='node-duration'>0h 0m 2s+161ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+3ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3034,22 +1251,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:00 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='107'>
+				<li class='node level-2 leaf skip' status='skip' test-id='41'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then Select assignee</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:00 PM</span>
-						<span class='node-duration'>0h 0m 4s+225ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3062,22 +1279,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:05 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='108'>
+				<li class='node level-2 leaf skip' status='skip' test-id='42'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And Select 'Start date'</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:05 PM</span>
-						<span class='node-duration'>0h 0m 0s+474ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3090,22 +1307,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:05 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='109'>
+				<li class='node level-2 leaf skip' status='skip' test-id='43'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then Click assign button</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:05 PM</span>
-						<span class='node-duration'>0h 0m 17s+454ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3118,22 +1335,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:23 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='110'>
+				<li class='node level-2 leaf skip' status='skip' test-id='44'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then Click user name</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:23 PM</span>
-						<span class='node-duration'>0h 0m 2s+133ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3146,22 +1363,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:25 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='111'>
+				<li class='node level-2 leaf skip' status='skip' test-id='45'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And Click 'Sign out'</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:25 PM</span>
-						<span class='node-duration'>0h 0m 3s+361ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3174,22 +1391,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:28 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='112'>
+				<li class='node level-2 leaf skip' status='skip' test-id='46'>
 					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on username/email id "smita@amuratech.com"</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:28 PM</span>
-						<span class='node-duration'>0h 0m 1s+213ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>Then Click on username/email id "gautham@amuratech.com"</div>						
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3202,526 +1419,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:29 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='113'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on password "amura!@#"</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:29 PM</span>
-						<span class='node-duration'>0h 0m 1s+149ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:30 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='114'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on sign in button</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:30 PM</span>
-						<span class='node-duration'>0h 0m 13s+873ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:44 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='115'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on task sidebar</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:44 PM</span>
-						<span class='node-duration'>0h 0m 2s+144ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:47 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='116'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click Paid Media</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:47 PM</span>
-						<span class='node-duration'>0h 0m 3s+29ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:50 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='117'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on assigned to me</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:50 PM</span>
-						<span class='node-duration'>0h 0m 0s+713ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:50 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='118'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Select newest</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:50 PM</span>
-						<span class='node-duration'>0h 0m 2s+204ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:52 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='119'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click on apply</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:52 PM</span>
-						<span class='node-duration'>0h 0m 2s+902ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:55 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='120'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on Edit</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:55 PM</span>
-						<span class='node-duration'>0h 0m 3s+860ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:32:59 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='121'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Update' link</div>						
-						<span class='node-time'>Nov 27, 2017 05:32:59 PM</span>
-						<span class='node-duration'>0h 0m 2s+134ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:01 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='122'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Start'</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:01 PM</span>
-						<span class='node-duration'>0h 0m 6s+325ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:08 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='123'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click 'Add your output' link</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:08 PM</span>
-						<span class='node-duration'>0h 0m 2s+790ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:10 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='124'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Enter Reason for not advertising automation "Testing"</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:10 PM</span>
-						<span class='node-duration'>0h 0m 1s+183ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:12 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='125'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click 'Submit' button</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:12 PM</span>
-						<span class='node-duration'>0h 0m 3s+370ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:15 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='126'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click 'Update' link</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:15 PM</span>
-						<span class='node-duration'>0h 0m 2s+167ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:17 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='127'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Select 'Review'</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:17 PM</span>
-						<span class='node-duration'>0h 0m 15s+892ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:33 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='128'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click user name</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:33 PM</span>
-						<span class='node-duration'>0h 0m 2s+133ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:35 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='129'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Sign out'</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:35 PM</span>
-						<span class='node-duration'>0h 0m 3s+361ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:39 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='130'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on username/email id "madhavi@amuratech.com"</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:39 PM</span>
-						<span class='node-duration'>0h 0m 1s+219ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:40 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='131'>
+				<li class='node level-2 leaf skip' status='skip' test-id='47'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then Click on password "amura!@#"</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:40 PM</span>
-						<span class='node-duration'>0h 0m 1s+138ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3734,22 +1447,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:41 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='132'>
+				<li class='node level-2 leaf skip' status='skip' test-id='48'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then Click on sign in button</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:41 PM</span>
-						<span class='node-duration'>0h 0m 14s+135ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3762,22 +1475,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:55 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='133'>
+				<li class='node level-2 leaf skip' status='skip' test-id='49'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then Click on task sidebar</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:55 PM</span>
-						<span class='node-duration'>0h 0m 2s+142ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3790,22 +1503,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:33:57 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='134'>
+				<li class='node level-2 leaf skip' status='skip' test-id='50'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Click Paid Media</div>						
-						<span class='node-time'>Nov 27, 2017 05:33:57 PM</span>
-						<span class='node-duration'>0h 0m 3s+0ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>And Click Marketing</div>						
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3818,22 +1531,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:00 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='135'>
+				<li class='node level-2 leaf skip' status='skip' test-id='51'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And Click on assigned to me</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:00 PM</span>
-						<span class='node-duration'>0h 0m 0s+814ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3846,22 +1559,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:01 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='136'>
+				<li class='node level-2 leaf skip' status='skip' test-id='52'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then Select newest</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:01 PM</span>
-						<span class='node-duration'>0h 0m 2s+197ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3874,22 +1587,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:03 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='137'>
+				<li class='node level-2 leaf skip' status='skip' test-id='53'>
 					<div class='collapsible-header'>
 						<div class='node-name'>And Click on apply</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:03 PM</span>
-						<span class='node-duration'>0h 0m 2s+747ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -3902,340 +1615,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:06 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='138'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click review link</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:06 PM</span>
-						<span class='node-duration'>0h 0m 4s+953ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:11 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='139'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Rate the output brief- Paid Media</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:11 PM</span>
-						<span class='node-duration'>0h 0m 2s+160ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:13 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='140'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click deliver button</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:13 PM</span>
-						<span class='node-duration'>0h 0m 5s+814ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:19 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-						</ul>
-				</li>
-				<li class='node level-1  pass' status='pass' test-id='141'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Scenario: Validate Mark as Ready to go Live</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:22 PM</span>
-						<span class='node-duration'>0h 0m 37s+768ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<ul class='collapsible node-list' data-collapsible='accordion'>
-				<li class='node level-2 leaf pass' status='pass' test-id='142'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click user name</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:22 PM</span>
-						<span class='node-duration'>0h 0m 2s+132ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:25 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='143'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Sign out'</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:25 PM</span>
-						<span class='node-duration'>0h 0m 3s+465ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:28 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='144'>
-					<div class='collapsible-header'>
-						<div class='node-name'>When Click on username/email id "shahbaz@amuratech.com"</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:28 PM</span>
-						<span class='node-duration'>0h 0m 1s+220ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:29 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='145'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click on password "amura!@#"</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:29 PM</span>
-						<span class='node-duration'>0h 0m 1s+146ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:30 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='146'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Click on sign in button</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:30 PM</span>
-						<span class='node-duration'>0h 0m 14s+33ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:44 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='147'>
-					<div class='collapsible-header'>
-						<div class='node-name'>When Click on projects</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:44 PM</span>
-						<span class='node-duration'>0h 0m 3s+246ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:48 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='148'>
-					<div class='collapsible-header'>
-						<div class='node-name'>Then Select newest</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:48 PM</span>
-						<span class='node-duration'>0h 0m 2s+203ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:50 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='149'>
-					<div class='collapsible-header'>
-						<div class='node-name'>And Click on apply</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:50 PM</span>
-						<span class='node-duration'>0h 0m 2s+871ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:53 PM</td>
-													<td class='step-details'>passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='150'>
+				<li class='node level-2 leaf skip' status='skip' test-id='54'>
 					<div class='collapsible-header'>
 						<div class='node-name'>Then Click on Edit</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:53 PM</span>
-						<span class='node-duration'>0h 0m 4s+70ms</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -4248,22 +1643,22 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:34:57 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
 								</div>
 						</div>
 				</li>
-				<li class='node level-2 leaf pass' status='pass' test-id='151'>
+				<li class='node level-2 leaf skip' status='skip' test-id='55'>
 					<div class='collapsible-header'>
-						<div class='node-name'>And Click 'Mark as ready to go live'</div>						
-						<span class='node-time'>Nov 27, 2017 05:34:57 PM</span>
-						<span class='node-duration'>0h 0m 3s+362ms</span>
-						<span class='test-status right pass'>pass</span>
+						<div class='node-name'>And Click 'Update' link</div>						
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
 					</div>
 						<div class='collapsible-body'>
 								<div class='node-steps'>
@@ -4276,10 +1671,262 @@
 											</tr>
 										</thead>
 										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:35:00 PM</td>
-													<td class='step-details'>passed</td>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf skip' status='skip' test-id='56'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Click 'Start'</div>						
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf skip' status='skip' test-id='57'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Click 'Add your output' link</div>						
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf skip' status='skip' test-id='58'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Enter Offers</div>						
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf skip' status='skip' test-id='59'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Enter Communication guidelines</div>						
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf skip' status='skip' test-id='60'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Select a competitor</div>						
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+0ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf skip' status='skip' test-id='61'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Select a project</div>						
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf skip' status='skip' test-id='62'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Click 'Save' button- Marketing Output</div>						
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf skip' status='skip' test-id='63'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Click 'Update' link</div>						
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-2 leaf skip' status='skip' test-id='64'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Select 'Review'</div>						
+						<span class='node-time'>Dec 15, 2017 03:02:00 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:02:00 PM</td>
+													<td class='step-details'>skipped</td>
 												</tr>
 										</tbody>
 									</table>
@@ -4343,15 +1990,16 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@retesting</span>
+						<span class='category-name'>@assignment</span>
 						<span class='category-status right'>
-							<span class='label pass'>5</span>
+							<span class='label pass'>1</span>
+							<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 5</span>
-							
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 					
@@ -4366,29 +2014,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 27, 2017 05:25:30 PM</td>
-										<td class='linked' test-id='2'>Project- Full Flow.Scenario: Validate Mark as Design Approved</td>
+										<td>Dec 15, 2017 02:57:50 PM</td>
+										<td class='linked' test-id='2'>Project- Full Flow.Scenario: Validate 'Add new Project'</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 27, 2017 05:26:25 PM</td>
-										<td class='linked' test-id='12'>Project- Full Flow.Scenario: Validate Testing- Request for Website Development</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 27, 2017 05:30:03 PM</td>
-										<td class='linked' test-id='74'>Project- Full Flow.Scenario: Validate Mark as Client Approved</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 27, 2017 05:30:42 PM</td>
-										<td class='linked' test-id='85'>Project- Full Flow.Scenario: Validate Testing- Request for Campaign Execution</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 27, 2017 05:34:22 PM</td>
-										<td class='linked' test-id='141'>Project- Full Flow.Scenario: Validate Mark as Ready to go Live</td>
-										<td><span class='test-status pass'>pass</span></td>
+										<td>Dec 15, 2017 03:00:37 PM</td>
+										<td class='linked' test-id='22'>Project- Full Flow.Scenario: Validate 'Submit initial campaign brief' task</td>
+										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -4407,6 +2040,93 @@
 	</div>
 </div>
 <!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Dec 15, 2017 03:01:59 PM</td>
+                                                        <td class='linked' test-id='39'>Project- Full Flow.Scenario: Validate 'Submit initial campaign brief' task.Then Rate the input brief- Marketing Brief</td>
+                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="new_client_marketing_review"]/div[8]/div/div/a[4]"}
+  (Session info: chrome=62.0.3202.94)
+  (Driver info: chromedriver=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4),platform=Linux 3.13.0-24-generic x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 493 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'unknown', time: 'unknown'
+System info: host: 'amuraqa-Inspiron-3542', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-24-generic', java.version: '1.8.0_141'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.33.506092 (733a02544d189eeb751fe0d7ddca79a0ee28cce4), userDataDir=/tmp/.org.chromium.Chromium.HsNxbL}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=62.0.3202.94, platform=LINUX, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: b48f188021f8e8b93bde5e0b8759335f
+*** Element info: {Using=xpath, value=//*[@id="new_client_marketing_review"]/div[8]/div/div/a[4]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at org.selenium.iHub.driver.TestDriver.myclicking(TestDriver.java:493)
+	at org.selenium.iHub.pages.MarketingBriefInputPage.rateTheInputBriefMarketingBrief(MarketingBriefInputPage.java:32)
+	at org.selenium.iHub.steps.MarketingBriefInputSteps.rateTheInputBriefMarketingBrief(MarketingBriefInputSteps.java:36)
+	at ✽.Then Rate the input brief- Marketing Brief(assignmentFlow.feature:47)
+</pre></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -4416,31 +2136,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>145</div>
+					<div class='panel-lead'>61</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>145</div>
+					<div class='panel-lead'>61</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 27, 2017 05:25:29 PM</div>
+					<div class='panel-lead'>Dec 15, 2017 02:57:48 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 27, 2017 05:35:02 PM</div>
+			 		<div class='panel-lead'>Dec 15, 2017 03:02:06 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>572,539ms</div>
+					<div class='panel-lead'>258,225ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -4455,9 +2175,9 @@
 							<th>Others</th>
 						</tr>
 						<tr>
-							<td>@retesting</td>
-							<td>5</td>
-							<td>0</td>
+							<td>@assignment</td>
+							<td>1</td>
+							<td>1</td>
 							<td>0</td>
 						</tr>
 					</table>
@@ -4473,22 +2193,22 @@
 
 		<script>
 			var statusGroup = {
-				passParent: 145,
-				failParent: 0,
+				passParent: 35,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
-				skipParent: 0,
-				exceptionsParent: 0,
+				skipParent: 25,
+				exceptionsParent: 26,
 				
-				passChild: 145,
-				failChild: 0,
+				passChild: 35,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
-				skipChild: 0,
+				skipChild: 25,
 				infoChild: 0,
-				exceptionsChild: 0,
+				exceptionsChild: 26,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,

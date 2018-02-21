@@ -17,7 +17,7 @@ public class ContentSitemapInputPage extends BasePage {
     UIElement microGeos = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_sitemap\"]/div[6]/div[11]/div/div/div/div[1]");
     UIElement trying = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_target_group_attributes_target_audience')]");
     UIElement saveInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_sitemap\"]/div[6]/input");//*[@id="new_client_content_sitemap"]/div[6]/input
-    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[10]/div/div/a[4]");
+    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[11]/div/div/a[4]");
 
     public void enterNameContentSitemap(String arg0) {
         tDriver.mytype(name,arg0);

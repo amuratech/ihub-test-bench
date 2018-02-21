@@ -1,8 +1,9 @@
 Feature: SEO Submission- Full Flow
+
   Scenario: Validate 'Add/Create a Task'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click 'Quick add' link
     And Select 'Task'
@@ -40,9 +41,9 @@ Feature: SEO Submission- Full Flow
     And Click 'Sign out'
 
   Scenario: Validate 'Review Input Brief'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "gaurav.m@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click SEO
@@ -52,8 +53,9 @@ Feature: SEO Submission- Full Flow
     Then Click review link
     And Rate the input- SEO Submission Input
     And Accept
-    Then Select assignee
-    And Select 'Start date'
+    And Select 'Due date'
+    Then Select assignee for seo
+#    And Select 'Start date'
     Then Click assign button
     Then Click user name
     And Click 'Sign out'
@@ -61,7 +63,7 @@ Feature: SEO Submission- Full Flow
   Scenario: Validate 'Add Output'
     Given Launch the url ""
     Then Click on username/email id "minal@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click SEO
@@ -80,10 +82,10 @@ Feature: SEO Submission- Full Flow
     Then Click user name
     And Click 'Sign out'
 
-   Scenario: Validate 'Review the Output'
+  Scenario: Validate 'Review the Output'
      Given Launch the url ""
      Then Click on username/email id "gaurav.m@amuratech.com"
-     Then Click on password "amura123"
+     Then Click on password "amura!@#"
      Then Click on sign in button
      Then Click on task sidebar
      And Click SEO
@@ -94,4 +96,5 @@ Feature: SEO Submission- Full Flow
      Then Enter 'Have the correct keywords and tags posted along with the main submission' "Testing"
      And Rate the output- SEO Submission
      Then Click deliver button
+
 

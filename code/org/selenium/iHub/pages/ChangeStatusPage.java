@@ -6,7 +6,7 @@ import org.selenium.iHub.utitlities.UIType;
 
 public class ChangeStatusPage extends BasePage{
 
-    UIElement updateTask = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'edit_client_')]/div[13]/input");//*[@id="edit_client_development_task_59dcb3e15461f412dbbf03bc"]/div[13]/input
+    UIElement updateTask = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Update Task')]");//*[@id="edit_client_design_task_5a55c82c8ec6293eff030e56"]/div[15]/input
     UIElement update = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Update task status')]");//*[contains(text(),'Tasks')]
     UIElement review = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Review')]");//*[@id="edit_client_development_task_59dcb3e15461f412dbbf03bc"]/div[13]/input
     UIElement start = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Start')]");//*[@id="edit_client_development_task_59dcb3e15461f412dbbf03bc"]/div[13]/input
@@ -37,7 +37,7 @@ public class ChangeStatusPage extends BasePage{
     }
 
     public void selectPublish() {
-        tDriver.mytasktype(statusPublish);
+        tDriver.myclicking(publish);
     }
 
     public void clickCancel() {

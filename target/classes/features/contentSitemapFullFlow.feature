@@ -1,8 +1,9 @@
 Feature: Content Sitemap- Full Flow
+
   Scenario: Validate 'Add/Create a Task'
     Given Launch the url ""
     Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click 'Quick add' link
     And Select 'Task'
@@ -36,9 +37,9 @@ Feature: Content Sitemap- Full Flow
      And Click 'Sign out'
 
    Scenario: Validate 'Review Input Brief'
-     Given Launch the url "http://localhost:3000/"
+     Given Launch the url ""
     Then Click on username/email id "meenakshi@amuratech.com"
-    And Click on password "amura123"
+    And Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click content
@@ -48,16 +49,17 @@ Feature: Content Sitemap- Full Flow
     Then Click review link
     And Rate the brief- Content Sitemap Input
      Then Accept
-     And Select assignee
-     And Select 'Start date'
+     And Select 'Due date'
+     And Select assignee for Content
+#     And Select 'Start date'
      Then Click assign button
      Then Click user name
      And Click 'Sign out'
 
   Scenario: Validate 'Add Output'
-    Given Launch the url "http://localhost:3000/"
+#    Given Launch the url ""
     Then Click on username/email id "abhay@amuratech.com"
-    And Click on password "amura123"
+    And Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click content
@@ -77,9 +79,9 @@ Feature: Content Sitemap- Full Flow
     Then Click 'Sign out'
 
   Scenario: Validate 'Review the Output'
-    Given Launch the url "http://localhost:3000/"
+#    Given Launch the url "http://localhost:3000/"
     Then Click on username/email id "meenakshi@amuratech.com"
-    And Click on password "amura123"
+    And Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click content
@@ -91,6 +93,23 @@ Feature: Content Sitemap- Full Flow
     And Enter 'Has the brief been followed' "Yes"- Content Sitemap
     And Upload Reference document- Content Output  Review
     Then Rate the output- Content Sitemap
-    And Click deliver button
-    
+    And Click 'Send for secondary review' button
+
+    When Click on user
+    Then Click 'Sign out'
+
+   Scenario: Validate 'SOR'
+     Given Launch the url ""
+    Then Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
+    Then Click on sign in button
+    Then Click on task sidebar
+    And Click content
+    Then Click on assigned to me
+    Then Select newest
+    And Click on apply
+    When Click on Edit
+    Then Click 'Approve or Reject the output'
+    And Enter Comments "Testing the task delivered"
+       Then Click 'Accept and Mark Delivered' button
 

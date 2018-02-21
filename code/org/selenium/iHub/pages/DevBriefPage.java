@@ -9,7 +9,7 @@ import org.selenium.iHub.utitlities.UIType;
  */
 public class DevBriefPage extends BasePage {
 
-    UIElement clickWebDev = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[10]");//*[@id="taskLinks"]/li[3]/a
+    UIElement clickWebDev = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[11]/a");//*[@id="taskLinks"]/li[3]/a
     UIElement actionDetails = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div/div/div[1]/div[1]/table/tbody/tr/td[4]/div/button/i");
     UIElement devBrief = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div/div/div[2]/div/div[2]/div/ul/li[1]/a");//*[@id="page-content-wrapper"]/div[2]/div/div[2]/div/div[2]/div/ul/li[1]/a
     UIElement name = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_development_website_development_name\"]");

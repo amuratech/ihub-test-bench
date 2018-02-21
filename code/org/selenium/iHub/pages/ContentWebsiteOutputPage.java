@@ -11,7 +11,7 @@ public class ContentWebsiteOutputPage  extends  BasePage{
 
     UIElement webDoc = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_content_website_output_content\"]");
     UIElement saveOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_website_output\"]/div[7]/input");
-    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[13]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[14]/div/div/a[4]");
 
     public void uploadContentWebsiteDoc() {
         tDriver.mytxtupload(webDoc);

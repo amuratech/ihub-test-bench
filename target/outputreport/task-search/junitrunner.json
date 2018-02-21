@@ -1,0 +1,158 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 859253,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AutomationHooks.beforeRunning(Scenario)"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Validate the task search feature with using # as prefix",
+        "description": "",
+        "id": "task-search-box-for-finding-any-task;validate-the-task-search-feature-with-using-#-as-prefix",
+        "after": [
+          {
+            "result": {
+              "duration": 3832014902,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AutomationHooks.afterRunning(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21107860692,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Launch the url \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginSteps.launchTheUrl(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3973364177,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Click on username/email id \"shahbaz@amuratech.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "shahbaz@amuratech.com",
+                  "offset": 28
+                }
+              ],
+              "location": "LoginSteps.clickOnUsernameEmailId(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1236056989,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on password \"amura!@#\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "amura!@#",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginSteps.clickOnPassword(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12148966704,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on sign in button",
+            "match": {
+              "location": "LoginSteps.clickOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3385900920,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click on dashboard",
+            "match": {
+              "location": "DashboardSteps.clickOnDashboard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 573667245,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Search the task with using # as prefix \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 40
+                }
+              ],
+              "location": "TaskSearchSteps.searchTheTaskWithUsingAsPrefix(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2105122201,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The task should be found",
+            "match": {
+              "location": "TaskSearchSteps.theTaskShouldBeFound()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 14,
+            "name": "@retesting"
+          }
+        ]
+      }
+    ],
+    "name": "Task search box for finding any task",
+    "description": "There is a feature of finding the task from the list\nWe can find it by using # as prefix",
+    "id": "task-search-box-for-finding-any-task",
+    "keyword": "Feature",
+    "uri": "searchTask.feature"
+  }
+]
