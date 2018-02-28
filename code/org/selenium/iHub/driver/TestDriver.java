@@ -5659,4 +5659,96 @@ public class TestDriver {
         act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_export\"]/div[3]/div/div[4]/div/div/div[2]/div/div"))).click().perform();//*[@id="new_client_seo_plan_output"]/div[2]/div/div/div/div[2]/div/div[1]
 
     }
+
+    public void myClientExportsDateRange(UIElement uiElement) {
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(myFindBy(uiElement))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div/div/table/tbody/tr[3]/td[4]/div/button/i
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_export\"]/div[2]/div[1]/div/div/div[2]/div/div"))).click().perform();//*[@id="edit_client_campaign_assignment_59ae4a625461f40e8410cb3f"]/div[4]/div/div[2]/div/div[2]
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+        }
+    }
+
+    public void myClientExportsCategory(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("A");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_export\"]/div[3]/div/div[2]/div/div/div[2]/div/div"))).click().perform();//*[@id="new_client_seo_plan_output"]/div[2]/div/div/div/div[2]/div/div[1]
+
+    }
+
+    public void myClientExportsBusinessVertical(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("R Estate");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_export\"]/div[3]/div/div[3]/div/div/div[2]/div/div[1]"))).click().perform();//*[@id="new_client_seo_plan_output"]/div[2]/div/div/div/div[2]/div/div[1]
+
+    }
+
+
+    
+    public void myClientExportsManager(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Jasmine");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_export\"]/div[3]/div/div[4]/div/div/div[2]/div/div"))).click().perform();//*[@id="new_client_seo_plan_output"]/div[2]/div/div/div/div[2]/div/div[1]
+
+    }
+    public void myClientExportsExecutive(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Shahbaz");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_export\"]/div[3]/div/div[5]/div/div/div[2]/div"))).click().perform();//*[@id="new_client_seo_plan_output"]/div[2]/div/div/div/div[2]/div/div[1]
+
+    }
 }
