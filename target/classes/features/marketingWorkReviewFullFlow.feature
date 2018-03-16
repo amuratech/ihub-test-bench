@@ -71,14 +71,14 @@ Feature: Marketing Work Review
     And Select Last client meeting
     And Enter Notes from last client meeting "Testing"
     And Enter Recent escalations "Testing"
-    And Enter Review of SEO activities "Testing"
-    And Enter Review of social activities "Testing"
-    And Enter Review of website maintainance activities "Testing"
-    And Enter Review of market research activities "Testing"
-    And Enter Review of creative and ideation activities "Testing"
-    And Enter Review of paid media activities "Testing"
-    And Enter Comments- "Testing"- Marketing Work Review output
-    And Enter Ideas and innovation suggested to client "Testing"
+    And Enter Review of SEO activities "Testing SEO activities"
+    And Enter Review of social activities "Testing social activities"
+    And Enter Review of website maintainance activities "Testing website maintainance activities"
+    And Enter Review of market research activities "Testing market research activities"
+    And Enter Review of creative and ideation activities "Testing creative and ideation activities"
+    And Enter Review of paid media activities "Testing paid media activities"
+    And Enter Comments- "Testing comments"- Marketing Work Review output
+    And Enter Ideas and innovation suggested to client "Testing ideas and innovation suggested to client"
     And Click 'Save' button- Marketing Work Review output
     When Click 'Update' link
     Then Select 'Review'

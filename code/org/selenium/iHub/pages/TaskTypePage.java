@@ -46,9 +46,9 @@ public class TaskTypePage extends BasePage{
         tDriver.mydesignad();
     }
 
-    public void enterTaskTypeSocialPost() {
-        tDriver.mycontentsocialpost();
-    }
+//    public void enterTaskTypeSocialPost() {
+//        tDriver.mycontentsocialpost();
+//    }
 
     public void enterTaskTypeContentIdea() {
         tDriver.mycontentidea();
@@ -58,9 +58,9 @@ public class TaskTypePage extends BasePage{
         tDriver.mycontentblogpost();
     }
 
-    public void enterTaskTypeContentAd() {
-        tDriver.mycontentad();
-    }
+//    public void enterTaskTypeContentAd() {
+//        tDriver.mycontentad();
+//    }
 
     public void enterCampaignTaskTypeExecution() {
         tDriver.mycampaignexecution();
@@ -326,4 +326,16 @@ public class TaskTypePage extends BasePage{
         tDriver.myMarketingReportMonthlyReport();
     }
 
+    public void selectTaskSubTypeSocialMonthlyPlan() {
+        tDriver.mySocialPlanMonthlyPlan();
+    }
+
+    public void selectTaskSubTypeWebsiteBanner(){
+        tDriver.myDesignBannerWebsiteBanner();
+    }
+
+    public void selectTaskSubTypeSocialFullAudit() {
+        tDriver.mySocialAuditFullAudit();
+
+    }
 }

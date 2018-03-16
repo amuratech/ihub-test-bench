@@ -12,7 +12,8 @@ public class WebBlogInputPage extends BasePage {
     UIElement keywords = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_blog\"]/div[2]/div/div/div/input");
     UIElement accordion = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_blog\"]/div[2]/div/div/div/span/a/i");
     UIElement save = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_blog\"]/div[5]/input");
-    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[9]/div/div/a[4]");
+    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[10]/div/div/a[4]");
+    UIElement refTask = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_blog\"]/div[1]/div[2]/div/div/div/div/div[1]");
 
     public void uploadContentBlogpostReferenceDoc() {
         tDriver.mytxtupload(upload);
@@ -37,4 +38,7 @@ public class WebBlogInputPage extends BasePage {
     }
 
 
+    public void selectContentBlogpostTaskReference() {
+        tDriver.myWebBlogContentBlogpostRefTask(refTask);
+    }
 }

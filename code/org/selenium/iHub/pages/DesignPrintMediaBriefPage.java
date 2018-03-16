@@ -14,7 +14,7 @@ public class DesignPrintMediaBriefPage extends BasePage{
     UIElement gender = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_print_medium\"]/div[9]/div[3]/div/div/div/div[1]");
     UIElement trying = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_print_medium_target_group_attributes_target_audience\"]");
     UIElement tg = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_print_medium\"]/div[9]/div[13]/div/div[1]");
-    UIElement publish = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_infographic\"]/div[5]/input");
+    UIElement publish = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_print_medium\"]/div[7]/input");
     UIElement media = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_review_fields_attributes_5_correct_true\"]");
     UIElement radioContent = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_review_fields_attributes_6_correct_true\"]");
     UIElement dimension = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_review_fields_attributes_6_correct_true\"]");
@@ -24,7 +24,7 @@ public class DesignPrintMediaBriefPage extends BasePage{
     UIElement target = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_review_fields_attributes_11_correct_true\"]");
     UIElement productInfo = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_review_fields_attributes_12_correct_true\"]");
     UIElement accept = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[16]/a");
-    UIElement rate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[11]/div/div/a[4]");
+    UIElement rate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[12]/div/div/a[4]");
     UIElement save = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"edit_client_design_output_598ad8815461f40e9bd1155e\"]/div[2]/input"); //*[@id="new_client_design_output"]/div[2]/input
     UIElement paperType = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_print_medium_paper_type\"]"); //*[@id="new_client_design_output"]/div[2]/input
     UIElement referenceTask = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_print_medium_content_print_medium_doc\"]"); //*[@id="new_client_design_output"]/div[2]/input
@@ -32,6 +32,7 @@ public class DesignPrintMediaBriefPage extends BasePage{
     UIElement suffPMReference = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_review_fields_attributes_12_correct_true\"]"); //*[@id="new_client_design_output"]/div[2]/input
     UIElement suffBudget = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_review_fields_attributes_8_correct_true\"]"); //*[@id="new_client_design_output"]/div[2]/input
     UIElement suffProduct = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_review_fields_attributes_11_correct_true\"]"); //*[@id="new_client_design_output"]/div[2]/input
+    UIElement refTask = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_print_medium\"]/div[5]/div[2]/div/div/div/div/div[1]"); //*[@id="new_client_design_output"]/div[2]/input
 
     public void enterProductName() {
         tDriver.mywait(product);
@@ -135,5 +136,9 @@ public class DesignPrintMediaBriefPage extends BasePage{
 
     public void selectContentPrintMediaReferenceTaskSuffInfo() {
         tDriver.myclicking(suffPMReference);
+    }
+
+    public void selectPrintMediaContentTaskReference() {
+        tDriver.myDesignPrintMediaContentrefTask(refTask);
     }
 }

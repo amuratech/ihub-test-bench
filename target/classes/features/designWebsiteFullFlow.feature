@@ -29,10 +29,10 @@ Feature: Design Website- Full Flow
     And Enter reference link "https://www.google.co.in/"
     Then Click plus
     And Select CTA
-#    And Put trying to reach "Testing"
-#    And Select tg to do
-    And Upload content website ref doc
-    And Upload content sitemap ref doc
+#    And Upload content website ref doc
+#    And Upload content sitemap ref doc
+    And Select Website content task ref- Design Website
+    And Select Sitemap content task ref- Design Website
     Then Click save and publish later button
 #    And Select status publish
 #    And Click update task
@@ -93,7 +93,7 @@ Feature: Design Website- Full Flow
     And Click 'Sign out'
 
   Scenario: Validate 'Review the Output'
-#    Given Launch the url ""
+    Given Launch the url ""
     Then Click on username/email id "rohit.m@amuratech.com"
     Then Click on password "amura!@#"
     Then Click on sign in button
@@ -110,13 +110,14 @@ Feature: Design Website- Full Flow
     And Enter 'Is the creative as per the brief' "Yes"
     And Enter 'Has the designer explained his thought process' "Yes"
     And Enter 'If delayed, please comment on the reason for the delay' "Yes"
-    And Rate
+    And Rate the output- Design Website
     And Click 'Send for secondary review' button
 
     When Click user name
     Then Click 'Sign out'
 
   Scenario: Validate the 'SOR'
+      Given Launch the url ""
      Then Click on username/email id "shahbaz@amuratech.com"
      Then Click on password "amura!@#"
      Then Click on sign in button

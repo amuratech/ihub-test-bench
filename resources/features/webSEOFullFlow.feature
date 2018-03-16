@@ -1,9 +1,9 @@
 Feature: Web Development- SEO Full Flow
 
   Scenario: Validate 'Add/Create a Task'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click 'Quick add' link
     And Select 'Task'
@@ -31,9 +31,9 @@ Feature: Web Development- SEO Full Flow
     And Click 'Sign out'
 
   Scenario: Validate 'Review the Input Brief'
-    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "sanjay@amuratech.com"
-    Then Click on password "amura123"
+    Given Launch the url ""
+    Then Click on username/email id "pankit@amuratech.com"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     Then Click on web development
@@ -53,16 +53,17 @@ Feature: Web Development- SEO Full Flow
 #    And Select radio desc
     Then Rating the brief
     And Accept
-    Then Select assignee
-    And Select 'Start date'
+    When Select 'Due date'
+    Then Select assignee for Web Development
+#    And Select 'Start date'
     Then Click assign button
     Then Click user name
     And Click 'Sign out'
 
   Scenario: Validate 'Add Output'
-    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "pankit@amuratech.com"
-    Then Click on password "amura123"
+    Given Launch the url ""
+    Then Click on username/email id "ashwin@amuratech.com"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     Then Click on web development
@@ -82,9 +83,9 @@ Feature: Web Development- SEO Full Flow
     And Click 'Sign out'
 
   Scenario: Validate 'Review the Output' and 'Deliver' the task
-    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "sanjay@amuratech.com"
-    Then Click on password "amura123"
+    Given Launch the url ""
+    Then Click on username/email id "atul.saini@amuratech.com"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     Then Click on web development
@@ -95,6 +96,7 @@ Feature: Web Development- SEO Full Flow
 #    Then Select webdev thought process
 #    And Select URL- webseo
     Then Rating- webseo output
-    And Click deliver- webseo
+    And Click 'Deliver' button
 
-
+    When Click user name
+    Then Click 'Sign out'

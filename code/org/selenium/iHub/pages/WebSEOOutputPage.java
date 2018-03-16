@@ -9,11 +9,11 @@ public class WebSEOOutputPage extends BasePage{
     UIElement start = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"edit_client_development_task_59c0c32c5461f47840bbebe3\"]/div[11]/input");
     UIElement thought = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'_seo_update_output_thought_process')]");
     UIElement URL = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'_seo_update_output_url')]");
-    UIElement submit = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_development_seo_update_output\"]/div[2]/div/div/input");
+    UIElement submit = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_development_seo_update_output\"]/div[3]/div/div/input");
     UIElement status = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"edit_client_development_task_598c60675461f40e10dca058\"]/div[5]/div/div/div/div[1]");
     UIElement update = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"edit_client_development_task_598c60675461f40e10dca058\"]/div[10]/input");//*[@id="edit_client_development_task_598d51bf5461f40e10dca2f8"]/div[10]/input
     UIElement radioURL = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_development_review_review_fields_attributes_1_correct_true\"]");
-    UIElement rating = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[3]/div/div/a[4]");
+    UIElement rating = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[6]/div/div/a[4]");
     UIElement deliver = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"move_forward\"]");
     UIElement rework = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[4]/input[2]");
     UIElement updateRework = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"edit_client_development_task_598c60675461f40e10dca058\"]/div[9]/input");

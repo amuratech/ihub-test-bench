@@ -9,8 +9,9 @@ public class DesignBannerInputPage extends BasePage {
     UIElement image = new UIElement(UIType.TextBox, UILocatorType.Xpath,"");
     UIElement height = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_banner_height\"]");
     UIElement width = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_banner_width\"]");
-    UIElement content = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'new_client_content_')]/div[1]/div/div/div/div[3]/div[2]");//*[@id="new_client_content_print_medium_output"]/div[3]/div/div/div/div[3]/div[2]
-    UIElement save = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_emailer_output\"]/div[8]/input");
+    UIElement content = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_banner\"]/div[2]/div/div[3]/div[2]");//*[@id="new_client_design_banner"]/div[2]/div/div[3]/div[2]
+    UIElement save = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_banner\"]/div[4]/input");
+    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[11]/div/div/a[4]");
 
     public void selectImageFormat() {
         tDriver.myimageformat();
@@ -30,5 +31,9 @@ public class DesignBannerInputPage extends BasePage {
 
     public void clickSaveButtonDesignBannerInput() {
         tDriver.myclicking(save);
+    }
+
+    public void rateTheInputBriefDesignBanner() {
+        tDriver.myclicking(rateInput);
     }
 }

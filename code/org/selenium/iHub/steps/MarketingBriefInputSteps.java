@@ -38,4 +38,8 @@ public class MarketingBriefInputSteps {
     }
 
 
+    @Then("^Select Marketing brief task ref$")
+    public void selectMarketingBriefTaskRef() {
+        dp.selectMarketingBriefTaskRef();
+    }
 }

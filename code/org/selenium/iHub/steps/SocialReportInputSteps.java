@@ -37,4 +37,8 @@ public class SocialReportInputSteps {
     }
 
 
+    @Then("^Rate the input- Social Report$")
+    public void rateTheInputSocialReport(){
+        dp.rateTheInputSocialReport();
+    }
 }

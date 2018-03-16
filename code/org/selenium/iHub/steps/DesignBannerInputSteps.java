@@ -36,4 +36,9 @@ public class DesignBannerInputSteps {
     public void clickSaveButtonDesignBannerInput() {
         dp.clickSaveButtonDesignBannerInput();
     }
+
+    @And("^Rate the input brief- Design Banner$")
+    public void rateTheInputBriefDesignBanner(){
+        dp.rateTheInputBriefDesignBanner();
+    }
 }

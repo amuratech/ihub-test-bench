@@ -49,4 +49,9 @@ public class ContentEmailerOutputSteps {
     public void rateTheOutputContentEmailer() {
         dp.rateTheOutputContentEmailer();
     }
+
+    @And("^Select Call to action- Content Emailer$")
+    public void selectCallToActionContentEmailer(){
+        dp.selectCallToActionContentEmailer();
+    }
 }

@@ -3,6 +3,7 @@ package org.selenium.iHub.steps;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.selenium.iHub.pages.WebBlogInputPage;
 
 public class WebBlogInputSteps {
@@ -37,4 +38,8 @@ public class WebBlogInputSteps {
     }
 
 
+    @When("^Select Content blogpost task reference$")
+    public void selectContentBlogpostTaskReference(){
+        dp.selectContentBlogpostTaskReference();
+    }
 }

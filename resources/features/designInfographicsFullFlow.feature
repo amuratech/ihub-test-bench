@@ -2,7 +2,7 @@ Feature: Design Infographics Full Flow
 
   Scenario: Validate 'Add/Create a Task'
     Given Launch the url ""
-    Then Click on username/email id "gautham@amuratech.com"
+    Then Click on username/email id "shahbaz@amuratech.com"
     Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click 'Quick add' link
@@ -19,33 +19,37 @@ Feature: Design Infographics Full Flow
     Then Click 'save and add brief' button
 
   Scenario: Validate 'Add Input Brief'
-    Then Upload 'Client Content' reference task
-    Then Click 'Save and publish'
+#    Then Upload 'Client Content' reference task
+    When Select Website content task ref
+    And Click 'Save and publish'
     Then Click 'Update' link
     And Select 'Publish'
 
+    Then Click user name
+    And Click 'Sign out'
+
   Scenario: Validate 'Review the Input Brief'
-#    Then Click user name
-#    And Click 'Sign out'
-      Given Launch the url ""
-    Then Click on username/email id "rohit.m@amuratech.com"
-    Then Click on password "amura!@#"
+#    Given Launch the url ""
+    When Click on username/email id "rohit.m@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
-    And Click on design
+    When Click on task sidebar
+    Then Click on design
     And Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
-    Then Click review link
+    When Click review link
     Then Rate the input brief- Design Infographics
     And Accept
-    Then Select assignee
+    When Select 'Due date'
+    And Select assignee for Design
 #    And Select 'Start date'
     Then Click assign button
 
+    When Click user name
+    Then Click 'Sign out'
+
   Scenario: Validate 'Add Output'
-#    Then Click user name
-#    And Click 'Sign out'
     Given Launch the url ""
     Then Click on username/email id "varsha.j@amuratech.com"
     Then Click on password "amura!@#"
@@ -69,9 +73,10 @@ Feature: Design Infographics Full Flow
     Then Click 'Update' link
     And Select 'Review'
 
+    Then Click user name
+    And Click 'Sign out'
+
   Scenario: Validate 'Review the Output'
-#    Then Click user name
-#    And Click 'Sign out'
     Given Launch the url ""
     Then Click on username/email id "rohit.m@amuratech.com"
     Then Click on password "amura!@#"
@@ -89,12 +94,13 @@ Feature: Design Infographics Full Flow
     And Enter 'If delayed, please comment on the reason for the delay' "Yes"
     Then Rate the output- Design Infographics
     And Click 'Send for secondary review' button
+
     When Click user name
     Then Click 'Sign out'
 
   Scenario: Validate 'Secondary Output Review'
     Given Launch the url ""
-    Then Click on username/email id "gautham@amuratech.com"
+    Then Click on username/email id "shahbaz@amuratech.com"
     And Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar

@@ -26,7 +26,7 @@ public class ContentBlogOutputPage extends BasePage {
     UIElement brief = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_0_answer\"]");
     UIElement contentCater = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_1_answer\"]");//*[@id="edit_client_content_task_599174365461f40a6e4a0793"]/div[8]/input
     UIElement copywriter = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_2_answer\"]");//*[@id="edit_client_content_task_599174365461f40a6e4a0793"]/div[8]/input
-    UIElement rate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[13]/div/div/a[4]");//*[@id="new_client_content_review"]/div[11]/div/div/a[4]
+    UIElement rate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[14]/div/div/a[4]");//*[@id="new_client_content_review"]/div[11]/div/div/a[4]
     UIElement deliver = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[12]/input[1]");//*[@id="edit_client_content_task_599174365461f40a6e4a0793"]/div[8]/input
     UIElement designImage = new UIElement(UIType.Button, UILocatorType.ClassName,"file_extension_validation");//*[@id="client_content_socialpost_output_design_cue_images_attributes_1510305692759_design_cue_image"]
     UIElement description = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'_description')]");//*[@id="client_content_blogpost_output_design_cue_images_attributes_1510296097975_description"]

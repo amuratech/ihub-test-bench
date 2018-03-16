@@ -13,7 +13,7 @@ public class WebMaintenanceOutputPage extends BasePage{
     UIElement submit = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_development_maintenance_work_output\"]/div[3]/div/div/input");
     UIElement update = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'edit_client_')]/div[10]/input");
     UIElement radioURL = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_development_review_review_fields_attributes_1_correct_true\"]");
-    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[5]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[6]/div/div/a[4]");
     UIElement deliver = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[4]/input[1]");
 
     public void clickStartWorkingOnThisTaskWebmaintenance() {

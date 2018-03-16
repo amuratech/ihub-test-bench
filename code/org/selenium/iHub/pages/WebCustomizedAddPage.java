@@ -13,7 +13,7 @@ public class WebCustomizedAddPage extends BasePage {
     UIElement savePublish = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_customized_requirement\"]/div[3]/input");
     UIElement radioReqType = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_development_review_review_fields_attributes_7_correct_true\"]");
     UIElement radioReqDoc = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_development_review_review_fields_attributes_8_correct_true\"]");
-    UIElement rate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[7]/div/div/a[4]");
+    UIElement rate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[8]/div/div/a[4]");
     UIElement accept = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[11]/a");
 
     public void enterNameInputWebcustomized() {

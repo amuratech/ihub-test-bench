@@ -31,4 +31,10 @@ public class DesignSocialCoverInputSteps {
         dp.rateTheInputDesignSocialCover();
     }
 
+    @And("^Select Social post content task reference$")
+    public void selectSocialPostContentTaskReference() {
+        dp.selectSocialPostContentTaskReference();
+    }
+
+
 }

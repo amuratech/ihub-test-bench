@@ -6,7 +6,7 @@ import org.selenium.iHub.utitlities.UIType;
 
 public class ContentMetaDescriptionInputPage extends BasePage {
 
-    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[7]/div/div/a[4]");
+    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[8]/div/div/a[4]");
     UIElement metaTitle = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_suggestions')]");
     UIElement url = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_url')]");
     UIElement keywords = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_meta_description\"]/div[1]/div[2]/div/div/div[4]/div/div/div/div/input");//*[@id="new_client_content_case_study"]/div[2]/div[1]/div/div/div/div/input

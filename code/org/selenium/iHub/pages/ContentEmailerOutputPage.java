@@ -14,6 +14,7 @@ public class ContentEmailerOutputPage extends BasePage {
     UIElement tg = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_3_answer\"]");
     UIElement copy = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_4_answer\"]");
     UIElement rateOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[17]/div/div/a[4]");
+    UIElement CTC = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_emailer_output\"]/div[3]/div/div/div/div[1]");
 
     public void enterCallToAction(String arg0) {
         tDriver.mytype(cta, arg0);
@@ -45,5 +46,9 @@ public class ContentEmailerOutputPage extends BasePage {
 
     public void rateTheOutputContentEmailer() {
         tDriver.myclicking(rateOutput);
+    }
+
+    public void selectCallToActionContentEmailer() {
+        tDriver.myContentEmailerCTC(CTC);
     }
 }

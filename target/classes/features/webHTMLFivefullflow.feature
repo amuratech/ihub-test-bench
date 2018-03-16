@@ -19,10 +19,11 @@ Feature: Web Development HTML Five task full flow
     Then Click 'save and add brief' button
 
   Scenario: Validate 'Add input brief'
-    When Click 'Add input brief' link
-    Then Enter Specification animation requirements "Testing the animation requirements"
-    And Upload Design ad reference doc
-    And Click 'Save' button- Web HTML Five Ad Input
+#    When Click 'Add input brief' link
+    When Enter Specification animation requirements "Testing the animation requirements"
+#    And Upload Design ad reference doc
+    And Select Design ad task reference
+    Then Click 'Save' button- Web HTML Five Ad Input
     When Click 'Update' link
     Then Select 'Publish'
 
@@ -30,6 +31,7 @@ Feature: Web Development HTML Five task full flow
     Then Click 'Sign out'
 
   Scenario: Validate 'Review the input brief'
+    Given Launch the url ""
     When Click on username/email id "pankit@amuratech.com"
     And Click on password "amura!@#"
     Then Click on sign in button
@@ -37,12 +39,13 @@ Feature: Web Development HTML Five task full flow
     And Click on web development
     Then Click on assigned to me
     And Select newest
+    And Click on apply
     When Click review link
-    And Rate the input brief- Web HTML Five Ad
-    Then Accept
+    Then Rate the input brief- Web HTML Five Ad
+    When Accept
     And Select 'Due date'
     And Select assignee for Web Development
-    And Click assign button
+    Then Click assign button
 
     When Click user name
     Then Click 'Sign out'
@@ -63,10 +66,11 @@ Feature: Web Development HTML Five task full flow
     When Click 'Add your output' link
     Then Select Tool used
     And Click 'Save' button- Web HTML Five Ad output
+#    And Click 'Edit your output' link
     When Upload Files
     And Click 'Edit your output' link
     Then Click 'Update' link
-    And Click 'Review'
+    And Select 'Review'
 
     When Click user name
     Then Click 'Sign out'
@@ -89,6 +93,7 @@ Feature: Web Development HTML Five task full flow
      Then Click 'Sign out'
 
   Scenario: Validate the 'SOR'
+    Given Launch the url ""
     When Click on username/email id "shahbaz@amuratech.com"
     And Click on password "amura!@#"
     Then Click on sign in button

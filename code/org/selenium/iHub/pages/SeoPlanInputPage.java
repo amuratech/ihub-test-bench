@@ -20,7 +20,7 @@ public class SeoPlanInputPage extends BasePage {
     UIElement radioProduct = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_seo_review_review_fields_attributes_7_correct_true\"]");
     UIElement productIISuff = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_seo_review_review_fields_attributes_8_correct_true\"]");
     UIElement productIIISuff = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_seo_review_review_fields_attributes_9_correct_true\"]");
-    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_seo_review\"]/div[10]/div/div/a[4]");
+    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_seo_review\"]/div[11]/div/div/a[4]");
     UIElement accept = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_seo_review\"]/div[12]/a");
     UIElement startDate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_seo_task_start_date\"]");
     UIElement changeAssignee = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'edit_client_')]/div[6]/div[1]/div/div");//*[@id="edit_client_seo_task_599009d95461f40e10dcaba1"]/div[6]/div[1]/div/div

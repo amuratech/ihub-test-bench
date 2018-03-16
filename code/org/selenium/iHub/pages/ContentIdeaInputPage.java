@@ -25,7 +25,7 @@ public class ContentIdeaInputPage extends BasePage{
     UIElement blog = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_content_review_review_fields_attributes_11_correct_true\"]");//*[@id="edit_client_content_task_599432175461f40de73ce1a5"]/div[7]/input
     UIElement product = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_content_review_review_fields_attributes_12_correct_true\"]");//*[@id="edit_client_content_task_599432175461f40de73ce1a5"]/div[7]/input
     UIElement reference = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_content_review_review_fields_attributes_13_correct_true\"]");//*[@id="edit_client_content_task_599432175461f40de73ce1a5"]/div[7]/input
-    UIElement brief = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[14]/div/div/a[4]");//*[@id="edit_client_content_task_599432175461f40de73ce1a5"]/div[7]/input
+    UIElement ratebrief = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[15]/div/div/a[4]");//*[@id="edit_client_content_task_599432175461f40de73ce1a5"]/div[7]/input
     UIElement accept = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[16]/a");//*[@id="edit_client_content_task_599432175461f40de73ce1a5"]/div[7]/input
 
     public void enterNameContentIdea() {
@@ -102,7 +102,7 @@ public class ContentIdeaInputPage extends BasePage{
     }
 
     public void rateTheBriefContentIdea() {
-        tDriver.myclicking(brief);
+        tDriver.myclicking(ratebrief);
     }
 
     public void clickAcceptContentIdea() {

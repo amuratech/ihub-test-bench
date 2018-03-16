@@ -56,13 +56,13 @@ Feature: Social- Asset Creation Full Flow
     And Rate the input- social asset creation
 #    And Click request changes- social asset creation
     And Accept
-    Then Select assignee for Social
-    And Select 'Due date'
+    When Select 'Due date'
+    And Select assignee for Social
 #    And Select 'Start date'
     Then Click assign button
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
   Scenario: Validate 'Add Output'
     Given Launch the url ""
@@ -110,7 +110,7 @@ Feature: Social- Asset Creation Full Flow
 
   Scenario: Validate the Secondary Output Review
     Given Launch the url ""
-    Then Click on username/email id "tabassum@amuratech.com"
+    Then Click on username/email id "shahbaz@amuratech.com"
     And Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar

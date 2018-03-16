@@ -87,4 +87,19 @@ public class WebMailerInputSteps {
     public void selectDesignEmailerSuffInfo() {
         dp.selectDesignEmailerSuffInfo();
     }
+
+    @And("^Select Emailer content task reference$")
+    public void selectEmailerContentTaskReference() {
+        dp.selectEmailerContentTaskReference();
+    }
+
+    @And("^Select Emailer design task reference$")
+    public void selectEmailerDesignTaskReference(){
+        dp.selectEmailerDesignTaskReference();
+    }
+
+    @Then("^Rate the input brief- Web Mailer$")
+    public void rateTheInputBriefWebMailer() {
+        dp.rateTheInputBriefWebMailer();
+    }
 }

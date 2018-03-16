@@ -12,7 +12,7 @@ import java.rmi.server.UID;
 public class ContentReviewForumOutputPage extends BasePage {
 
     UIElement saveOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review_forum_participation_output\"]/div[4]/input");
-    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[11]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[12]/div/div/a[4]");
     UIElement forum = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_3_answer\"]");
 
     public void clickSaveButtonContentReviewOutput() {

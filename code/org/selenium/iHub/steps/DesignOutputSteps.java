@@ -3,6 +3,7 @@ package org.selenium.iHub.steps;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.selenium.iHub.pages.DesignOutputPage;
 
 public class DesignOutputSteps {
@@ -29,11 +30,6 @@ public class DesignOutputSteps {
     @Then("^Click upload$")
     public void clickUpload(){
         p.clickUpload();
-    }
-
-    @Then("^Enter thought process \"([^\"]*)\"- Design$")
-    public void enterThoughtProcessDesign(String arg0) {
-        p.enterThoughtProcessDesign(arg0);
     }
 
     @And("^Click 'Save' button$")
@@ -90,4 +86,11 @@ public class DesignOutputSteps {
     public void rateOutput() {
         p.rateOutput();
     }
+
+    @And("^Rate the output- Design Website$")
+    public void rateTheOutputDesignWebsite(){
+        p.rateTheOutputDesignWebsite();
+    }
+
+
 }

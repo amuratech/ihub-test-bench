@@ -17,7 +17,7 @@ public class SeoPlanOutputPage extends BasePage{
     UIElement targetRank = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[contains(@id,'_target_rank')]");//*contains[@id,'_target_rank')]
     UIElement competition = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_seo_plan_output\"]/div[7]/div[2]/div/div/div[3]/div[2]/div/div/div[1]");
     UIElement saveOutput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_seo_plan_output\"]/div[9]/div/div/input");
-    UIElement rateOutput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_seo_review\"]/div[10]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_seo_review\"]/div[11]/div/div/a[4]");
 
     public void clickOutputDoc() {
         tDriver.mywait(output);

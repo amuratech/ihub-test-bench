@@ -35,7 +35,7 @@ public class SocialCMSInputPage extends BasePage{
     UIElement objectiveII = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_review_review_fields_attributes_7_correct_true\"]");//*[@id="edit_client_social_task_5996c3555461f4287c21caf9"]/div[9]/input
     UIElement paid = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_review_review_fields_attributes_8_correct_true\"]");//*[@id="edit_client_social_task_5996c3555461f4287c21caf9"]/div[9]/input
     UIElement orm = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_review_review_fields_attributes_9_correct_true\"]");//*[@id="edit_client_social_task_5996c3555461f4287c21caf9"]/div[9]/input
-    UIElement rate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[12]/div/div/a[4]");//*[@id="edit_client_social_task_5996c3555461f4287c21caf9"]/div[9]/input
+    UIElement rate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[11]/div/div/a[4]");//*[@id="edit_client_social_task_5996c3555461f4287c21caf9"]/div[9]/input
     UIElement accept = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[12]/a");//*[@id="edit_client_social_task_5996c3555461f4287c21caf9"]/div[9]/input
     UIElement refURL = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_social_post_reference_url\"]");//*[@id="edit_client_social_task_5996c3555461f4287c21caf9"]/div[9]/input
 

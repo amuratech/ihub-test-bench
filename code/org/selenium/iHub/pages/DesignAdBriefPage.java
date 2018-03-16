@@ -19,7 +19,8 @@ public class DesignAdBriefPage extends BasePage {
     UIElement product = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_review_fields_attributes_9_correct_true\"]");
     UIElement ref = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_review_fields_attributes_10_correct_true\"]");
     UIElement adAccept = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[13]/a");
-    UIElement rating = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[10]/div/div/a[4]");
+    UIElement rating = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[11]/div/div/a[4]    ");
+    UIElement adRefTask = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_ad\"]/div[4]/div[2]/div/div/div/div/div[1]");
 
     public void enterTheProjectName() {
         tDriver.mytasktype(project);
@@ -79,4 +80,7 @@ public class DesignAdBriefPage extends BasePage {
         tDriver.myclicking(adAccept);
     }
 
+    public void selectAdCommunicationContentTaskReference() {
+        tDriver.myDesignAdCommunicationContentRefTask(adRefTask);
+    }
 }

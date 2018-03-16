@@ -17,7 +17,7 @@ public class SocialCMSOutputPage extends BasePage {
     UIElement goal = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_cms_output_goal\"]");
     UIElement link = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_post_output\"]/div[1]/div/div/div/input");
     UIElement upload = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_cms_output_reference_image\"]");
-    UIElement save = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_post_output\"]/div[2]/input");
+    UIElement save = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_post_output\"]/div[3]/input");
     UIElement cmsI = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_review_review_fields_attributes_0_correct_true\"]");
     UIElement cmsII = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_review_review_fields_attributes_1_correct_true\"]");
     UIElement businessObjective = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_0_answer\"]");
@@ -25,16 +25,16 @@ public class SocialCMSOutputPage extends BasePage {
     UIElement earlierCMS = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_2_answer\"]");
     UIElement hashtagsSugg = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_3_answer\"]");
     UIElement hashtagsTrending = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_4_answer\"]");
-    UIElement rate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[3]/div/div/a[4]");//*[@id="new_client_social_review"]/div[3]/div/div/a[4]
+    UIElement rate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[6]/div/div/a[4]");//*[@id="new_client_social_review"]/div[3]/div/div/a[4]
     UIElement deliver = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[9]/input[1]");
     UIElement rework = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[9]/input[2]");
     UIElement linkAccordion = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_post_output\"]/div[1]/div/div/div/span/a/i");
     UIElement orm = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_plan_output\"]/div[2]/div[2]/div[2]/div/div/div/div[1]");
-    UIElement objective = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_0_answer\"]//*[@id=\"new_client_social_plan_output\"]/div[2]/div[2]/div[2]/div/div/div/div[1]");
+    UIElement objective = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_0_answer\"]");
     UIElement tg = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_1_answer\"]");
     UIElement repitition = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_2_answer\"]");
     UIElement hashtag = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_3_answer\"]");
-    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[13]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[14]/div/div/a[4]");
     UIElement hashtagTrending = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_review_questions_attributes_4_answer\"]");
 
     public void clickStartWorkingButtonSocial() {

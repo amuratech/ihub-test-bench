@@ -13,7 +13,7 @@ public class ContentSEOPlanOutputPage extends BasePage {
     UIElement enoughRef = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_1_answer\"]");
     UIElement find = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_2_answer\"]");
     UIElement seoSpecific = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_3_answer\"]");
-    UIElement rateOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[10]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[11]/div/div/a[4]");
     UIElement refDocuments = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_review_reference_documents_file\"]");
 
     public void enterTopicContentSEOPlan(String arg0) {

@@ -3,6 +3,7 @@ package org.selenium.iHub.steps;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.selenium.iHub.pages.DesignPrintMediaBriefPage;
 
 public class DesignPrintMediaBriefSteps {
@@ -142,4 +143,11 @@ public class DesignPrintMediaBriefSteps {
     public void selectContentPrintMediaReferenceTaskSuffInfo() {
         dp.selectContentPrintMediaReferenceTaskSuffInfo();
     }
+
+    @And("^Select Print media content task reference$")
+    public void selectPrintMediaContentTaskReference() {
+        dp.selectPrintMediaContentTaskReference();
+    }
+
+
 }

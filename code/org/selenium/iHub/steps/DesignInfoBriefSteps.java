@@ -3,6 +3,7 @@ package org.selenium.iHub.steps;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.selenium.iHub.pages.DesignInfoBriefPage;
 
 public class DesignInfoBriefSteps {
@@ -134,5 +135,10 @@ public class DesignInfoBriefSteps {
     @Then("^Rate the input brief- Design Infographics$")
     public void rateTheInputBriefDesignInfographics(){
         dp.rateTheInputBriefDesignInfographics();
+    }
+
+    @When("^Select Website content task ref$")
+    public void selectWebsiteContentTaskRef() {
+        dp.selectWebsiteContentTaskRef();
     }
 }

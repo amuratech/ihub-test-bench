@@ -15,7 +15,7 @@ public class SocialMediaPlanOutputPage extends BasePage{
     UIElement deliver = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[5]/input[1]");
     UIElement rework = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[5]/input[2]");
     UIElement thoughtProcess = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_social_media_plan_output_thought_process\"]");
-    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[6]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[9]/div/div/a[4]");
 
     public void uploadMediaPlanOutputDocument() {
         tDriver.mytxtupload(upload);

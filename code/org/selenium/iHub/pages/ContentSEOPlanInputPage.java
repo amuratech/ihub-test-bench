@@ -30,7 +30,7 @@ public class ContentSEOPlanInputPage extends BasePage {
     UIElement saveInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_seo_plan\"]/div[4]/input");
     UIElement refLinks = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_seo_plan\"]/div[2]/div/div/div/input");
     UIElement keywords = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_seo_plan\"]/div[3]/div/div/div/input");//*[@id="new_client_content_seo_plan"]/div[3]/div/div/div/input
-    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[9]/div/div/a[4]");//*[@id="new_client_content_seo_plan"]/div[3]/div/div/div/input
+    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[10]/div/div/a[4]");//*[@id="new_client_content_seo_plan"]/div[3]/div/div/div/input
     UIElement monthYear = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_seo_plan_month_year\"]");//*[@id="new_client_content_seo_plan"]/div[3]/div/div/div/input
     UIElement url = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_url')]");//*[@id="new_client_content_seo_plan"]/div[3]/div/div/div/input
     UIElement keywordsPlan = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_seo_plan\"]/div[2]/div[2]/div/div/div[3]/div/div/div/div/input");//*[@id="new_client_content_seo_plan"]/div[3]/div/div/div/input

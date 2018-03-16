@@ -1,15 +1,16 @@
 Feature: Design- Social Cover- Full Flow
+
   Scenario: Validate 'Add/Create a Task'
-    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura123"
+    Given Launch the url ""
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click 'Quick add' link
+    When Click 'Quick add' link
     And Select 'Task'
-    And Enter the client name ""
+    Then Enter the client name ""
     And Select the department- Design
     And Click on create task
-    Then Enter task name "Testing design social cover"
+    When Enter task name "Testing design social cover"
     And Enter task type- Design Social Cover
     And Select task sub-type- Adaption
     And Enter Brief "Testing design social cover brief"
@@ -18,25 +19,26 @@ Feature: Design- Social Cover- Full Flow
     Then Click 'save and add brief' button
 
   Scenario: Validate 'Add Input Brief'
-    Then Select platforms
-    And Upload Social post content reference doc
+    When Select Social post content task reference
+    And Select platforms
+#    And Upload Social post content reference doc
     Then Click 'Save' button- Design Social Cover Input
-    Then Click 'Update' link
-    And Select 'Publish'
-    Then Click user name
-    And Click 'Sign out'
+    When Click 'Update' link
+    Then Select 'Publish'
+    When Click user name
+    Then Click 'Sign out'
 
   Scenario: Validate 'Review the Input Brief'
-    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "vishwanath.k@amuratech.com"
-    Then Click on password "amura123"
+    Given Launch the url ""
+    When Click on username/email id "rohit.m@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on design
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click review link
+    When Click review link
 #    Then Select name with sufficient info
 #    And Description with insufficient info
 #    Then Due date with sufficient
@@ -49,53 +51,51 @@ Feature: Design- Social Cover- Full Flow
 #    And Product radio button
 #    And Ref images
     Then Rate the input- Design Social Cover
-    And Accept
-    Then Select assignee
-    And Select 'Start date'
-    Then Click assign button
+    When Accept
+    Then Select 'Due date'
+    And Select assignee for Design
+#    And Select 'Start date'
+    When Click assign button
     Then Click user name
     And Click 'Sign out'
 
   Scenario: Validate 'Add Output'
-    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "navni@amuratech.com"
-    Then Click on password "amura123"
+    Given Launch the url ""
+    When Click on username/email id "varsha.j@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on design
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click on Edit
-    Then Click 'Update' link
-    And Click 'Start'
-    Then Click 'Add your output' link
+    And Click on Edit
+    When Click 'Update' link
+    Then Click 'Start'
+    When Click 'Add your output' link
     Then Enter thought process "Testing"- Design
     And Click 'Save' button
-    Then Upload designs
+    When Upload designs
     Then Click 'Edit your output' link
 #    Then Click upload
 #    Then Click 'More'
 #    And Select 'Edit task'
-    Then Click 'Update' link
-    And Select 'Review'
-    Then Click user name
-    And Click 'Sign out'
+    When Click 'Update' link
+    Then Select 'Review'
+    When Click user name
+    Then Click 'Sign out'
 
   Scenario: Validate 'Review the Output'
-    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "vishwanath.k@amuratech.com"
-    Then Click on password "amura123"
+    Given Launch the url ""
+    When Click on username/email id "rohit.m@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on design
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click review link
-#    Then Select radio thought
-#    And Select radio doc
-    And Rate
+    When Click review link
 #    Then Select thought process suff info
 #    And Select design suff info
     Then Enter 'Have the brand guidelines been followed' "Testing"
@@ -103,5 +103,26 @@ Feature: Design- Social Cover- Full Flow
     And Enter 'Is the creative as per the brief' "Yes"
     And Enter 'Has the designer explained his thought process' "Yes"
     And Enter 'If delayed, please comment on the reason for the delay' "Yes"
-    Then Click deliver button
+    And Rate the output- Design Social Cover
+    Then Click 'Send for secondary review' button
+
+    When Click user name
+    Then Click 'Sign out'
+
+
+    Scenario: Validate 'SOR'
+      Given Launch the url ""
+      When Click on username/email id "shahbaz@amuratech.com"
+      And Click on password "amura!@#"
+      Then Click on sign in button
+      And Click on task sidebar
+      When Click on design
+      And Click on assigned to me
+      Then Select newest
+      And Click on apply
+      When Click on Edit
+      And Click 'Approve or Reject the output'
+      Then Enter Comments "Testing the task with the SOR"
+      And Click 'Accept and Mark Delivered' button
+
 

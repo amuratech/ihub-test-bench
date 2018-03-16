@@ -176,7 +176,7 @@ public class TestDriver {
     public void mytxtupload(UIElement uiElement) {
         By by = myFindBy(uiElement);
         WebElement element = driver.findElement(by);
-        element.sendKeys("/home/amuraqa/Desktop/Software/Testing_iHub.txt");// Enter the path
+        element.sendKeys("/home/amura/Desktop/Testing.txt");// Enter the path
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -578,7 +578,7 @@ public class TestDriver {
     public void myjpgupload(UIElement uiElement) {
         By by = myFindBy(uiElement);
         WebElement element = driver.findElement(by);
-        element.sendKeys("/home/amuraqa/Desktop/Sites/505145-dhoni-m.jpg");// Enter the path
+        element.sendKeys("/home/amura/Downloads/download.jpeg");// Enter the path
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -1006,7 +1006,7 @@ public class TestDriver {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"task-form-modal\"]/div/div/div[2]/div[2]/div/div[2]/div/div[10]"))).click().perform();//*[@id="edit_client_media_plan_task_59952b5b5461f40e7d63b6f4"]/div[5]/div/div/div/div[2]/div/div[2]
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"task-form-modal\"]/div/div/div[2]/div[2]/div/div[2]/div/div[12]"))).click().perform();//*[@id="edit_client_media_plan_task_59952b5b5461f40e7d63b6f4"]/div[5]/div/div/div/div[2]/div/div[2]
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -1459,7 +1459,7 @@ public class TestDriver {
     public void myhtmlupload(UIElement uiElement) {
         By by = myFindBy(uiElement);
         WebElement element = driver.findElement(by);
-        element.sendKeys("/home/amuraqa/Desktop/Software/Testing.html");// Enter the path
+        element.sendKeys("/home/amura/Downloads/Testing.html");// Enter the path
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -1533,7 +1533,7 @@ public class TestDriver {
             e.printStackTrace();
         }
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div[1]"))).click().perform();//*[@id="review-accept-modal"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div[1]
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[2]"))).click().perform();//*[@id="review-accept-modal"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div[1]
     }
 
     //      ------Assignee for Web Development----------
@@ -1543,7 +1543,7 @@ public class TestDriver {
             action = new Actions(driver);
         }
         By by = myFindBy(uiElement);
-        action.moveToElement(driver.findElement(by)).click();
+        action.moveToElement(driver.findElement(by)).click().perform();
         action.sendKeys("Ashwin");
         action.perform();
         try {
@@ -1552,7 +1552,7 @@ public class TestDriver {
             e.printStackTrace();
         }
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[2]/div/div"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div"))).click().perform();//*[@id="review-accept-modal"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div
     }
 
     //      -------Assignee fo Content-----------
@@ -1628,7 +1628,7 @@ public class TestDriver {
             e.printStackTrace();
         }
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[2]/div/div"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]"))).click().perform();
     }
 
     public void mydate() {
@@ -1956,13 +1956,13 @@ public class TestDriver {
 
     public void mydesignsocialcoveradaption() {
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_task\"]/div[2]/div[2]/div/div[2]/div/div[1]"))).click().perform();//*[@id="new_client_development_task"]/div[2]/div[2]/div/div/div[1]
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_task\"]/div[2]/div[2]/div/div/div[1]"))).click().perform();//*[@id="new_client_development_task"]/div[2]/div[2]/div/div/div[1]
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_task\"]/div[2]/div[2]/div/div[2]/div/div[2]/div/div[1]"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_task\"]/div[2]/div[2]/div/div/div[2]/div/div[1]"))).click().perform();
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -1988,13 +1988,13 @@ public class TestDriver {
 
     public void mydesignsocialpostjpeg() {
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_task\"]/div[2]/div[2]/div/div[2]/div/div[1]"))).click().perform();//*[@id="new_client_development_task"]/div[2]/div[2]/div/div/div[1]
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_task\"]/div[2]/div[2]/div/div/div[1]"))).click().perform();//*[@id="new_client_development_task"]/div[2]/div[2]/div/div/div[1]
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_task\"]/div[2]/div[2]/div/div[2]/div/div[2]/div/div[1]"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_task\"]/div[2]/div[2]/div/div/div[2]/div/div[1]"))).click().perform();
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -2020,13 +2020,13 @@ public class TestDriver {
 
     public void mysocialmediapostcampaignrelated() {
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_task\"]/div[2]/div[2]/div/div[2]/div/div[1]"))).click().perform();//*[@id="new_client_design_social_post"]/div[1]/div/div[1]
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_task\"]/div[2]/div[2]/div/div/div[1]"))).click().perform();//*[@id="new_client_design_social_post"]/div[1]/div/div[1]
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_task\"]/div[2]/div[2]/div/div[2]/div/div[2]/div/div[1]"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_task\"]/div[2]/div[2]/div/div/div[2]/div/div[1]"))).click().perform();
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -2371,13 +2371,13 @@ public class TestDriver {
 
     public void mysocialmediareportcampaign() {
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_task\"]/div[2]/div[2]/div/div[2]/div/div[1]"))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div/div/table/tbody/tr[3]/td[4]/div/button/i
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_task\"]/div[2]/div[2]/div/div/div[1]"))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div/div/table/tbody/tr[3]/td[4]/div/button/i
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_task\"]/div[2]/div[2]/div/div[2]/div/div[2]/div/div[1]"))).click().perform();//*[@id="edit_client_campaign_assignment_59ae4a625461f40e8410cb3f"]/div[4]/div/div[2]/div/div[2]
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_task\"]/div[2]/div[2]/div/div/div[2]/div/div[1]"))).click().perform();//*[@id="edit_client_campaign_assignment_59ae4a625461f40e8410cb3f"]/div[4]/div/div[2]/div/div[2]
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -2387,13 +2387,13 @@ public class TestDriver {
 
     public void mysocialplatform() {
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[contains(@id,'edit_client_social_report_')]/div[3]/div/div/div/div[1]"))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div/div/table/tbody/tr[3]/td[4]/div/button/i
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_report\"]/div[3]/div/div/div/div[1]"))).click().perform();//*[@id="new_client_social_report"]/div[3]/div/div/div/div[1]
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        act.moveToElement(driver.findElement(By.xpath("//*[contains(@id,'edit_client_social_report_')]/div[3]/div/div/div/div[2]/div/div[1]"))).click().perform();//*[@id="edit_client_campaign_assignment_59ae4a625461f40e8410cb3f"]/div[4]/div/div[2]/div/div[2]
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_report\"]/div[3]/div/div/div/div[2]/div/div[1]"))).click().perform();//*[@id="new_client_social_report"]/div[3]/div/div/div/div[2]/div/div[1]
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -2883,7 +2883,7 @@ public class TestDriver {
             e.printStackTrace();
         }
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_meeting\"]/div[4]/div[1]/div/div/div[2]"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_meeting\"]/div[4]/div[2]/div/div/div[2]/div"))).click().perform();
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -2897,7 +2897,7 @@ public class TestDriver {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_meeting\"]/div[4]/div[1]/div/div/div[2]"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_meeting\"]/div[4]/div[2]/div/div/div[2]/div"))).click().perform();
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -2929,7 +2929,7 @@ public class TestDriver {
         Date dt = new Date();
         Calendar cl = Calendar.getInstance();
         cl.setTime(dt);
-        cl.add(Calendar.DAY_OF_YEAR, 2);
+        cl.add(Calendar.DAY_OF_YEAR, 0);
         dt = cl.getTime();
         String str = df.format(dt);
         element.sendKeys(str);
@@ -3550,7 +3550,7 @@ public class TestDriver {
 
     public void mycontentcta() {
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[contains(@id,'new_client_content_')]/div[2]/div/div/div/div[1]"))).click().perform();//*[@id="new_client_content_website_output"]/div[2]/div/div/div/div[1]
+        act.moveToElement(driver.findElement(By.xpath("//*[contains(@id,'new_client_content_')]/div[2]/div/div/div/div[1]"))).click().perform();//*[@id="new_client_content_hoarding_output"]/div[2]/div/div/div/div[1]
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -4708,10 +4708,15 @@ public class TestDriver {
         Date dt = new Date();
         Calendar cl = Calendar.getInstance();
         cl.setTime(dt);
-        cl.add(Calendar.DAY_OF_YEAR, 1);
+        cl.add(Calendar.DAY_OF_YEAR, 4);
         dt = cl.getTime();
         String str = df.format(dt);
         element.sendKeys(str);
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void myCampaignAssignee(UIElement uiElement) {
@@ -4797,19 +4802,39 @@ public class TestDriver {
 
     }
 
-    public void myContentEmailerTonality() {
-
-    }
-
-    public void myWebDevelopmentHTMLFive() {
+    public void myContentEmailerTonality(UIElement uiElement) {
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_development_task\"]/div[2]/div[1]/div/div/div[1]"))).click().perform();
+        act.moveToElement(driver.findElement(myFindBy(uiElement))).click().perform();
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_development_task\"]/div[2]/div[1]/div/div/div[2]/div/div[7]"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_content_emailer\"]/div[2]/div[1]/div/div/div[2]/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_content_emailer\"]/div[2]/div[1]/div/div/div[2]/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_content_emailer\"]/div[2]/div[1]/div/div/div[2]/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_content_emailer\"]/div[2]/div[1]/div/div/div[2]/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_content_emailer\"]/div[2]/div[1]/div/div/div[2]/div/div[1]"))).click().perform();
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -4826,6 +4851,22 @@ public class TestDriver {
             e.printStackTrace();
         }
         act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_development_html_five_ad_output\"]/div[1]/div/div/div/div[2]/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+
+        }
+    }
+    public void myWebDevelopmentHTMLFive() {
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_development_task\"]/div[2]/div[1]/div/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_development_task\"]/div[2]/div[1]/div/div/div[2]/div/div[7]"))).click().perform();
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -5573,7 +5614,7 @@ public class TestDriver {
         element.sendKeys(str);
     }
 
-    public void myProductExportDateRangeField(UIElement uiElement) {
+    public void myProjectExportDateRange(UIElement uiElement) {
         Actions act = new Actions(driver);
         act.moveToElement(driver.findElement(myFindBy(uiElement))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div/div/table/tbody/tr[3]/td[4]/div/button/i
         try {
@@ -5588,7 +5629,7 @@ public class TestDriver {
         }
     }
 
-    public void myProductExportStage(UIElement uiElement) {
+    public void myProjectExportStage(UIElement uiElement) {
         Actions act = new Actions(driver);
         act.moveToElement(driver.findElement(myFindBy(uiElement))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div/div/table/tbody/tr[3]/td[4]/div/button/i
         try {
@@ -5626,7 +5667,7 @@ public class TestDriver {
         }
     }
 
-    public void myProductExportClient(UIElement uiElement) {
+    public void myProjectExportClient(UIElement uiElement) {
         Actions act = new Actions(driver);
         act.moveToElement(driver.findElement(myFindBy(uiElement))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div/div/table/tbody/tr[3]/td[4]/div/button/i
         try {
@@ -5641,7 +5682,7 @@ public class TestDriver {
         }
     }
 
-    public void myProductExportCreator(UIElement uiElement) {
+    public void myProjectExportCreator(UIElement uiElement) {
         Actions action;     // Action class to find the element
         {
             action = new Actions(driver);
@@ -5750,5 +5791,508 @@ public class TestDriver {
         Actions act = new Actions(driver);
         act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_export\"]/div[3]/div/div[5]/div/div/div[2]/div"))).click().perform();//*[@id="new_client_seo_plan_output"]/div[2]/div/div/div/div[2]/div/div[1]
 
+    }
+
+    public void myTaskExportCreator(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Shahbaz");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_export\"]/div[3]/div/div[8]/div/div/div[2]"))).click().perform();//*[@id="new_client_seo_plan_output"]/div[2]/div/div/div/div[2]/div/div[1]
+
+    }
+
+    public void myTaskExportAssignment(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Testing");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_export\"]/div[3]/div/div[9]/div/div/div[2]/div/div[1]"))).click().perform();//*[@id="new_client_seo_plan_output"]/div[2]/div/div/div/div[2]/div/div[1]
+
+
+    }
+
+    public void myMarketingBriefTaskRef(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_media_plan_campaign\"]/div[1]/div[2]/div/div/div/div/div[2]/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public void myDesignInfographicsRefTask(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_infographic\"]/div[2]/div[2]/div/div/div/div/div[2]/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void myDesignWebsiteContentRefTask(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_development_mailer\"]/div[2]/div[2]/div/div/div/div/div[2]/div"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void myDesignWebsiteSitemapRefTask(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_website\"]/div[8]/div[2]/div/div/div/div/div[2]/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void mySocialPlanMonthlyPlan() {
+            Actions act = new Actions(driver);
+            act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_task\"]/div[2]/div[2]/div/div/div[1]"))).click().perform();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_task\"]/div[2]/div[2]/div/div/div[2]/div/div[1]"))).click().perform();
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+    }
+
+    public void myContentAdMediaPlanRefTask(UIElement uiElement) {
+            Actions action;     // Action class to find the element
+            {
+                action = new Actions(driver);
+            }
+            By by = myFindBy(uiElement);
+            action.moveToElement(driver.findElement(by)).click().perform();
+            try {
+                Thread.sleep(4000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            action.sendKeys("Testing delivered");
+            action.perform();
+            try {
+                Thread.sleep(4000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            Actions act = new Actions(driver);
+            act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_content_ad_communication\"]/div[7]/div[2]/div/div/div/div/div[2]/div/div[1]"))).click().perform();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+    }
+
+    public void myContentEmailerCTC(UIElement uiElement) {
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(myFindBy(uiElement))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div/div/table/tbody/tr[3]/td[4]/div/button/i
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_content_emailer_output\"]/div[3]/div/div/div/div[2]/div/div[1]"))).click().perform();//*[@id="edit_client_campaign_assignment_59ae4a625461f40e8410cb3f"]/div[4]/div/div[2]/div/div[2]
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void myWebDevelopmentEmailerContentRefTask(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_development_mailer\"]/div[2]/div[2]/div/div/div/div/div[2]/div/div"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public void myWebDevelopmentEmailerDesignRefTask(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_development_mailer\"]/div[3]/div[2]/div/div/div/div/div[2]/div/div"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void myDesignEmailerContentRefTask(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_development_mailer\"]/div[3]/div[2]/div/div/div/div/div[2]/div"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void myDesignBannerWebsiteBanner() {
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_task\"]/div[2]/div[2]/div/div/div[1]"))).click().perform();//*[@id="new_client_campaign_assignment"]/div[5]/div[2]/div/div/div[1]
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+//        -----------For New Website---------
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_task\"]/div[2]/div[2]/div/div/div[2]/div/div[1]"))).click().perform();//*[@id="edit_client_campaign_assignment_59ae4a625461f40e8410cb3f"]/div[4]/div/div[2]/div/div[2]
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void myDesignAdCommunicationContentRefTask(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_ad\"]/div[4]/div[2]/div/div/div/div/div[2]/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void myWebHTMlDesignAdReferenceTask(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_development_html_five_ad\"]/div[2]/div[2]/div/div/div/div/div[2]/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public void myDesignPrintMediaContentrefTask(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_design_print_medium\"]/div[5]/div[2]/div/div/div/div/div[2]/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void myDesignSocialPostContentRefTask(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[contains(@id,'new_client_design_social_')]/div[2]/div[2]/div/div/div/div/div[2]/div/div"))).click().perform();//*[@id="new_client_design_social_post"]/div[2]/div[2]/div/div/div/div/div[2]/div/div
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void myPPCCampaignExecutionRefTask(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_campaign_report\"]/div[2]/div[2]/div/div/div/div/div[2]/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void mySocialAuditFullAudit() {
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_task\"]/div[2]/div[2]/div/div/div[1]"))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div/div/table/tbody/tr[3]/td[4]/div/button/i
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_social_task\"]/div[2]/div[2]/div/div/div[2]/div/div[1]"))).click().perform();//*[@id="edit_client_campaign_assignment_59ae4a625461f40e8410cb3f"]/div[4]/div/div[2]/div/div[2]
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void myWebBlogContentBlogpostRefTask(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        action.sendKeys("Testing delivered");
+        action.perform();
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_development_blog\"]/div[1]/div[2]/div/div/div/div/div[2]/div/div"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

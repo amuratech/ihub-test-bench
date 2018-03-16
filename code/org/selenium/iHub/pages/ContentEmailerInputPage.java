@@ -6,8 +6,9 @@ import org.selenium.iHub.utitlities.UIType;
 
 public class ContentEmailerInputPage extends BasePage {
 
-    UIElement saveInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'edit_client_content_emailer_')]/div[5]/input");
+    UIElement saveInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_emailer\"]/div[5]/input");
     UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[11]/div/div/a[4]");
+    UIElement tonality = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_emailer\"]/div[2]/div[1]/div/div/div[1]");
 
     public void clickSaveButtonContentEmailer() {
         tDriver.myclicking(saveInput);
@@ -18,7 +19,7 @@ public class ContentEmailerInputPage extends BasePage {
     }
 
     public void selectTonalityContentEmailer() {
-        tDriver.myContentEmailerTonality();
+        tDriver.myContentEmailerTonality(tonality);
 
     }
 }

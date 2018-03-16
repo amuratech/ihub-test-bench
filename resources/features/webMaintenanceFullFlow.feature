@@ -26,6 +26,7 @@ Feature: Web Development- Maintenance Flow
     And Click save and publish- webmaintenance
     Then Click 'Update' link
     And Select 'Publish'
+
     Then Click user name
     And Click 'Sign out'
 
@@ -57,11 +58,12 @@ Feature: Web Development- Maintenance Flow
 #    And Select content task suff info
     And Rate brief- webmaintenance
     And Accept
+    When Select 'Due date'
     Then Select assignee for Web Development
-    And Select 'Start date'
-    Then Click assign button
-    Then Click user name
-    And Click 'Sign out'
+#    And Select 'Start date'
+    And Click assign button
+    When Click user name
+    Then Click 'Sign out'
 
   Scenario: Validate 'Add output'
 #    Given Launch the url ""
@@ -104,7 +106,7 @@ Feature: Web Development- Maintenance Flow
     Then Click 'Sign out'
 
     Scenario: Validate 'SOR'
-#      Given Launch the url ""
+      Given Launch the url ""
       When Click on username/email id "shahbaz@amuratech.com"
       And Click on password "amura!@#"
       Then Click on sign in button

@@ -25,7 +25,7 @@ public class ContentBlogInputPage extends BasePage{
     UIElement campaignSuff = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_review_review_fields_attributes_10_correct_true\"]");
     UIElement targetSuff = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_review_review_fields_attributes_11_correct_true\"]");
     UIElement keywordsSuff = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_review_review_fields_attributes_12_correct_true\"]");
-    UIElement rateBrief = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[14]/div/div/a[4]");
+    UIElement rateBrief = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[15]/div/div/a[4]");
     UIElement accept = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[15]/a");
     UIElement enterTopic = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_content_blogpost_blog_topic\"]");
     UIElement referencetTask = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_content_blogpost\"]/div[1]/div[1]/div/div/div/div[1]");

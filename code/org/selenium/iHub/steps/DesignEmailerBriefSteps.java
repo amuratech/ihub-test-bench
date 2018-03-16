@@ -108,4 +108,13 @@ public class DesignEmailerBriefSteps {
     }
 
 
+    @And("^Select Emailer content task reference- Design Emailer$")
+    public void selectEmailerContentTaskReferenceDesignEmailer() {
+        dp.selectEmailerContentTaskReferenceDesignEmailer();
+    }
+
+    @When("^Rate the output- Design Emailer$")
+    public void rateTheOutputDesignEmailer() {
+        dp.rateTheOutputDesignEmailer();
+    }
 }

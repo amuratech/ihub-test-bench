@@ -11,6 +11,7 @@ public class MarketingBriefInputPage extends BasePage {
     UIElement saveInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_marketing_brief\"]/div[4]/input");//*[@id="new_client_marketing_brief"]/div[4]/input
     UIElement marketing = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"taskLinks\"]/li[7]/a");
     UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_marketing_review\"]/div[9]/div/div/a[4]");
+    UIElement ref = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_media_plan_campaign\"]/div[1]/div[2]/div/div/div/div/div[1]");
 
     public void enterObjectiveMarketing(String arg0) {
         tDriver.mytype(objective,arg0);
@@ -30,5 +31,9 @@ public class MarketingBriefInputPage extends BasePage {
 
     public void rateTheInputBriefMarketingBrief() {
         tDriver.myclicking(rateInput);
+    }
+
+    public void selectMarketingBriefTaskRef() {
+        tDriver.myMarketingBriefTaskRef(ref);
     }
 }

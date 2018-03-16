@@ -1,27 +1,27 @@
 Feature: Content Hoarding- Full Flow
 
   Scenario: Validate 'Add/Create a Task'
-    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura123"
+    Given Launch the url ""
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click 'Quick add' link
+    When Click 'Quick add' link
     And Select 'Task'
-    And Enter the client name ""
+    Then Enter the client name ""
     And Select the department- content
-    And Click on create task
+    When Click on create task
     Then Enter task name "Testing Content Hoarding"
     And Select task type- Content Hoarding
-    Then Select task sub-type- Content Hoarding- Hoarding
+    And Select task sub-type- Content Hoarding- Hoarding
     And Enter Brief "Testing content hoarding brief"
     And Enter Due date
     And Select time slot
-    Then Click 'save and add brief' button
+    When Click 'save and add brief' button
 
   Scenario: Validate 'Add Input Brief'
 #    Given Launch the url "http://localhost:3000/"
 #    Then Click on username/email id "shahbaz@amuratech.com"
-#    And Click on password "amura123"
+#    And Click on password "amura!@#"
 #    Then Click on sign in button
 #    Then Click on task sidebar
 #    And Click content
@@ -35,77 +35,94 @@ Feature: Content Hoarding- Full Flow
     And Select Tonality- Content Hoarding
     And Select Tags- Content Hoarding
     And Click 'Save' button- Content Hoarding
-    Then Click 'Update' link
-    And Select 'Publish'
-    Then Click user name
-    And Click 'Sign out'
+    When Click 'Update' link
+    Then Select 'Publish'
+    When Click user name
+    Then Click 'Sign out'
 
   Scenario: Validate 'Review the Input Brief'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "meenakshi@amuratech.com"
-    And Click on password "amura123"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click content
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
-    Then Click review link
-    And Rate the brief- content idea
-    And Accept
-    Then Select assignee
-    And Select 'Start date'
-    Then Click assign button
-    Then Click user name
-    And Click 'Sign out'
+    When Click review link
+    Then Rate the brief- Content Hoarding
+    When Accept
+    Then Select 'Due date'
+    And Select assignee for Content
+#    And Select 'Start date'
+    And Click assign button
+    When Click user name
+    Then Click 'Sign out'
 
   Scenario: Validate 'Add Output'
-    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "abhay@amuratech.com"
-    Then Click on password "amura123"
-    Then Click on sign in button
-    Then Click on task sidebar
+    Given Launch the url ""
+    When Click on username/email id "abhay@amuratech.com"
+    Then Click on password "amura!@#"
+    And Click on sign in button
+    When Click on task sidebar
     And Click content
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
-    Then Click on Edit
+    When Click on Edit
     Then Click 'Update' link
     And Click 'Start'
+    When Click 'Add your output' link
     Then Enter Title "Testing"- Content Hoarding
     And Select Call to action
     And Enter Content "Testing"- Content
     And Enter Thought process "Testing"- Content
-    Then Click 'Click to add' link
-    And Upload Design cue image
-    And Enter Description "Testing"
-    Then Click 'Save' button- Content Hoarding Output
+#    When Click 'Click to add' link
+#    Then Upload Design cue image
+#    And Enter Description "Testing"
+    When Click 'Save' button- Content Hoarding Output
     Then Click 'Update' link
     And Select 'Review'
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
   Scenario: Validate 'Review the output'
-    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "meenakshi@amuratech.com"
-    Then Click on password "amura123"
+    Given Launch the url ""
+    When Click on username/email id "meenakshi@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click content
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
-    Then Click review link
+    When Click review link
     Then Enter 'Does the content ensure it fits for the given type of hoarding & the mentioned dimensions' "Testing"
     And Enter 'Has the brief been followed' "Yes"- Content Hoarding
     And Enter 'Does the content cater to given TG' "Yes"- Content Hoading
     And Enter 'Has the copywriter followed the necessary 'tone of voice'' "Yes"- Content Hoarding
     And Upload Reference document- Content Output  Review
     And Rate the output- Content Hoarding
-    Then Click deliver button
+    And Click 'Send for secondary review' button
 #    Then Click rework- content idea
 
-
+Scenario: Validate 'SOR'
+  Given Launch the url ""
+  Then Click on username/email id "shahbaz@amuratech.com"
+  And Click on password "amura!@#"
+  Then Click on sign in button
+  When Click on task sidebar
+  And Click content
+  Then Click on assigned to me
+  And Select newest
+  And Click on apply
+  When Click on Edit
+  Then Click 'Approve or Reject the output'
+  When Enter Comments "Testing"
+  Then Click 'Accept and Mark Delivered' button
+  
+  
 
 
 

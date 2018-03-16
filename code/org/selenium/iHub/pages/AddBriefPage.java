@@ -43,6 +43,8 @@ public class AddBriefPage extends BasePage {
     UIElement refContentWebsite = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[contains(@id,'_17_correct_true')]");//*[@id="client_design_website_content_sitemap_doc"]
     UIElement refContentSitemap = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[contains(@id,'_18_correct_true')]");//*[@id="client_design_website_content_sitemap_doc"]
     UIElement publishTask = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div/div[1]/div/div[2]/div/a");//*[@id="page-content-wrapper"]/div[2]/div/div/div[1]/div/div[2]/div/a
+    UIElement contentRefTask = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[@id=\"new_client_development_mailer\"]/div[2]/div[2]/div/div/div/div/div[1]");//*[@id="page-content-wrapper"]/div[2]/div/div/div[1]/div/div[2]/div/a
+    UIElement sitemapRefTask = new UIElement(UIType.Link,UILocatorType.Xpath,"//*[@id=\"new_client_development_mailer\"]/div[3]/div[2]/div/div/div/div/div[1]");//*[@id="page-content-wrapper"]/div[2]/div/div/div[1]/div/div[2]/div/a
 
     public void putClientName() {
         tDriver.myclient(client);
@@ -181,5 +183,14 @@ public class AddBriefPage extends BasePage {
 
     public void selectTagsDesign() {
         tDriver.myTags();
+    }
+
+    public void selectWebsiteContentTaskRefDesignWebsite() {
+        tDriver.myDesignWebsiteContentRefTask(contentRefTask);
+    }
+
+    public void selectSitemapContentTaskRefDesignWebsite() {
+        tDriver.myDesignWebsiteSitemapRefTask(sitemapRefTask);
+
     }
 }

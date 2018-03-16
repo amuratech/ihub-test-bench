@@ -30,4 +30,8 @@ public class WebHTMLFiveInputSteps {
     }
 
 
+    @And("^Select Design ad task reference$")
+    public void selectDesignAdTaskReference() {
+        dp.selectDesignAdTaskReference();
+    }
 }

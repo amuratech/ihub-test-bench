@@ -32,6 +32,7 @@ public class DesignInfoBriefPage extends BasePage{
     UIElement suffProduct  = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_attributes_10_correct_true')]");//*[@id="edit_client_social_task_599be1615461f4119acb7835"]/div[2]/input
     UIElement suffContentTask  = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_attributes_11_correct_true')]");//*[@id="edit_client_social_task_599be1615461f4119acb7835"]/div[2]/input
     UIElement rateInput  = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[9]/div/div/a[4]");//*[@id="edit_client_social_task_599be1615461f4119acb7835"]/div[2]/input
+    UIElement refTask  = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_infographic\"]/div[2]/div[2]/div/div/div/div");//*[@id="new_client_design_website"]/div[7]/div[2]/div/div/div/div/div[1]
 
     public void enterProject() {
         tDriver.mywait(project);
@@ -131,5 +132,9 @@ public class DesignInfoBriefPage extends BasePage{
 
     public void rateTheInputBriefDesignInfographics() {
         tDriver.myclicking(rateInput);
+    }
+
+    public void selectWebsiteContentTaskRef() {
+        tDriver.myDesignInfographicsRefTask(refTask);
     }
 }

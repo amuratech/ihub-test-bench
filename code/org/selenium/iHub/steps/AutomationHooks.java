@@ -3,12 +3,12 @@ package org.selenium.iHub.steps;
 import com.cucumber.listener.Reporter;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
-import cucumber.api.java.Before;
+//import cucumber.api.java.Before;
 import cucumber.runtime.Utils;
 import org.apache.commons.io.FileUtils;
-import org.junit.Test;
-import org.junit.experimental.ParallelComputer;
-import org.junit.runner.JUnitCore;
+//import org.junit.Test;
+//import org.junit.experimental.ParallelComputer;
+//import org.junit.runner.JUnitCore;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
@@ -41,14 +41,14 @@ import static org.selenium.iHub.driver.TestDriver.driver;
  */
 public class AutomationHooks {
 
-    @Before
+//    @Before
     public void beforeRunning(Scenario scenario) {
 
         System.out.println("Running scenario:- " + scenario.getName());
         System.out.println("\n");
     }
 
-    @Test
+//    @Test
     public void OnRunning(Scenario status) {
 //        String nodeURL = "http://192.168.0.176:4444/wd/hub";
 //        if (myBrowser.equals("firefox")){

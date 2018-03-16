@@ -28,7 +28,7 @@ public class ContentIdeaOutputPage extends BasePage {
     UIElement conceptResonate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_1_answer\"]");//*[@id="page-content-wrapper"]/div[2]/div/div[2]/div/div[2]/div/ul/li/a
     UIElement design = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_2_answer\"]");//*[@id="page-content-wrapper"]/div[2]/div/div[2]/div/div[2]/div/ul/li/a
     UIElement rateConcept = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[8]/div/div/a[4]");//*[@id="page-content-wrapper"]/div[2]/div/div[2]/div/div[2]/div/ul/li/a
-    UIElement rate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[11]/div/div/a[4]");//*[@id="page-content-wrapper"]/div[2]/div/div[2]/div/div[2]/div/ul/li/a
+    UIElement rate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[12]/div/div/a[4]");//*[@id="page-content-wrapper"]/div[2]/div/div[2]/div/div[2]/div/ul/li/a
     UIElement deliver = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[10]/input[1]");//*[@id="page-content-wrapper"]/div[2]/div/div[2]/div/div[2]/div/ul/li/a
     UIElement rework = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[10]/input[2]");//*[@id="page-content-wrapper"]/div[2]/div/div[2]/div/div[2]/div/ul/li/a
     UIElement docUpload = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_content_idea_output_idea_document\"]");//*[@id="page-content-wrapper"]/div[2]/div/div[2]/div/div[2]/div/ul/li/a

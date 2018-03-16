@@ -13,7 +13,7 @@ public class SocialPlanInputPage extends BasePage {
     UIElement thirdTheme = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_plan\"]/div[1]/div[2]/div/div[1]/div[4]/div/div/div[1]");
     UIElement thirdHashtags = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_plan\"]/div[1]/div[2]/div/div[1]/div[5]/div/div/div[1]");
     UIElement saveInput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_plan\"]/div[3]/input");
-    UIElement rateInput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[8]/div/div/a[4]");
+    UIElement rateInput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[9]/div/div/a[4]");
 
     public void selectCategory() {
         tDriver.mysocialplancategory();

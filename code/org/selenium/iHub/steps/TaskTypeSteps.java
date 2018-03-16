@@ -79,10 +79,10 @@ public class TaskTypeSteps {
         dp.enterTaskTypeContent();
     }
 
-    @And("^Enter task type- content ad$")
-    public void enterTaskTypeContentAd() {
-        dp.enterTaskTypeContentAd();
-    }
+//    @And("^Enter task type- content ad$")
+//    public void enterTaskTypeContentAd() {
+//        dp.enterTaskTypeContentAd();
+//    }
 
     @And("^Enter campaign task type- execution$")
     public void enterCampaignTaskTypeExecution() {
@@ -407,5 +407,20 @@ public class TaskTypeSteps {
     @And("^Select task sub type- Marketing Monthly Report$")
     public void selectTaskSubTypeMarketingMonthlyReport() {
         dp.selectTaskSubTypeMarketingMonthlyReport();
+    }
+
+    @And("^Select task sub type- Social Monthly Plan$")
+    public void selectTaskSubTypeSocialMonthlyPlan() {
+        dp.selectTaskSubTypeSocialMonthlyPlan();
+    }
+
+    @And("^Select task sub type- Website Banner$")
+    public void selectTaskSubTypeWebsiteBanner(){
+        dp.selectTaskSubTypeWebsiteBanner();
+    }
+
+    @And("^Select task sub type- Social Full Audit$")
+    public void selectTaskSubTypeSocialFullAudit(){
+        dp.selectTaskSubTypeSocialFullAudit();
     }
 }

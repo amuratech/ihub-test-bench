@@ -121,4 +121,9 @@ public class ContentAdInputSteps {
     public void enterWebsiteURLContentAd(String arg0) {
         dp.enterWebsiteURLContentAd(arg0);
     }
+
+    @And("^Select Media plan task reference$")
+    public void selectMediaPlanTaskReference() {
+        dp.selectMediaPlanTaskReference();
+    }
 }

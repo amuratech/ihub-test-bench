@@ -42,5 +42,8 @@ public class ContentHoardingInputSteps {
     }
 
 
-
+    @Then("^Rate the brief- Content Hoarding$")
+    public void rateTheBriefContentHoarding(){
+        dp.rateTheBriefContentHoarding();
+    }
 }

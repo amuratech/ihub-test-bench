@@ -45,4 +45,9 @@ public class MeetingInputSteps {
     public void clickScheduleThisMeetingLink() {
         dp.clickScheduleThisMeetingLink();
     }
+
+    @And("^Mark as conducted$")
+    public void markAsConducted() {
+        dp.markAsConducted();
+    }
 }

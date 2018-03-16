@@ -12,13 +12,13 @@ public class AssignTaskPage extends BasePage{
     UIElement requestChanges = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_review\"]/div[14]/input");
     UIElement startDate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"task_start_date\"]");
     UIElement marketingAssignee = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[1]");
-    UIElement mediaPlanningAssignee = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[2]/div[1]/div/div/div[1]");
+    UIElement mediaPlanningAssignee = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[1]");
     UIElement dueDate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"task_due_date\"]");
     UIElement contentAssignee = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[1]");
-    UIElement designAssignee = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[2]/div[1]/div/div/div[1]");//*[@id="review-accept-modal"]/div/div/div[2]/div[2]/div[1]/div/div/div[1]
-    UIElement webDevelopmentAssignee = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[1]");
+    UIElement designAssignee = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[1]");//*[@id="review-accept-modal"]/div/div/div[2]/div[2]/div[1]/div/div/div[1]
+    UIElement webDevelopmentAssignee = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[2]/div[1]/div/div/div[1]");
     UIElement campaignAssignee = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[2]/div[1]/div/div/div[1]");
-    UIElement socialAssignee = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[1]");
+    UIElement socialAssignee = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[2]/div[1]/div/div/div[1]");
     UIElement seoAssignee = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[1]");
 
     public void selectAssignee() {

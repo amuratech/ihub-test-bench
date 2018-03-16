@@ -10,7 +10,7 @@ public class PPCReportOutputPage extends BasePage {
     UIElement observations = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_report_output\"]/div[2]/div/div/div/div[3]/div[2]");
     UIElement reportDoc = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_campaign_report_output_report_document\"]");
     UIElement saveOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_report_output\"]/div[5]/input");
-    UIElement rateOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_review\"]/div[7]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_review\"]/div[8]/div/div/a[4]");
 
     public void enterOptimizationsUndertaken(String arg0) {
         tDriver.mytype(optimization,arg0);

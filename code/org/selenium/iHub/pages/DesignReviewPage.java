@@ -23,7 +23,7 @@ public class DesignReviewPage extends BasePage{
     UIElement sufSitemap = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_design_review_review_fields_attributes_12_correct_true\"]");
     UIElement sufFunc = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'_13_correct_true')]");
     UIElement sufTarget = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'_15_correct_true')]");
-    UIElement rate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[11]/div/div/a[4]");//*[@id="new_client_design_review"]/div[11]/div/div/a[4]
+    UIElement rate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[16]/div/div/a[4]");//*[@id="new_client_design_review"]/div[11]/div/div/a[4]
     UIElement changeRequest = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[15]/input");
     UIElement accept = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"move_forward\"]");
     UIElement product = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'_16_correct_true')]");

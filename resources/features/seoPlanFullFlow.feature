@@ -31,7 +31,7 @@ Feature: SEO Plan- Full Flow
 #    Then Click 'Add input brief' link
     Then Enter requirements "Testing"
     And Click check box
-    And Select product
+#    And Select product
     And Click Save
     Then Click 'Update' link
     And Select 'Publish'
@@ -39,7 +39,7 @@ Feature: SEO Plan- Full Flow
     Then Click 'Sign out'
 
   Scenario: Validate 'Review the Input Brief'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "gaurav.m@amuratech.com"
     And Click on password "amura!@#"
     Then Click on sign in button
@@ -52,141 +52,160 @@ Feature: SEO Plan- Full Flow
     Then Rate input brief
 #    Then Click request changes- seo
     And Accept
-    Then Select assignee
-    And Select 'Start date'
-    Then Click assign button
-#    Then Click user name
-#    And Click 'Sign out'
+    When Select 'Due date'
+    Then Select assignee for seo
+#    And Select 'Start date'
+    And Click assign button
+
+    When Click user name
+    And Click 'Sign out'
 
   Scenario: Validate 'Add Output'
-    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "minal@amuratech.com"
-    Then Click on password "amura!@#"
+    Given Launch the url ""
+    When Click on username/email id "minal@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
-    And Click SEO
-    Then Click on assigned to me
+    When Click on task sidebar
+    Then Click SEO
+    When Click on assigned to me
     Then Select newest
     And Click on apply
     And Click on Edit
-    Then Click 'Update' link
-    And Click 'Start'
-    And Click 'Add your output' link
+#    Then Click 'Update' link
+#    And Click 'Start'
+    When Click 'Add your output' link
     Then Enter objective "Testing"
-    And Select product
-    And Enter suggested topics "Testing"
-    Then Click accordion to add the topic
-    Then Click 'Click to add' link
-    And Enter URL "www.google.com" for Objective
-    And Enter Strategy "Testing"
-    And Enter Activities done "Testing"
-    And Enter Desired outcome "Testing"
-    Then Click 'Click to add' link
-    And Enter URL "www.google.com" for Objective
-    And Enter Strategy "Testing"
-    And Enter Activities done "Testing"
-    And Enter Desired outcome "Testing"
-    Then Click 'Click to add' link
-    And Enter URL "www.google.com" for Objective
-    And Enter Strategy "Testing"
-    And Enter Activities done "Testing"
-    And Enter Desired outcome "Testing"
-    Then Click 'Click to add' link for Quora
-    And Enter URL to Quora post ""
+#    And Select product
+    And Enter suggested topics "Testing suggested topics"
+    And Click accordion to add the topic
+    When Click 'Click to add' link
+    Then Enter URL "www.google.com" for Objective
+    And Enter Strategy "Testing strategy"
+    And Enter Activities done "Testing activities done"
+    And Enter Desired outcome "Testing desired outcome"
+    When Click 'Click to add' link
+    Then Enter URL "www.google.com" for Objective
+    And Enter Strategy "Testing strategy"
+    And Enter Activities done "Testing activities done"
+    And Enter Desired outcome "Testing desired outcome"
+    When Click 'Click to add' link
+    Then Enter URL "www.google.com" for Objective
+    And Enter Strategy "Testing strategy"
+    And Enter Activities done "Testing activities done"
+    And Enter Desired outcome "Testing desired outcome"
+    When Click 'Click to add' link for Quora
+    Then Enter URL to Quora post ""
     And Enter Weeks to publish "2"
     And Enter Keywords of focus for Quora post
-    Then Click 'Click to add' link for Google
-    And Enter Existing URL ""
+    When Click 'Click to add' link for Google
+    Then Enter Existing URL ""
     And Select Category for business listing
-    Then Click 'Click to add' link for Keywords
-    And Enter Keyword ""
+    When Click 'Click to add' link for Keywords
+    Then Enter Keyword ""
     And Enter Impressions "2"
     And Enter Current SEO rank "2"
     And Enter Target SEO rank "2"
     And Select Category for keywords
     And Enter Competition
-    Then Click 'Click to add' link for Keywords
-    And Enter Keyword "Testing"
+    When Click 'Click to add' link for Keywords
+    Then Enter Keyword "Testing keyword"
     And Enter Impressions "2"
     And Enter Current SEO rank "2"
     And Enter Target SEO rank "2"
     And Select Category for keywords
     And Enter Competition
-    Then Click 'Click to add' link for Keywords
-    And Enter Keyword "Testing"
+    When Click 'Click to add' link for Keywords
+    Then Enter Keyword "Testing"
     And Enter Impressions "2"
     And Enter Current SEO rank "2"
     And Enter Target SEO rank "2"
     And Select Category for keywords
     And Enter Competition
-    Then Click 'Click to add' link for Keywords
-    And Enter Keyword "Testing"
+    When Click 'Click to add' link for Keywords
+    Then Enter Keyword "Testing"
     And Enter Impressions "2"
     And Enter Current SEO rank "2"
     And Enter Target SEO rank "2"
     And Select Category for keywords
     And Enter Competition
-    Then Click 'Click to add' link for Keywords
-    And Enter Keyword "Testing"
+    When Click 'Click to add' link for Keywords
+    Then Enter Keyword "Testing"
     And Enter Impressions "2"
     And Enter Current SEO rank "2"
     And Enter Target SEO rank "2"
     And Select Category for keywords
     And Enter Competition
-    Then Click 'Click to add' link for Keywords
-    And Enter Keyword "Testing"
+    When Click 'Click to add' link for Keywords
+    Then Enter Keyword "Testing"
     And Enter Impressions "2"
     And Enter Current SEO rank "2"
     And Enter Target SEO rank "2"
     And Select Category for keywords
     And Enter Competition
-    Then Click 'Click to add' link for Keywords
-    And Enter Keyword "Testing"
+    When Click 'Click to add' link for Keywords
+    Then Enter Keyword "Testing"
     And Enter Impressions "2"
     And Enter Current SEO rank "2"
     And Enter Target SEO rank "2"
     And Select Category for keywords
     And Enter Competition
-    Then Click 'Click to add' link for Keywords
-    And Enter Keyword "Testing"
+    When Click 'Click to add' link for Keywords
+    Then Enter Keyword "Testing"
     And Enter Impressions "2"
     And Enter Current SEO rank "2"
     And Enter Target SEO rank "2"
     And Select Category for keywords
     And Enter Competition
-    Then Click 'Click to add' link for Keywords
-    And Enter Keyword "Testing"
+    When Click 'Click to add' link for Keywords
+    Then Enter Keyword "Testing"
     And Enter Impressions "2"
     And Enter Current SEO rank "2"
     And Enter Target SEO rank "2"
     And Select Category for keywords
     And Enter Competition
-    Then Click 'Click to add' link for Keywords
-    And Enter Keyword "Testing"
+    When Click 'Click to add' link for Keywords
+    Then Enter Keyword "Testing"
     And Enter Impressions "2"
     And Enter Current SEO rank "2"
     And Enter Target SEO rank "2"
     And Select Category for keywords
     And Enter Competition
-    Then Click 'Save' button- SEO Plan Output
+    When Click 'Save' button- SEO Plan Output
     Then Click 'Update' link
     And Select 'Review'
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
   Scenario: Validate 'Review' the Output'
     Given Launch the url ""
-    Then Click on username/email id "gaurav.m@amuratech.com"
+    When Click on username/email id "gaurav.m@amuratech.com"
     Then Click on password "amura!@#"
-    Then Click on sign in button
-    Then Click on task sidebar
-    And Click SEO
+    And Click on sign in button
+    When Click on task sidebar
+    Then Click SEO
     And Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
-    Then Click review link
-    And Rate the output- SEO Plan Output
-    Then Click deliver button
-    
+    When Click review link
+    Then Rate the output- SEO Plan Output
+    And Click 'Send for secondary review' button
+
+    When Click user name
+    Then Click 'Sign out'
+
+    Scenario: Validate 'SOR'
+#      Given Launch the url ""
+      When Click on username/email id "shahbaz@amuratech.com"
+      And Click on password "amura!@#"
+      Then Click on sign in button
+      When Click on task sidebar
+      Then Click on web development
+      And Click on assigned to me
+      And Select newest
+      And Click on apply
+      When Click on Edit
+      Then Click 'Approve or Reject the output'
+      And Enter Comments "Testing comments"
+      And Click 'Accept and Mark Delivered' button
 
 

@@ -15,7 +15,7 @@ public class WebCustomizedOutputPage extends BasePage {
     UIElement submit = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_development_customized_requirement_output\"]/div[3]/div/div/input");
     UIElement changeStatus = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'edit_client_')]/div[5]/div/div/div/div[1]");//*[@id="edit_client_seo_task_599009d95461f40e10dcaba1"]/div[5]/div/div/div/div[1]
     UIElement updateStatus = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'edit_client_')]/div[10]/input");//*[@id="edit_client_development_task_598f4dbd5461f40e10dca7f2"]/div[10]/input
-    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[6]/div/div/a[4]");//*[@id="new_client_development_review"]/div[5]/div/div/a[5]
+    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[7]/div/div/a[4]");//*[@id="new_client_development_review"]/div[5]/div/div/a[5]
     UIElement deliver = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"move_forward\"]");//*[@id="edit_client_development_task_598f4dbd5461f40e10dca7f2"]/div[10]/input
     UIElement projectLink = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_development_customized_requirement_output_qa_software_project_link\"]");//*[@id="edit_client_development_task_598f4dbd5461f40e10dca7f2"]/div[10]/input
     UIElement link = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_development_review_questions_attributes_0_answer\"]");//*[@id="edit_client_development_task_598f4dbd5461f40e10dca7f2"]/div[10]/input

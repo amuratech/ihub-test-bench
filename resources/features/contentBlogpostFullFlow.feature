@@ -1,9 +1,9 @@
 Feature: Content- Blog Flow
 
   Scenario: Validate 'Add/Create a Task'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click 'Quick add' link
     And Select 'Task'
@@ -21,7 +21,7 @@ Feature: Content- Blog Flow
   Scenario: Validate 'Add Input Brief'
 #    Given Launch the url "http://localhost:3000/"
 #    Then Click on username/email id "shahbaz@amuratech.com"
-#    Then Click on password "amura123"
+#    Then Click on password "amura!@#"
 #    Then Click on sign in button
 #    Then Click on task sidebar
 #    And Click content
@@ -41,9 +41,9 @@ Feature: Content- Blog Flow
     And Click 'Sign out'
 
   Scenario: Validate 'Review the Input Brief'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "meenakshi@amuratech.com"
-    And Click on password "amura123"
+    And Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click content
@@ -53,8 +53,9 @@ Feature: Content- Blog Flow
     Then Click review link
     Then Rate the brief- contentblogpost
     And Accept
-    Then Select assignee
-    And Select 'Start date'
+    When Select 'Due date'
+    Then Select assignee for Content
+#    And Select 'Start date'
     Then Click assign button
     Then Click user name
     And Click 'Sign out'
@@ -62,7 +63,7 @@ Feature: Content- Blog Flow
   Scenario: Validate 'Add Output'
     Given Launch the url ""
     Then Click on username/email id "abhay@amuratech.com"
-    And Click on password "amura123"
+    And Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click content
@@ -87,9 +88,9 @@ Feature: Content- Blog Flow
     And Click 'Sign out'
 
   Scenario: Validate 'Review the Output'
-    Given Launch the url "http://localhost:3000/"
+    Given Launch the url ""
     Then Click on username/email id "meenakshi@amuratech.com"
-    Then Click on password "amura123"
+    Then Click on password "amura!@#"
     Then Click on sign in button
     Then Click on task sidebar
     And Click content
@@ -102,7 +103,22 @@ Feature: Content- Blog Flow
     And Enter 'Has the copywriter followed the necessary 'tone of voice'' "Yes"
     And Upload Reference document- Content Output  Review
     Then Rate the output- contentblogpost
-    And Click deliver button
+    And Click 'Send for secondary review' button
+    
+   Scenario: Validate 'SOR'
+     Given Launch the url ""
+     Then Click on username/email id "shahbaz@amuratech.com"
+     And Click on password "amura!@#"
+     Then Click on sign in button
+     When Click on task sidebar
+     And Click content
+     Then Click on assigned to me
+     When Select newest
+     And Click on apply
+     Then Click on Edit
+     When Click 'Approve or Reject the output'
+     And Enter Comments "Testing"
+     Then Click 'Accept and Mark Delivered' button
 
 
 

@@ -21,6 +21,9 @@ public class WebMailerAddPage extends BasePage{
     UIElement accordion = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_mailer\"]/div[1]/div/div/div/span/a/i");
     UIElement suffContent = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_10_correct_true')]");
     UIElement suffDesign = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_11_correct_true')]");
+    UIElement contentRefTask = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_mailer\"]/div[2]/div[2]/div/div/div/div/div[1]");
+    UIElement designRefTask = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_mailer\"]/div[3]/div[2]/div/div/div/div/div[1]");
+    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[10]/div/div/a[4]");
 
     public void enterDestinationURL(String arg0) {
         tDriver.mytype(URL,arg0);
@@ -82,5 +85,17 @@ public class WebMailerAddPage extends BasePage{
 
     public void selectDesignEmailerSuffInfo() {
         tDriver.myclicking(suffDesign);
+    }
+
+    public void selectEmailerContentTaskReference() {
+        tDriver.myWebDevelopmentEmailerContentRefTask(contentRefTask);
+    }
+
+    public void selectEmailerDesignTaskReference() {
+        tDriver.myWebDevelopmentEmailerDesignRefTask(designRefTask);
+    }
+
+    public void rateTheInputBriefWebMailer() {
+        tDriver.myclicking(rateInput);
     }
 }

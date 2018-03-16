@@ -12,7 +12,8 @@ public class PPCReportInputPage extends BasePage {
     UIElement saveInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_report\"]/div[4]/input");
     UIElement startDate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_campaign_report_start_date\"]");
     UIElement endDate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_campaign_report_end_date\"]");
-    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_review\"]/div[10]/div/div/a[4]");
+    UIElement rateInput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_review\"]/div[11]/div/div/a[4]");
+    UIElement refTask = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_report\"]/div[2]/div[2]/div/div/div/div/div[1]");
 
 //    public void reportForEntireCampaignYes() {
 //    }
@@ -39,5 +40,9 @@ public class PPCReportInputPage extends BasePage {
 
     public void rateTheInputBriefPaidMediaReport() {
         tDriver.myclicking(rateInput);
+    }
+
+    public void selectCampaignExecutionTaskReference() {
+        tDriver.myPPCCampaignExecutionRefTask(refTask);
     }
 }

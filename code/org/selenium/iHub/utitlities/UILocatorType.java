@@ -12,7 +12,9 @@ public enum UILocatorType {
     ClassName,
     PartialLinkText,
     LinkText,
-    TagName;
+    TagName,
+    DropDown,
+    Link;
 
     private UILocatorType(){
 

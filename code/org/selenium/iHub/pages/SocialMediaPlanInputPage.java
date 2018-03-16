@@ -27,7 +27,7 @@ public class SocialMediaPlanInputPage extends BasePage{
     UIElement rate = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[15]/div[2]/div/div/a[2]");
     UIElement accept = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[15]/div[3]/a");
     UIElement saveInput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_media_plan\"]/div[11]/input");
-    UIElement rateInput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[16]/div/div/a[4]");
+    UIElement rateInput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[17]/div/div/a[4]");
     UIElement clickAdd = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[contains(text(),'Click to add')]");
 
 

@@ -188,4 +188,15 @@ public class AddBriefSteps {
     public void selectTagsDesign() {
         p.selectTagsDesign();
     }
+
+    @And("^Select Website content task ref- Design Website$")
+    public void selectWebsiteContentTaskRefDesignWebsite(){
+        p.selectWebsiteContentTaskRefDesignWebsite();
+    }
+
+    @And("^Select Sitemap content task ref- Design Website$")
+    public void selectSitemapContentTaskRefDesignWebsite(){
+
+        p.selectSitemapContentTaskRefDesignWebsite();
+    }
 }

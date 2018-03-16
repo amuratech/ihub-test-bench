@@ -17,7 +17,7 @@ public class WebSEOInputPage extends BasePage{
     UIElement radioTitle = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_7_correct_true')]");
     UIElement radioKeywords = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_8_correct_true')]");
     UIElement radioDesc = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_9_correct_true')]");
-    UIElement brief = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[9]/div/div/a[4]");
+    UIElement brief = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[11]/div/div/a[4]");
     UIElement accept = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_development_review\"]/div[12]/a");//*[@id="new_client_development_review"]/div[11]/a
     UIElement start = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"edit_client_development_task_598c60675461f40e10dca058\"]/div[10]/input");
 

@@ -16,7 +16,7 @@ public class SocialAuditInputPage extends BasePage{
     UIElement suffPlatform = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_social_review_review_fields_attributes_6_correct_true\"]");
     UIElement suffRequriements = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_social_review_review_fields_attributes_7_correct_true\"]");
     UIElement suffObjective = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_social_review_review_fields_attributes_8_correct_true\"]");
-    UIElement rate = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[11]/div/div/a[4]");
+    UIElement rate = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[12]/div/div/a[4]");
     UIElement accept = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_social_review\"]/div[11]/a");
 
     public void enterReferenceLinkSocial(String arg0) {

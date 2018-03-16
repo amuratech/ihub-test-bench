@@ -20,17 +20,17 @@ Feature: Marketing Plan full flow
     Then Click 'save and add brief' button
 
   Scenario: Validate 'Add input brief'
-    Given Launch the url ""
-    When Click on username/email id "shahbaz@amuratech.com"
-    And Click on password "amura!@#"
-    Then Click on sign in button
-    When Click on task sidebar
-     And Click Marketing
-     Then Click on assigned to me
-     And Select newest
-     And Click on apply
-     When Click on Edit
-     Then Click 'Add input brief' link
+#    Given Launch the url ""
+#    When Click on username/email id "shahbaz@amuratech.com"
+#    And Click on password "amura!@#"
+#    Then Click on sign in button
+#    When Click on task sidebar
+#     And Click Marketing
+#     Then Click on assigned to me
+#     And Select newest
+#     And Click on apply
+#     When Click on Edit
+#     Then Click 'Add input brief' link
     When Select Plan start date
     And Select Plan end date
     And Select SEO plan task reference

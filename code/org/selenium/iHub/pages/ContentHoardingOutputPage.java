@@ -14,7 +14,7 @@ public class ContentHoardingOutputPage extends BasePage {
     UIElement brief = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_1_answer\"]");
     UIElement tg = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_2_answer\"]");
     UIElement copywriter = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_3_answer\"]");
-    UIElement rateOutput = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[14]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.TextBox,UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[15]/div/div/a[4]");
 
     public void enterTitleContentHoarding(String arg0) {
         tDriver.mytype(title,arg0);

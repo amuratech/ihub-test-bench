@@ -14,7 +14,7 @@ public class ContentWikipediaPageOutputPage extends BasePage {
     UIElement saveOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_wikipedia_page_output\"]/div[5]/input");
     UIElement wellContent = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_2_answer\"]");
     UIElement refCitations = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_content_review_questions_attributes_3_answer\"]");
-    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[12]/div/div/a[4]");
+    UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[13]/div/div/a[4]");
 
     public void enterTitleContent(String arg0) {
         tDriver.mytype(title,arg0);

@@ -19,7 +19,8 @@ Feature: Media Plan- Full Flow
 
 
   Scenario: Validate 'Add Input Brief'
-    Then Upload Marketing brief reference doc
+#    Then Upload Marketing brief reference doc
+    Then Select Marketing brief task ref
     And Click 'Save' button- Media Plan Campaign Input
     Then Click 'Update' link
     And Select 'Publish'
@@ -48,8 +49,8 @@ Feature: Media Plan- Full Flow
     And Click 'Sign out'
 
   Scenario: Validate 'Add output'
-#    Given Launch the url "http://localhost:3000/"
-    Then Click on username/email id "pranav@amuratech.com"
+      Given Launch the url ""
+      Then Click on username/email id "pranav@amuratech.com"
       Then Click on password "amura!@#"
       Then Click on sign in button
       Then Click on task sidebar
@@ -61,15 +62,15 @@ Feature: Media Plan- Full Flow
       And Click 'Update' link
       And Click 'Start'
       And Click 'Add your output' link
-      Then Enter Objective "Testing campaign output objective"
-      And Enter Total budget "10000"
-      And Select start date of campaign
-      And Select end date of campaign
-#      Then Enter name of publisher
-#      And Enter budget- media plan
-#      And Enter clicks
-#      And Enter visits
-#      And Enter inquiries
+#      Then Enter Objective "Testing campaign output objective"
+#      And Enter Total budget "10000"
+#      And Select start date of campaign
+#      And Select end date of campaign
+      Then Enter name of publisher
+      And Enter budget- media plan
+      And Enter clicks
+      And Enter visits
+      And Enter inquiries
       Then Click submit button- media plan output
       Then Click 'Update' link
       And Select 'Review'

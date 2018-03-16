@@ -22,11 +22,12 @@ public class ContentAdInputPage extends BasePage {
     UIElement tagsSuff = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_content_review_review_fields_attributes_7_correct_true\"]");
     UIElement productSuff = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_content_review_review_fields_attributes_8_correct_true\"]");
     UIElement targetSuff = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_content_review_review_fields_attributes_9_correct_true\"]");
-    UIElement rate = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[14]/div/div/a[4]");//*[@id="new_client_content_review"]/div[14]/div/div/a[4]
+    UIElement rate = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[15]/div/div/a[4]");//*[@id="new_client_content_review"]/div[14]/div/div/a[4]
     UIElement accept = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[12]/a");
     UIElement request = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_content_review\"]/div[12]/input");
     UIElement saveInput = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_content_ad_communication\"]/div[10]/input");
     UIElement websiteURL = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_content_ad_communication_website_url\"]");
+    UIElement refTask = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_content_ad_communication\"]/div[7]/div[2]/div/div/div/div/div[1]");
 
     public void selectRelatedTask() {
         tDriver.mywait(related);
@@ -114,5 +115,9 @@ public class ContentAdInputPage extends BasePage {
 
     public void enterWebsiteURLContentAd(String arg0) {
         tDriver.mytype(websiteURL,arg0);
+    }
+
+    public void selectMediaPlanTaskReference() {
+        tDriver.myContentAdMediaPlanRefTask(refTask);
     }
 }

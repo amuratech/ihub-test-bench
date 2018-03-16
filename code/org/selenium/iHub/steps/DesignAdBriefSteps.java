@@ -82,4 +82,8 @@ public class DesignAdBriefSteps {
         dp.clickAdAcceptButton();
     }
 
+    @And("^Select Ad communication content task reference$")
+    public void selectAdCommunicationContentTaskReference() {
+        dp.selectAdCommunicationContentTaskReference();
+    }
 }

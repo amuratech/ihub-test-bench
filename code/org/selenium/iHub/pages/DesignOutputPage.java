@@ -8,7 +8,7 @@ public class DesignOutputPage extends BasePage {
 
     UIElement startWorking = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'edit_client_')]/div[10]/input");
     UIElement designOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div[2]/div/div[2]/div/ul/li[2]/a");//*[@id="page-content-wrapper"]/div[2]/div/div[1]/div[1]/div/div[4]/div/div/ul/li[1]/a
-    UIElement deliver = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[10]/input[1]");//*[@id="new_client_design_review"]/div[10]/input[1]
+    UIElement deliver = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"move_forward\"]");//*[@id="move_forward"]
     UIElement upload = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[3]/div[1]/div/div[2]/div/input");//*[@id="page-content-wrapper"]/div[2]/div/div[1]/div[3]/div[1]/div/div[2]/div
     UIElement thoughtProcess = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_output_thought_process')]");//*[@id="client_design_output_thought_process"]
     UIElement save = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_output\"]/div[3]/input");//*[@id="new_client_design_output"]/div[2]/input
@@ -21,6 +21,7 @@ public class DesignOutputPage extends BasePage {
     UIElement reason = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"client_design_review_questions_attributes_4_answer\"]");
     UIElement uploadDesigns = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[2]/div[1]/div/div[2]/div/input");
     UIElement rateOutput = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[11]/div/div/a[4]");//*[@id="new_client_design_review"]/div[11]/div/div/a[4]
+    UIElement rate = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_review\"]/div[11]/div/div/a[4]");//*[@id="new_client_design_review"]/div[11]/div/div/a[4]
 
     public void clickStartWorkingOnThisTask() {
         tDriver.mywait(startWorking);
@@ -86,5 +87,10 @@ public class DesignOutputPage extends BasePage {
     public void rateOutput() {
         tDriver.myclicking(rateOutput);
     }
+
+    public void rateTheOutputDesignWebsite() {
+        tDriver.myclicking(rate);
+    }
+
 }
 
