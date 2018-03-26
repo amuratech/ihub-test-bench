@@ -63,4 +63,8 @@ public class ApprovedAndReadySteps {
     }
 
 
+    @And("^Click 'Mark as live'$")
+    public void clickMarkAsLive(){
+        dp.clickMarkAsLive();
+    }
 }

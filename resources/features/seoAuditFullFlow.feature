@@ -1,4 +1,5 @@
 Feature: SEO Audit Full Flow
+
   Scenario: Validate 'Add/Create a Task'
     Given Launch the url ""
     When Click on username/email id "shahbaz@amuratech.com"
@@ -18,22 +19,25 @@ Feature: SEO Audit Full Flow
 
 
   Scenario: Validate 'Add Input Brief'
-    Given Launch the url "/"
-    When Click on username/email id "shahbaz@amuratech.com"
-    And Click on password "amura!@#"
-    Then Click on sign in button
-    When Click on task sidebar
-    And Click SEO
-    Then Click on assigned to me
-    And Select newest
-    And Click on apply
-    And Click on Edit
-    When Click 'Add input brief' link
-    Then Enter URL "https://www.google.co.in/"
+#    Given Launch the url ""
+#    When Click on username/email id "shahbaz@amuratech.com"
+#    And Click on password "amura!@#"
+#    Then Click on sign in button
+#    When Click on task sidebar
+#    And Click SEO
+#    Then Click on assigned to me
+#    And Select newest
+#    And Click on apply
+#    And Click on Edit
+#    When Click 'Add input brief' link
+    When Enter URL "https://www.google.co.in/"
     And Select requirements
     And Click Save- seoaudit
-    When Click 'Update' link
-    Then Select 'Publish'
+    Then Click 'Update' link
+    And Select 'Publish'
+
+    When Click user name
+    Then Click 'Sign out'
 
   Scenario: Validate 'Review the Input Brief'
     Given Launch the url ""

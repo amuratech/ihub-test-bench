@@ -106,4 +106,8 @@ public class MediaPlanOutputSteps {
         dp.clickDeliverButtonMediaPlan();
     }
 
+    @And("^Enter budget \"([^\"]*)\"$")
+    public void enterBudget(String arg0){
+        dp.enterBudget(arg0);
+    }
 }

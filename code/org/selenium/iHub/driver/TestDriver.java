@@ -567,7 +567,7 @@ public class TestDriver {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/table/tbody/tr[1]/td[5]/div/ul/li[2]"))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div[1]/table/tbody/tr/td[5]/div/ul/li[2]/a
+        act.moveToElement(driver.findElement(By.xpath("//*[contains(text(),'Edit')]"))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div[1]/table/tbody/tr[1]/td[5]/div/ul/li[2]
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -1494,7 +1494,7 @@ public class TestDriver {
             e.printStackTrace();
         }
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"task-form-modal\"]/div/div/div[2]/div[1]/div/div[2]/div/div[2]"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[2]/div/div"))).click().perform();
     }
 
     //      -----Assignee for SEO------------
@@ -1533,7 +1533,7 @@ public class TestDriver {
             e.printStackTrace();
         }
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[2]"))).click().perform();//*[@id="review-accept-modal"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div[1]
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[2]/div/div"))).click().perform();//*[@id="review-accept-modal"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div[1]
     }
 
     //      ------Assignee for Web Development----------
@@ -1552,7 +1552,7 @@ public class TestDriver {
             e.printStackTrace();
         }
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div"))).click().perform();//*[@id="review-accept-modal"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[2]/div/div"))).click().perform();//*[@id="review-accept-modal"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div
     }
 
     //      -------Assignee fo Content-----------
@@ -1590,7 +1590,7 @@ public class TestDriver {
             e.printStackTrace();
         }
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"task-form-modal\"]/div/div/div[2]/div[1]/div/div[2]/div/div[2]"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[2]/div/div"))).click().perform();
     }
 
     //      --------Assignee for Marketing-------
@@ -1609,7 +1609,7 @@ public class TestDriver {
             e.printStackTrace();
         }
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[2]/div/div[1]"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[2]/div/div"))).click().perform();
     }
 
     //      ---------Assignee for Social--------------
@@ -1628,7 +1628,7 @@ public class TestDriver {
             e.printStackTrace();
         }
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[2]/div/div"))).click().perform();
     }
 
     public void mydate() {
@@ -3769,7 +3769,7 @@ public class TestDriver {
         Date dt = new Date();
         Calendar cl = Calendar.getInstance();
         cl.setTime(dt);
-        cl.add(Calendar.DAY_OF_YEAR, 8);
+        cl.add(Calendar.DAY_OF_YEAR, 7);
         dt = cl.getTime();
         String str = df.format(dt);
         element.sendKeys(str);
@@ -4640,7 +4640,7 @@ public class TestDriver {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/table/tbody/tr[1]/td[5]/div/ul/li[1]/a"))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div[1]/table/tbody/tr/td[5]/div/ul/li[2]/a
+        act.moveToElement(driver.findElement(By.xpath("//*[contains(text(),'Details')]"))).click().perform();//*[@id="page-content-wrapper"]/div[2]/div/div[1]/table/tbody/tr/td[5]/div/ul/li[2]/a
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
@@ -4648,7 +4648,7 @@ public class TestDriver {
         }
     }
 
-    //    ---------For adding a user as SOR--------------
+    //    ---------For adding a user as SOR---x-----------
     public void mySOR(UIElement uiElement) {
         Actions action;
         {
@@ -4734,7 +4734,7 @@ public class TestDriver {
             e.printStackTrace();
         }
         Actions act = new Actions(driver);
-        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"task-form-modal\"]/div/div/div[2]/div[1]/div/div[2]/div/div[2]"))).click().perform();
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div"))).click().perform();
     }
 
     public void myContentCaseStudy() {
@@ -5584,7 +5584,7 @@ public class TestDriver {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        action.sendKeys("Testing completed");
+        action.sendKeys("Completed");
         action.perform();
         try {
             Thread.sleep(4000);
@@ -6294,5 +6294,1015 @@ public class TestDriver {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    public void myClientCategory(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("C");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client\"]/div[2]/div[1]/div/div/div[2]/div/div"))).click().perform();
+
+
+    }
+
+    public void myClientGroup(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Testing");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client\"]/div[2]/div[2]/div/div/div[2]/div/div"))).click().perform();
+
+    }
+
+    public void myClientManager(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Jasmine");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client\"]/div[4]/div[1]/div/div/div[2]/div"))).click().perform();
+
+    }
+
+    public void myClientExecutive(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Shahbaz");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client\"]/div[4]/div[2]/div/div/div[2]/div"))).click().perform();
+
+    }
+
+    public void myClientSecondaryExecutive(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Gautham");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client\"]/div[5]/div[1]/div/div/div[2]/div"))).click().perform();
+
+    }
+
+    public void myClientSalesUser(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Mayank");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client\"]/div[5]/div[2]/div/div/div[2]/div"))).click().perform();
+
+    }
+
+    public void myClientServices(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("SEO");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client\"]/div[8]/div[1]/div/div/div[2]/div/div[1]"))).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client\"]/div[8]/div[1]/div/div/div[2]/div/div[1]"))).click().perform();
+
+
+    }
+
+    public void myClientContractStartDate(UIElement uiElement) {
+        By by = myFindBy(uiElement);
+        WebElement element = driver.findElement(by);
+        element.clear();
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+        Date dt = new Date();
+        Calendar cl = Calendar.getInstance();
+        cl.setTime(dt);
+        cl.add(Calendar.DAY_OF_YEAR, 1);
+        dt = cl.getTime();
+        String str = df.format(dt);
+        element.sendKeys(str);
+
+    }
+
+    public void myClientContractEndDate(UIElement uiElement) {
+        By by = myFindBy(uiElement);
+        WebElement element = driver.findElement(by);
+        element.clear();
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+        Date dt = new Date();
+        Calendar cl = Calendar.getInstance();
+        cl.setTime(dt);
+        cl.add(Calendar.DAY_OF_YEAR, 1);
+        dt = cl.getTime();
+        String str = df.format(dt);
+        element.sendKeys(str);
+    }
+
+    public void myClientBillingDetails(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[contains(text(),'Add Billing Contacts')]"))).click().perform();
+
+
+    }
+
+    public void myClientBusinessVertical(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Real Estate");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client\"]/div[6]/div[1]/div/div/div[2]/div/div[1]"))).click().perform();
+
+    }
+
+    public void myType(UIElement uiElement, String arg0) {
+        WebElement element = driver.findElement(myFindBy(uiElement));
+        element.clear();
+        element.sendKeys(arg0);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void myClientEmailDomain(UIElement uiElement, String arg0) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Testing");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client\"]/div[8]/div[2]/div/div/div[2]/div"))).click().perform();
+
+
+    }
+
+    public void myClientFilter(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("TestingRunwalClientOnboarding");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"page-content-wrapper\"]/div[2]/div/div[2]/form/div/div[2]/div[1]/div/div[2]/div"))).click().perform();
+
+
+    }
+
+    public void myClientSupervisors(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"page-content-wrapper\"]/div[2]/div/div/div[2]/div/div/ul/li[7]/ul/li[3]/a"))).click().perform();
+
+
+    }
+//
+//    public void myClientCopySupervisor(UIElement copyDepartment) {
+//    }
+//
+//    public void myClientCopyInputReviewer(UIElement copyInputReviewer) {
+//    }
+//
+//    public void myClientCopyOutputReviewer(UIElement copyOutputReviewer) {
+//    }
+
+    public void myClientSupervisorAllDepartments(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[contains(text(),'Add supervisor')]"))).click().perform();
+
+
+
+    }
+
+    public void myClientInputReviewer(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("shahbaz");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_supervisor\"]/div/div[2]/div[1]/div[2]/div/div/div[2]/div"))).click().perform();//*[@id="new_client_seo_plan_output"]/div[2]/div/div/div/div[2]/div/div[1]
+
+
+    }
+
+    public void myClientOutputReviewer(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("shahbaz");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_supervisor\"]/div/div[2]/div[1]/div[3]/div/div/div[2]/div"))).click().perform();//*[@id="new_client_seo_plan_output"]/div[2]/div/div/div/div[2]/div/div[1]
+
+    }
+
+    public void myClientCopySupervisor(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Copy");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_supervisor\"]/div/div[2]/div[1]/div[1]/div/div/div[2]"))).click().perform();
+
+    }
+
+    public void myClientDesignSupervisor(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Design");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_supervisor\"]/div/div[2]/div[1]/div[1]/div/div/div[2]"))).click().perform();
+
+
+    }
+
+    public void myClientSocialSupervisor(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Social Media");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_supervisor\"]/div/div[2]/div[1]/div[1]/div/div/div[2]"))).click().perform();
+
+
+    }
+
+    public void myClientWebDevelopmentSupervisor(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Web Development");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_supervisor\"]/div/div[2]/div[1]/div[1]/div/div/div[2]"))).click().perform();
+
+
+    }
+
+    public void myClientMarketingSupervisor(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Marketing");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_supervisor\"]/div/div[2]/div[1]/div[1]/div/div/div[2]/div/div[1]"))).click().perform();
+
+
+    }
+
+    public void myClientPaidMediaSuprevisor(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Paid Media");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_supervisor\"]/div/div[2]/div[1]/div[1]/div/div/div[2]"))).click().perform();
+
+
+    }
+
+    public void myClientMediaPlannningSupervisor(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Media Planning");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_supervisor\"]/div/div[2]/div[1]/div[1]/div/div/div[2]"))).click().perform();
+
+
+    }
+
+    public void myClientSEOSupervisor(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("SEO");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_supervisor\"]/div/div[2]/div[1]/div[1]/div/div/div[2]"))).click().perform();
+
+
+    }
+
+    public void myClientDeliverySupervisor(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Delivery");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_supervisor\"]/div/div[2]/div[1]/div[1]/div/div/div[2]"))).click().perform();
+
+
+    }
+
+    public void myClientQASupervisor(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("QA");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_supervisor\"]/div/div[2]/div[1]/div[1]/div/div/div[2]"))).click().perform();
+
+
+    }
+
+    public void myClientStageOnboarding(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[contains(@id,'edit_client_')]/div[2]/div[2]/div/div/div[2]/div/div[2]"))).click().perform();
+
+
+
+    }
+
+    public void myClientOnboardingGoLiveDate(UIElement uiElement) {
+        By by = myFindBy(uiElement);
+        WebElement element = driver.findElement(by);
+        element.clear();
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+        Date dt = new Date();
+        Calendar cl = Calendar.getInstance();
+        cl.setTime(dt);
+        cl.add(Calendar.DAY_OF_YEAR, 3);
+        dt = cl.getTime();
+        String str = df.format(dt);
+        element.sendKeys(str);
+    }
+
+    public void myClientOnboardingDueDate(UIElement uiElement) {
+        By by = myFindBy(uiElement);
+        WebElement element = driver.findElement(by);
+        element.clear();
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+        Date dt = new Date();
+        Calendar cl = Calendar.getInstance();
+        cl.setTime(dt);
+        cl.add(Calendar.DAY_OF_YEAR, 2);
+        dt = cl.getTime();
+        String str = df.format(dt);
+        element.sendKeys(str);
+    }
+
+    public void myClientOnboardingKickOffDate(UIElement uiElement) {
+        By by = myFindBy(uiElement);
+        WebElement element = driver.findElement(by);
+        element.clear();
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+        Date dt = new Date();
+        Calendar cl = Calendar.getInstance();
+        cl.setTime(dt);
+        cl.add(Calendar.DAY_OF_YEAR, 1);
+        dt = cl.getTime();
+        String str = df.format(dt);
+        element.sendKeys(str);
+    }
+
+    public void myClientOnboardingProjects(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[contains(text(),'Onboardings')]"))).click().perform();
+
+
+    }
+
+    public void myClientProjectViewDetails(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/table/tbody/tr/td[5]/div/ul/li[1]/a"))).click().perform();
+
+    }
+
+    public void myFinanceContractStartDate(UIElement uiElement) {
+        By by = myFindBy(uiElement);
+        WebElement element = driver.findElement(by);
+        element.clear();
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+        Date dt = new Date();
+        Calendar cl = Calendar.getInstance();
+        cl.setTime(dt);
+        cl.add(Calendar.DAY_OF_YEAR, 2);
+        dt = cl.getTime();
+        String str = df.format(dt);
+        element.sendKeys(str);
+    }
+
+    public void myFinanceContractEndDate(UIElement uiElement) {
+        By by = myFindBy(uiElement);
+        WebElement element = driver.findElement(by);
+        element.clear();
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+        Date dt = new Date();
+        Calendar cl = Calendar.getInstance();
+        cl.setTime(dt);
+        cl.add(Calendar.DAY_OF_YEAR, 2);
+        dt = cl.getTime();
+        String str = df.format(dt);
+        element.sendKeys(str);
+    }
+
+    public void myFinanceContractBillingDetails(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Testing");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_finance_contract\"]/div[2]/div/div[2]/div"))).click().perform();
+
+    }
+
+    public void myFinanceContractSignedOnDate(UIElement uiElement) {
+        By by = myFindBy(uiElement);
+        WebElement element = driver.findElement(by);
+        element.clear();
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+        Date dt = new Date();
+        Calendar cl = Calendar.getInstance();
+        cl.setTime(dt);
+        cl.add(Calendar.DAY_OF_YEAR, 0);
+        dt = cl.getTime();
+        String str = df.format(dt);
+        element.sendKeys(str);
+    }
+
+    public void myFinanceContractSignatory(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {action = new Actions(driver);}
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Ketan");
+        action.perform();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_finance_contract_output\"]/div[1]/div[2]/div/div/div[2]/div"))).click().perform();//*[@id="review-accept-modal"]/div/div/div[2]/div[1]/div/div[2]/div/div[1]
+
+    }
+
+    public void myMeetingAttendance(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Shahbaz");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_meeting_output\"]/div[1]/div/div[2]/div"))).click().perform();
+
+    }
+
+    public void myClientHostingType(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_hosting_detail\"]/div[1]/div[2]/div/div/div[2]/div/div[2]"))).click().perform();
+
+    }
+
+    public void myClientAddHostingDetails(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"page-content-wrapper\"]/div[2]/div/div/div[2]/div/div/ul/li[4]/ul/li[2]/a"))).click().perform();
+
+    }
+
+    public void myClientBrandGuidelines(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"page-content-wrapper\"]/div[2]/div/div/div[2]/div/div/ul/li[7]/ul/li[1]/a"))).click().perform();
+
+    }
+
+    public void myClientTargetGroupGender(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_target_group\"]/div[3]/div/div/div/div[2]/div/div[4]"))).click().perform();
+
+    }
+
+    public void myClientTargetGroup(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"page-content-wrapper\"]/div[2]/div/div/div[2]/div/div/ul/li[7]/ul/li[2]/a"))).click().perform();
+
+    }
+
+    public void myClientTargetGroupGeos(UIElement uiElement, String arg0) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys(arg0);
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_target_group\"]/div[10]/div/div/div/div[2]/div"))).click().perform();
+
+    }
+
+    public void myClientTargetGroupMicroGeos(UIElement uiElement, String arg0) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys(arg0);
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_target_group\"]/div[11]/div/div/div/div[2]"))).click().perform();
+
+    }
+
+    public void myClientProductLink(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click().perform();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"page-content-wrapper\"]/div[2]/div/div/div[2]/div/div/ul/li[1]/ul/li[2]/a"))).click().perform();
+
+
+    }
+
+    public void myClientProductDeveloper(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Runwal");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_product\"]/div/div[1]/div/div/div/div[2]/div/div[1]"))).click().perform();
+
+    }
+
+    public void myClientProductProject(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Runwal");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"new_client_product\"]/div/div[2]/div/div/div/div[2]/div/div[1]"))).click().perform();
+
+    }
+
+    public void myDeliveryFeedbackSurveyDate(UIElement uiElement) {
+        By by = myFindBy(uiElement);
+        WebElement element = driver.findElement(by);
+        element.clear();
+        SimpleDateFormat df = new SimpleDateFormat("dd/MM/YYYY");
+        Date dt = new Date();
+        Calendar cl = Calendar.getInstance();
+        cl.setTime(dt);
+        cl.add(Calendar.DAY_OF_YEAR, 1);
+        dt = cl.getTime();
+        String str = df.format(dt);
+        element.sendKeys(str);
+    }
+
+    public void myDelvieryAssignee(UIElement uiElement) {
+        Actions action;     // Action class to find the element
+        {
+            action = new Actions(driver);
+        }
+        By by = myFindBy(uiElement);
+        action.moveToElement(driver.findElement(by)).click();
+        action.sendKeys("Anupriya");
+        action.perform();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Actions act = new Actions(driver);
+        act.moveToElement(driver.findElement(By.xpath("//*[@id=\"review-accept-modal\"]/div/div/div[2]/div[1]/div[1]/div/div/div[2]"))).click().perform();//*[@id="review-accept-modal"]/div/div/div[2]/div[2]/div[1]/div/div/div[2]/div/div[1]
+
+    }
+
+    public void myClientCreateSave(UIElement uiElement) {
+        driver.findElement(myFindBy(uiElement)).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Client is created, now need to add billing details and supervisors to " +
+                "change the stage to Onboarding");
+    }
+
+    public void myClientBillingDetailsSave(UIElement uiElement) {
+        driver.findElement(myFindBy(uiElement)).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Client billing details has been added");
+
+    }
+
+    public void myClientSupervisorsSave(UIElement uiElement) {
+        driver.findElement(myFindBy(uiElement)).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Client supervisors for all the departments have been added");
+    }
+
+    public void myClientOnboardingStageSave(UIElement uiElement) {
+        driver.findElement(myFindBy(uiElement)).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Client stage has been changed to Onboarding, now the project can be added");
+    }
+
+    public void myClientOnboardingProjectSave(UIElement uiElement) {
+        driver.findElement(myFindBy(uiElement)).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Onboarding project for the client has been created, now the project can be initiated");
+    }
+
+    public void myTaskAcceptedandDelivered(UIElement uiElement) {
+        driver.findElement(myFindBy(uiElement)).click();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("Task is delivered");
+
     }
 }

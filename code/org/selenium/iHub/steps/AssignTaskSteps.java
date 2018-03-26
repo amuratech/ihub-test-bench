@@ -3,6 +3,7 @@ package org.selenium.iHub.steps;
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
 import org.selenium.iHub.pages.AssignTaskPage;
 
 public class AssignTaskSteps {
@@ -80,5 +81,10 @@ public class AssignTaskSteps {
     @Then("^Select assignee for seo$")
     public void selectAssigneeForSeo(){
         dp.selectAssigneeForSeo();
+    }
+
+    @When("^Select assignee for Delivery$")
+    public void selectAssigneeForDelivery(){
+        dp.selectAssigneeForDelivery();
     }
 }

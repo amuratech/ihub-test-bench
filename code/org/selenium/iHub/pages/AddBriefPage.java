@@ -17,11 +17,11 @@ public class AddBriefPage extends BasePage {
     UIElement funcUpload = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_functional_requirements')]");
     UIElement designGuide = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_website\"]/div[6]/div/div[1]");
     UIElement CTA = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_website\"]/div[8]/div/div[1]");
-    UIElement minAge = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*contains[@id,'_target_group_attributes_min_age')]");
+    UIElement minAge = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*contains[@id,'_target_group_attributes_min_age')]");//*[@id="client_target_group_min_age"]
     UIElement maxAge = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*contains[@id,'_target_group_attributes_max_age')]");
     UIElement gender = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_website\"]/div[9]/div[3]/div/div/div/div[1]");//*[@id="new_client_campaign_task_plan_output"]/div[10]/div/div/div/div[1]
     UIElement eduBackground = new UIElement(UIType.TextBox,UILocatorType.Xpath,"");
-    UIElement minIncome = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_min_household_income')]");//*[@id="client_content_sitemap_target_group_attributes_min_household_income"]
+    UIElement minIncome = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_min_household_income')]");//*[@id="client_target_group_min_household_income"]
     UIElement geos = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_website\"]/div[9]/div[10]/div/div/div");//*[@id="new_client_content_sitemap"]/div[6]/div[10]/div/div/div/div[1]
     UIElement microGeos = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[@id=\"new_client_design_website\"]/div[9]/div[11]/div/div/div/div[1]");//*[@id="new_client_content_sitemap"]/div[6]/div[11]/div/div/div/div[1]
     UIElement trying = new UIElement(UIType.TextBox, UILocatorType.Xpath,"//*[contains(@id,'_target_group_attributes_target_audience')]");//*[@id="client_content_sitemap_target_group_attributes_target_audience"]

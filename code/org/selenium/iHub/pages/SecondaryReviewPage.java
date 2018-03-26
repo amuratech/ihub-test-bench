@@ -32,7 +32,7 @@ public class SecondaryReviewPage extends BasePage {
     }
 
     public void clickAcceptAndMarkDeliveredButton() {
-        tDriver.myclicking(markDelivered);
+        tDriver.myTaskAcceptedandDelivered(markDelivered);
     }
 
     public void clickSendTo2NdSecondaryReviewer() {

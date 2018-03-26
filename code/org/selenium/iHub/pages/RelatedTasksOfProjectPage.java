@@ -9,54 +9,55 @@ import org.selenium.iHub.utitlities.UIType;
  */
 public class RelatedTasksOfProjectPage extends BasePage{
 
-    UIElement initialCampaign = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a");//*[@id="page-content-wrapper"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a
-    UIElement mediaPlan = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a");//*[@id="page-content-wrapper"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a
-    UIElement advertisingInvoice = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a");
-    UIElement sitemap = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a");
-    UIElement content = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a");
-    UIElement adCommunication = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a");
-    UIElement designWebsite = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a");
-    UIElement adDesign = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a");
-    UIElement website = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a");
-    UIElement campaign = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a");
+//    UIElement initialCampaign = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[9]/div[2]/table/tbody/tr/td[1]/a");//*[@id="page-content-wrapper"]/div[2]/div/div[1]/div[9]/div[2]/table/tbody/tr/td[1]/a
+//    UIElement mediaPlan = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[9]/div[2]/table/tbody/tr/td[1]/a");//*[@id="page-content-wrapper"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a
+//    UIElement advertisingInvoice = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[9]/div[2]/table/tbody/tr/td[1]/a");
+//    UIElement sitemap = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[9]/div[2]/table/tbody/tr/td[1]/a");
+//    UIElement content = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a");
+//    UIElement adCommunication = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a");
+//    UIElement designWebsite = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr[1]/td[1]/a");
+//    UIElement adDesign = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a");
+//    UIElement website = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a");
+//    UIElement campaign = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[8]/div[2]/table/tbody/tr/td[1]/a");
+    UIElement tasks = new UIElement(UIType.Button, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[9]/div[2]/table/tbody/tr/td[1]/a");//*[@id="page-content-wrapper"]/div[2]/div/div[1]/div[9]/div[2]/table/tbody/tr/td[1]/a
 
     public void clickSubmitInitialCampaignBriefTask() {
-        tDriver.myclicking(initialCampaign);
+        tDriver.myclicking(tasks);
     }
 
     public void testingSubmitMediaPlan() {
-        tDriver.myclicking(mediaPlan);
+        tDriver.myclicking(tasks);
     }
 
     public void clickOnTestingGenerateAdvertisingInvoice() {
-        tDriver.myclicking(advertisingInvoice);
+        tDriver.myclicking(tasks);
     }
 
     public void clickOnTestingGenerateSitemap() {
-        tDriver.myclicking(sitemap);
+        tDriver.myclicking(tasks);
     }
 
     public void clickOnTestingContentForLP() {
-        tDriver.myclicking(content);
+        tDriver.myclicking(tasks);
     }
 
     public void clickOnTestingRequestForAdCommunication() {
-        tDriver.myclicking(adCommunication);
+        tDriver.myclicking(tasks);
     }
 
     public void clickTestingRequestWebsiteDesign() {
-        tDriver.myclicking(designWebsite);
+        tDriver.myclicking(tasks);
     }
 
     public void clickTestingRequestForAdDesign() {
-        tDriver.myclicking(adDesign);
+        tDriver.myclicking(tasks);
     }
 
     public void testingRequestForWebsiteDevelopment() {
-        tDriver.myclicking(website);
+        tDriver.myclicking(tasks);
     }
 
     public void clickTestingRequestForCampaignExecution() {
-        tDriver.myclicking(campaign);
+        tDriver.myclicking(tasks);
     }
 }

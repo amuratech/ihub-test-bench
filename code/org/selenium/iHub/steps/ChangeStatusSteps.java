@@ -71,5 +71,29 @@ public class ChangeStatusSteps {
     }
 
 
+    @And("^Click 'Accept this task'$")
+    public void clickAcceptThisTask() {
+        dp.clickAcceptThisTask();
+    }
 
+    @When("^Click 'Review the output'$")
+    public void clickReviewTheOutput() {
+        dp.clickReviewTheOutput();
+    }
+
+    @When("^Click 'Send for review' link$")
+    public void clickSendForReviewLink() {
+        dp.clickSendForReviewLink();
+    }
+
+    @When("^Click 'Review input brief'$")
+    public void clickReviewInputBrief() {
+        dp.clickReviewInputBrief();
+    }
+
+    @When("^Click 'Start working on this task' link$")
+    public void clickStartWorkingOnThisTaskLink() {{
+        dp.clickStartWorkingOnThisTaskLink();
+    }
+    }
 }

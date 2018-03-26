@@ -100,7 +100,7 @@ Feature:Content Ad- Full Flow
 
       Scenario: Validate 'SOR'
          Given Launch the url ""
-         Then Click on username/email id "shahbaz@amuratech.com"
+         When Click on username/email id "shahbaz@amuratech.com"
          And Click on password "amura!@#"
          Then Click on sign in button
          When Click on task sidebar

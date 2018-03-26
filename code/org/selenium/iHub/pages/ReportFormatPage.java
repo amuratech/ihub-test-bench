@@ -19,7 +19,7 @@ public class ReportFormatPage extends BasePage {
     UIElement createReport = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Create report')]");
     UIElement dateRangeField = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_report\"]/div[1]/div[1]/div/div/div[1]");//*[@id="new_export"]/div[2]/div[1]/div/div/div[1]
     UIElement dateRangeFieldValue = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'_date_range_field_value')]");//*[@id="export_date_range_field_value"]
-    UIElement departmentFilter = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'new_report')]/div[2]/div/div[1]/div/div/div[1]");//*[@id="new_export_format"]/div[2]/div/div[1]/div/div/div[1]
+    UIElement departmentFilter = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(@id,'new_report')]/div[2]/div/div[1]/div/div/div[1]");//*[@id="new_client_supervisor"]/div/div[2]/div[1]/div[1]/div/div/div[1]
     UIElement saveReport = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_report\"]/div[3]/input");//*[@id="new_report"]/input[2]
     UIElement generateReportLink = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div/table/tbody/tr[1]/td[5]/div/a/i");
     UIElement showReport = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/table/tbody/tr[1]/td[5]/div/a/i");

@@ -15,6 +15,12 @@ public class ChangeStatusPage extends BasePage{
     UIElement editTask = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Edit task')]");//*[@id="edit_client_development_task_59dcb3e15461f412dbbf03bc"]/div[13]/input
     UIElement publish = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Publish')]");//*[@id="edit_client_development_task_59dcb3e15461f412dbbf03bc"]/div[13]/input
     UIElement reason = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_design_task_task_cancellation_reason\"]");//*[@id="edit_client_development_task_59dcb3e15461f412dbbf03bc"]/div[13]/input
+    UIElement acceptTask = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Accept this task')]");//*[@id="edit_client_development_task_59dcb3e15461f412dbbf03bc"]/div[13]/input
+    UIElement reviewOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Review the output')]");//*[@id="edit_client_development_task_59dcb3e15461f412dbbf03bc"]/div[13]/input
+    UIElement markConducted = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Mark as Conducted')]");//*[@id="edit_client_development_task_59dcb3e15461f412dbbf03bc"]/div[13]/input
+    UIElement sendForReview = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Send for review')]");//*[@id="edit_client_development_task_59dcb3e15461f412dbbf03bc"]/div[13]/input
+    UIElement reviewInput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Review input brief')]");//*[@id="edit_client_development_task_59dcb3e15461f412dbbf03bc"]/div[13]/input
+    UIElement startWorking = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[contains(text(),'Start working on this task')]");//*[@id="edit_client_development_task_59dcb3e15461f412dbbf03bc"]/div[13]/input
 
     public void selectTheStatusPublish() {
         tDriver.mypublishtask();
@@ -63,5 +69,29 @@ public class ChangeStatusPage extends BasePage{
 
     public void doNotEnterReasonForCancellingTheTask() {
         tDriver.myEnter(reason);
+    }
+
+    public void clickAcceptThisTask() {
+        tDriver.myclicking(acceptTask);
+    }
+
+    public void clickReviewTheOutput() {
+        tDriver.myclicking(reviewOutput);
+    }
+
+    public void clickMarkAsConductedToConductTheMeeting() {
+        tDriver.myclicking(markConducted);
+    }
+
+    public void clickSendForReviewLink() {
+        tDriver.myclicking(sendForReview);
+    }
+
+    public void clickReviewInputBrief() {
+        tDriver.myclicking(reviewInput);
+    }
+
+    public void clickStartWorkingOnThisTaskLink() {
+        tDriver.myclicking(startWorking);
     }
 }

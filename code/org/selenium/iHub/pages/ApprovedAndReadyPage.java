@@ -16,7 +16,8 @@ public class ApprovedAndReadyPage extends BasePage {
     UIElement client = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[contains(text(), 'Mark as client approved')]");
     UIElement live   = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[contains(text(), 'Mark as ready to go live')]");
     UIElement money = new UIElement(UIType.Link, UILocatorType.Xpath, "//*[contains(text(),'Money Received')]");
-    UIElement viewProject = new UIElement(UIType.Link, UILocatorType.Xpath, "//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[1]/div/div[4]/div/div/ul/li[2]/a");
+    UIElement viewProject = new UIElement(UIType.Link, UILocatorType.Xpath, "//*[contains(text(),'View project')]");//*[@id="page-content-wrapper"]/div[2]/div/div[1]/div[1]/div/div[4]/div/div/ul/li[4]/a
+    UIElement markLive = new UIElement(UIType.Link, UILocatorType.Xpath, "//*[contains(text(),'Mark as live')]");//*[@id="page-content-wrapper"]/div[2]/div/div[1]/div[1]/div/div[4]/div/div/ul/li[4]/a
 
     public void clickMarkAsBriefApproved() {
         tDriver.myclicking(brief);
@@ -52,5 +53,9 @@ public class ApprovedAndReadyPage extends BasePage {
 
     public void clickViewProjectLink() {
         tDriver.myclicking(viewProject);
+    }
+
+    public void clickMarkAsLive() {
+        tDriver.myclicking(markLive);
     }
 }

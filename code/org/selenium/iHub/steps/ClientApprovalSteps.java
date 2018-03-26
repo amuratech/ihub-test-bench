@@ -13,7 +13,9 @@ public class ClientApprovalSteps {
 
     ClientApprovalPage dp;
 
-    public ClientApprovalSteps(){dp = new ClientApprovalPage();}
+    public ClientApprovalSteps() {
+        dp = new ClientApprovalPage();
+    }
 
     @Then("^Click on task sidebar- Client$")
     public void clickOnTaskSidebarClient() {
@@ -31,7 +33,9 @@ public class ClientApprovalSteps {
     }
 
     @And("^Click on design- Client$")
-    public void clickOnDesignClient(){
+    public void clickOnDesignClient() {
         dp.clickOnDesignClient();
     }
+
+
 }

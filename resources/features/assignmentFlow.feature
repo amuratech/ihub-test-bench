@@ -7,8 +7,8 @@ Feature: Project/Assignment Full Flow
     Given Launch the url ""
     When Click on username/email id "shahbaz@amuratech.com"
     And Click on password "amura!@#"
-    And Click on sign in button
-    Then Click 'Quick add' link
+    Then Click on sign in button
+    When Click 'Quick add' link
     And Select 'Project'
     Then Select 'Client'
     And Click 'Add Project'
@@ -22,62 +22,62 @@ Feature: Project/Assignment Full Flow
     And Select campaign end date- assignment
     And Enter Purpose "Testing"
 #       And Check 'brief session required' box
-    Then Click 'save' button- assignment
-    And Click 'Initiate campaign'
+    When Click 'save' button- assignment
+    Then Click 'Initiate campaign'
 
 #    --------Submit Initial Campaign Brief----------
   Scenario: Validate 'Submit initial campaign brief' task
-    Then Click Submit initial campaign brief task
-    When Click 'Add input brief' link
-    Then Enter Brief provided by client "Testing brief provided by the client"
-    And Click 'Save' button- Marketing Input
+    When Click Submit initial campaign brief task
+    Then Click 'Add input brief' link
+    And Enter Brief provided by client "Testing brief provided by the client"
+    When Click 'Save' button- Marketing Input
     Then Select 'Publish'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #    ----------Review input brief and assigning the task------------
-    Then Click on username/email id "jasmine@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "jasmine@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click Marketing
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click review link
+    When Click review link
     Then Rate the input brief- Marketing Brief
-    And Accept
+    When Accept
 #    And Select 'Start date'
-    And Select 'Due date'
+#    And Select 'Due date'
     Then Select assignee for Marketing Brief
-    Then Click assign button
+    And Click assign button
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     ---------Adding the output---------------
-    Then Click on username/email id "gautham@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "gautham@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click Marketing
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
     Then Click on Edit
-    And Click 'Update' link
-    And Click 'Start'
-    Then Click 'Add your output' link
-    And Enter Offers
+    When Click 'Update' link
+    Then Click 'Start'
+    When Click 'Add your output' link
+    Then Enter Offers
     And Enter Communication guidelines
-    Then Select a competitor
+    And Select a competitor
     And Select a project
-    Then Click 'Save' button- Marketing Output
-    Then Click 'Update' link
-    And Select 'Review'
-    Then Click user name
-    And Click 'Sign out'
+    And Click 'Save' button- Marketing Output
+    When Click 'Update' link
+    Then Select 'Review'
+    When Click user name
+    Then Click 'Sign out'
 
 #     --------Review the output and send for SOR----------
     When Click on username/email id "jasmine@amuratech.com"
@@ -96,18 +96,18 @@ Feature: Project/Assignment Full Flow
     Then Click 'Sign out'
 
 #     -----------SOR---------
-    Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click Marketing
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
     When Click on Edit
     Then Click 'Approve or Reject the output'
     And Enter Comments "Testing the marketing task delivered for an assignment"
-    Then Click 'Accept and Mark Delivered' button
+    And Click 'Accept and Mark Delivered' button
 
 #    When Click user name
 #    Then Click 'Sign out'
@@ -120,84 +120,87 @@ Feature: Project/Assignment Full Flow
 
 #     --------- Media Plan task----------------
   Scenario: Validate Submit Media Plan
+
     When Testing- Submit Media Plan
     Then Select 'Publish'
     When Click user name
-    And Click 'Sign out'
+    Then Click 'Sign out'
 
 #    ------- Review the input brief and assign the task------------------
-    Then Click on username/email id "saad@amuratech.com"
-    Then Click on password "amura!@#"
+  Scenario: Validate media plan
+    Given Launch the url ""
+    When Click on username/email id "saad@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on media plan
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click review link
-    And Rate the input brief- media input
-    And Accept
-    And Select 'Due date'
-    Then Select assignee for Media Planning
+    When Click review link
+    Then Rate the input brief- media input
+    When Accept
+#    Then Select 'Due date'
+    When Select assignee for Media Planning
 #    And Select 'Start date'
     Then Click assign button
 
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     -------Add the output -------
-    Then Click on username/email id "pranav@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "pranav@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on media plan
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click on Edit
-    And Click 'Update' link
-    And Click 'Start'
-    And Click 'Add your output' link
+    And Click on Edit
+    When Click 'Update' link
+    Then Click 'Start'
+    When Click 'Add your output' link
     Then Enter name of publisher
     And Enter budget- media plan "10000"
     And Enter clicks "10"
     And Enter visits "20"
     And Enter inquiries "100"
-    Then Click submit button- media plan output
-    Then Click 'Update' link
-    And Select 'Review'
+    And Click submit button- media plan output
+    When Click 'Update' link
+    Then Select 'Review'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #    ----Review the output brief and send for SOR-----------------
-    Then Click on username/email id "saad@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "saad@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on media plan
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click review link
-    And Rate the output- media plan
+    When Click review link
+    Then Rate the output- media plan
     And Click 'Send for secondary review' button
 
     When Click user name
     Then Click 'Sign out'
 
 #     ---------Secondary output review-------------
-    Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
-    And Click Marketing
+    When Click on task sidebar
+    And Click on media plan
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
-    When Click on Edit
-    Then Click 'Approve or Reject the output'
+    And Click on Edit
+    When Click 'Approve or Reject the output'
     And Enter Comments "Testing the plan task delivered for an assignment"
     Then Click 'Accept and Mark Delivered' button
 
@@ -246,185 +249,191 @@ Feature: Project/Assignment Full Flow
     When Click on Testing- Generate Sitemap
     Then Click 'Add input brief' link
     And Click 'Save' button- Content Sitemap Input
-    Then Click 'Update' link
-    And Select 'Publish'
+    When Click 'Update' link
+    Then Select 'Publish'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     ------------Review the input brief----------
-    Then Click on username/email id "meenakshi@amuratech.com"
+    When Click on username/email id "meenakshi@amuratech.com"
     And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click content
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
-    Then Click review link
-    And Rate the brief- Content Sitemap Input
-    Then Accept
-    And Select 'Due date'
-    And Select assignee for Content
+    When Click review link
+    Then Rate the brief- Content Sitemap Input
+    When Accept
+#    And Select 'Due date'
+    Then Select assignee for Content
 #    And Select 'Start date'
-    Then Click assign button
+    And Click assign button
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     -------------Add output------------
-    Then Click on username/email id "abhay@amuratech.com"
+    When Click on username/email id "abhay@amuratech.com"
     And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click content
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
     And Click on Edit
-    Then Click 'Update' link
-    And Click 'Start'
-    And Click 'Add your output' link
+    When Click 'Update' link
+    Then Click 'Start'
+    When Click 'Add your output' link
     Then Enter Thought process "Testing"
     And Upload detailed sitemap doc
     And Click 'Save' button- Content Sitemap Output
-    Then Click 'Update' link
-    And Select 'Review'
+    When Click 'Update' link
+    Then Select 'Review'
 
-    And Click user name
+    When Click user name
     Then Click 'Sign out'
 
 
 #     -----------Review the output and send for SOR---------
-    Then Click on username/email id "meenakshi@amuratech.com"
+    When Click on username/email id "meenakshi@amuratech.com"
     And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click content
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
-    And Click review link
+    When Click review link
     Then Enter 'Does the content cater to given TG' "Yes"- Content Sitemap
     And Enter 'Has the brief been followed' "Yes"- Content Sitemap
     And Upload Reference document- Content Output  Review
-    Then Rate the output- Content Sitemap
-    And Click 'Send for secondary review' button
+    When Rate the output- Content Sitemap
+    Then Click 'Send for secondary review' button
 
     When Click user name
     Then Click 'Sign out'
 
 #    -------SOR----------------
-    Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
-    And Click content
-    Then Click on assigned to me
+    When Click on projects
     Then Select newest
     And Click on apply
-    When Click on Edit
+    And Click on Details
+    When Click on Testing- Generate Sitemap
     Then Click 'Approve or Reject the output'
-    And Enter Comments "Testing the content sitmap delivered for an assignment"
-    Then Click 'Accept and Mark Delivered' button
+    And Enter Comments "Testing the content sitemap delivered for an assignment"
+    And Click 'Accept and Mark Delivered' button
 
 #   -------------Content LP task--------------
   Scenario: Validate Testing- Content for Landing Page
     When Click 'View Project' link
     Then Click on Testing- Content for LP
-    And Click 'Add input brief' link
+#    Given Launch the url ""
+#    When Click on username/email id "shahbaz@amuratech.com"
+#    And Click on password "amura!@#"
+#    Then Click on sign in button
+#    When Click on projects
+#    Then Select newest
+#    And Click on apply
+#    When Click on Details
+#    Then Click on Testing- Content for LP
+    When Click 'Add input brief' link
     And Select Tonality- Content Website
-    Then Select Tags- Content
+    And Select Tags- Content
     And Enter USPs- Content Website
     And Click 'Save' button- Content Website
-    Then Click 'Update' link
-    And Select 'Publish'
+    When Click 'Update' link
+    Then Select 'Publish'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     ----------Review the input brief----------
-    Then Click on username/email id "meenakshi@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "meenakshi@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    And Click on task sidebar
+    When Click on task sidebar
     And Click content
     Then Click on assigned to me
     And Select newest
     And Click on apply
-    And Click review link
+    When Click review link
     Then Rate the input brief- Content Website
-    And Accept
-    And Select 'Due date'
+    When Accept
+#    And Select 'Due date'
     Then Select assignee for Content
 #    And Select 'Start date'
-    Then Click assign button
+    And Click assign button
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #    ---------Add output---------
-    Then Click on username/email id "abhay@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "abhay@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click content
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click on Edit
-    Then Click 'Update' link
-    And Click 'Start'
-    Then Click 'Add your output' link
-    And Enter Title "Testing title of the content website"- Content
+    And Click on Edit
+    When Click 'Update' link
+    Then Click 'Start'
+    When Click 'Add your output' link
+    Then Enter Title "Testing title of the content website"- Content
     And Select Call to action
     And Upload Content website doc
     And Enter Thought process "Testing thought process"- Content
     And Click 'Save' button- Content Website Output
-    Then Click 'Update' link
-    And Select 'Review'
+    When Click 'Update' link
+    Then Select 'Review'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     -------Review the output---------
-    Then Click on username/email id "meenakshi@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "meenakshi@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click content
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    And  Click review link
+    When  Click review link
     Then Enter 'Has the brief been followed' "Testing"
     And Enter 'Does the content cater to given TG' "Testing"
     And Enter 'Has the copy writer followed the necessary 'tone of voice'' "Testing"
-    Then Upload Reference document- Content Output  Review
-    And Rate the output- Content Website
+    And Upload Reference document- Content Output  Review
+    When Rate the output- Content Website
     Then Click 'Send for secondary review' button
 
     When Click user name
     Then Click 'Sign out'
 
 #     --------SOR---------
-    Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
-    And Click content
-    Then Click on assigned to me
-    Then Select newest
+    When Click on projects
+    And Select newest
     And Click on apply
-    When Click on Edit
+    Then Click on Details
+    When Click on Testing- Content for LP
     Then Click 'Approve or Reject the output'
     And Enter Comments "Testing the content LP task delivered for an assignment"
-    Then Click 'Accept and Mark Delivered' button
+    And Click 'Accept and Mark Delivered' button
 
 # --------------Content Ad task---------
   Scenario: Validate Testing- Request for Ad Communication
     When Click 'View Project' link
-
     Then Click on Testing- Request for Ad Communication
     When Click 'Add input brief' link
     Then Enter usps
@@ -432,81 +441,80 @@ Feature: Project/Assignment Full Flow
     And Enter website URL- "www.google.com"- Content Ad
     And Upload Media plan reference doc
     Then Click 'Save' button- Content Ad Communication
-    And Click 'Update' link
-    And Select 'Publish'
+    When Click 'Update' link
+    Then Select 'Publish'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     ---------------Review the input brief------------
-    Then Click on username/email id "meenakshi@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "meenakshi@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click content
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click review link
-    And Rate the input brief- content ad
+    When Click review link
+    Then Rate the input brief- content ad
     When Accept
-    Then Select 'Due date'
-    And Select assignee for Content
+#    Then Select 'Due date'
+    Then Select assignee for Content
 #    And Select 'Start date'
-    Then Click assign button
+    And Click assign button
 
     When Click user name
     Then Click 'Sign out'
 
 #     ------------Add output----------
-    Then Click on username/email id "abhay@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "abhay@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click content
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click on Edit
-    And Click 'Update' link
-    And Click 'Start'
-    Then Click 'Add your output' link
-    And Enter thought process "Testing"- content ad
+    And Click on Edit
+    When Click 'Update' link
+    Then Click 'Start'
+    When Click 'Add your output' link
+    Then Enter thought process "Testing"- content ad
     And Upload ad content doc
-    Then Click save button- content
-    Then Click 'Update' link
-    And Select 'Review'
+    And Click save button- content
+    When Click 'Update' link
+    Then Select 'Review'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     -----Review the output and send for SOR-----------
-    Then Click on username/email id "meenakshi@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "meenakshi@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click content
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click review link
+    When Click review link
 #    And Upload Reference document- Content Output  Review
     And Review the output- Content Ad Communication
     Then Click 'Send for secondary review' button
 
 #     ------------SOR----------
-    Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
-    And Click content
-    Then Click on assigned to me
-    Then Select newest
+    When Click on projects
+    And Select newest
     And Click on apply
-    When Click on Edit
+    Then Click on Details
+    When Click on Testing- Request for Ad Communication
     Then Click 'Approve or Reject the output'
     And Enter Comments "Testing the content ad communication task delivered for an assignment"
-    Then Click 'Accept and Mark Delivered' button
+    And Click 'Accept and Mark Delivered' button
 
 #   ------------Communication Approved-------
   Scenario: Validate Mark as Communication Approved
@@ -515,284 +523,281 @@ Feature: Project/Assignment Full Flow
 
 #   -------------Design Website task------------
   Scenario: Validate Testing- Request Website Design
-    Then Click Testing- Request website design
-    And Click 'Add input brief' link
-    Then Enter usp "Testing"
+    When Click Testing- Request website design
+    Then Click 'Add input brief' link
+    And Enter usp "Testing"
     And Click plus sign
     And Select Tags- Design
     And Upload functional requirements
     And Enter reference link "https://www.google.co.in/"
-    Then Click plus
+    And Click plus
     And Select CTA
-    Then Click save and publish later button
+    When Click save and publish later button
     Then Click 'Update' link
     And Select 'Publish'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     -------Review the input brief---------
-    Then Click on username/email id "rohit.m@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "rohit.m@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on design
     Then Click on assigned to me
     And Select newest
     And Click on apply
-    And Click review link
+    When Click review link
     Then Rate
-    And Accept
-    When Select 'Due date'
-    And Select assignee for Design
+    When Accept
+#    When Select 'Due date'
+    Then Select assignee for Design
 #    And Select 'Start date'
-    Then Click assign button
+    And Click assign button
 
     When Click user name
-    And Click 'Sign out'
+    Then Click 'Sign out'
 
 #     ------Add output--------
-    Then Click on username/email id "varsha.j@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "varsha.j@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on design
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
     And Click on Edit
-    Then Click 'Update' link
-    And Click 'Start'
-    And Click 'Add your output' link
+    When Click 'Update' link
+    Then Click 'Start'
+    When Click 'Add your output' link
     Then Enter thought process "Testing"- Design
     And Click 'Save' button
-    Then Upload designs
-    Then Click 'Edit your output' link
+    And Upload designs
+    When Click 'Edit your output' link
     Then Click 'Update' link
     And Select 'Review'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     -------Review the output-----------
-    Then Click on username/email id "rohit.m@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "rohit.m@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on design
     Then Click on assigned to me
     And Select newest
     And Click on apply
-    Then Click review link
+    When Click review link
     Then Enter 'Have the brand guidelines been followed' "Testing"
     And Enter 'Has the designer used correct colours & fonts' "Yes"
     And Enter 'Is the creative as per the brief' "Yes"
     And Enter 'Has the designer explained his thought process' "Yes"
     And Enter 'If delayed, please comment on the reason for the delay' "Yes"
-    And Rate- Output
+    When Rate- Output
     Then Click 'Send for secondary review' button
 
     When Click user name
     Then Click 'Sign out'
 
 #     -----SOR------------
-    Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
-    And Click on design
-    Then Click on assigned to me
-    Then Select newest
+    When Click on projects
+    And Select newest
     And Click on apply
-    When Click on Edit
+    Then Click on Details
+    When Click Testing- Request website design
     Then Click 'Approve or Reject the output'
     And Enter Comments "Testing the design website task delivered for an assignment"
-    Then Click 'Accept and Mark Delivered' button
+    And Click 'Accept and Mark Delivered' button
 
-    And Click 'View Project' link
 
 #    ------------Ad Design task--------
   Scenario: Validate Testing- Request for Ad Design
     When Click Testing- Request for Ad Design
-    And Click 'Add input brief' link
-    Then Click 'Save' button- Design Ad Input
-    Then Click 'Update' link
-    And Select 'Publish'
+    Then Click 'Add input brief' link
+    And Click 'Save' button- Design Ad Input
+    When Click 'Update' link
+    Then Select 'Publish'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #       ---------Review the input brief-----------
-    Then Click on username/email id "rohit.m@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "rohit.m@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on design
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click review link
+    When Click review link
     Then Give rating
-    And Accept
-    And Select 'Due date'
+    When Accept
+#    And Select 'Due date'
     Then Select assignee for Design
 #    And Select 'Start date'
-    Then Click assign button
+    And Click assign button
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     --------Add output-----------------
-    Then Click on username/email id "varsha.j@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "varsha.j@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on design
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click on Edit
-    Then Click 'Update' link
-    And Click 'Start'
-    Then Click 'Add your output' link
+    And Click on Edit
+    When Click 'Update' link
+    Then Click 'Start'
+    When Click 'Add your output' link
     Then Enter thought process "Testing"- Design
     And Click 'Save' button
-    Then Upload designs
-    Then Click 'Edit your output' link
+    And Upload designs
+    When Click 'Edit your output' link
     Then Click 'Update' link
     And Select 'Review'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     ------------Review the output----------
-    Then Click on username/email id "rohit.m@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "rohit.m@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on design
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click review link
+    When Click review link
     Then Enter 'Have the brand guidelines been followed' "Testing"
     And Enter 'Has the designer used correct colours & fonts' "Yes"
     And Enter 'Is the creative as per the brief' "Yes"
     And Enter 'Has the designer explained his thought process' "Yes"
     And Enter 'If delayed, please comment on the reason for the delay' "Yes"
-    And Rate- Design Ad Output
+    When Rate- Design Ad Output
     Then Click 'Send for secondary review' button
 
     When Click user name
     Then Click 'Sign out'
 
 #     --------SOR----------
-    Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
-    And Click on design
-    Then Click on assigned to me
-    Then Select newest
+    When Click on projects
+    And Select newest
     And Click on apply
-    When Click on Edit
+    Then Click on Details
+    When Click Testing- Request for Ad Design
     Then Click 'Approve or Reject the output'
     And Enter Comments "Testing the design website task delivered for an assignment"
-    Then Click 'Accept and Mark Delivered' button
+    And Click 'Accept and Mark Delivered' button
 
 #     -------Design Approved--------
   Scenario: Validate Mark as Design Approved
     When Click 'View Project' link
-    And Click 'Mark as design approved'
+    Then Click 'Mark as design approved'
 
 #     --------Website Development-----
   Scenario: Validate Testing- Request for Website Development
-    Given Testing- Request for website development
+    When Testing- Request for website development
     Then Click 'Add input brief' link
     And Select CRM
     And Select func req
     And Select CMS
-    Then Select hosting
-    Then Click Save and publish later button
-    Then Click 'Update' link
-    And Select 'Publish'
+    And Select hosting
+    And Click Save and publish later button
+    When Click 'Update' link
+    Then Select 'Publish'
 
     Then Click user name
     And Click 'Sign out'
 
 #     --------Review the input brief------
-    Then Click on username/email id "pankit@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "pankit@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
-    Then Click on web development
-    And Click on assigned to me
-    Then Select newest
+    When Click on task sidebar
+    And Click on web development
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click review link
-     And Rate webdev brief
-     And Accept
-    And Select 'Due date'
-     Then Select assignee for Web Development
+    When Click review link
+    Then Rate webdev brief
+    When Accept
+#    And Select 'Due date'
+    Then Select assignee for Web Development
 #     And Select 'Start date'
-     Then Click assign button
+    And Click assign button
 
-     Then Click user name
-     And Click 'Sign out'
+     When Click user name
+     Then Click 'Sign out'
 
 #     -----Add output----
-    Then Click on username/email id "ashwin@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "ashwin@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
-    Then Click on web development
-    And Click on assigned to me
-    Then Select newest
+    When Click on task sidebar
+    And Click on web development
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click on Edit
-    Then Click 'Update task status' button
-    And Click 'Start'
-    And Click 'Add your output' link
-    And Enter staging link "https://www.google.co.in"
-    Then Click Save button
-    Then Click 'Update' link
-      And Select 'Review'
+    And Click on Edit
+    When Click 'Update task status' button
+    Then Click 'Start'
+    When Click 'Add your output' link
+    Then Enter staging link "https://www.google.co.in"
+    And Click Save button
+    When Click 'Update' link
+    Then Select 'Review'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     --------Review the output---------
-    Then Click on username/email id "atul.saini@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "atul.saini@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
-    Then Click on web development
-    And Click on assigned to me
-    Then Select newest
+    When Click on task sidebar
+    And Click on web development
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click review link
+    When Click review link
     Then Enter link to QA project "www.google.com"
-    Then Enter copy review "Testing copy review"
+    And Enter copy review "Testing copy review"
     And Enter design review "Testing design review"
     And Enter desktop page speed score "100 Testing"
     And Enter mobile page speed score "100"
-    Then Rate the website output
-    And Click 'Send for secondary review' button
+    When Rate the website output
+    Then Click 'Send for secondary review' button
 
     When Click user name
     Then Click 'Sign out'
 
 #       ----------SOR------------
-    Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click on design
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
-    When Click on Edit
-    Then Click 'Approve or Reject the output'
+    And Click on Edit
+    When Click 'Approve or Reject the output'
     And Enter Comments "Testing the design website task delivered for an assignment"
     Then Click 'Accept and Mark Delivered' button
 
@@ -810,85 +815,85 @@ Feature: Project/Assignment Full Flow
     And Select Grant the paid media access to
     And Enter Google analytics ID "UA-0000-02"
     And Click 'Save' button- Paid Media Input
-    Then Click 'Update' link
-    And Select 'Publish'
+    When Click 'Update' link
+    Then Select 'Publish'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     -------Review the input brief----
-    Then Click on username/email id "madhavi@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "madhavi@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click Paid Media
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
-    Then Click review link
+    When Click review link
     Then Rate the input brief- campaign execution
-    And Accept
-    And Select 'Due date'
+    When Accept
+#    And Select 'Due date'
     Then Select assignee for Campaign
 #    And Select 'Start date'
-    Then Click assign button
+    And Click assign button
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #     ------Add output-----
-    Then Click on username/email id "smita@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "smita@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click Paid Media
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
-    Then Click on Edit
-    And Click 'Update' link
-    And Click 'Start'
-    Then Click 'Add your output' link
-    And Enter Reason for not advertising automation "Testing"
-    Then Click 'Submit' button
-    Then Click 'Update' link
-    And Select 'Review'
+    And Click on Edit
+    When Click 'Update' link
+    Then Click 'Start'
+    When Click 'Add your output' link
+    Then Enter Reason for not advertising automation "Testing"
+    And Click 'Submit' button
+    When Click 'Update' link
+    Then Select 'Review'
 
-    Then Click user name
-    And Click 'Sign out'
+    When Click user name
+    Then Click 'Sign out'
 
 #    ------Review the output----
-    Then Click on username/email id "madhavi@amuratech.com"
-    Then Click on password "amura!@#"
+    When Click on username/email id "madhavi@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click Paid Media
-    And Click on assigned to me
-    Then Select newest
+    Then Click on assigned to me
+    And Select newest
     And Click on apply
-    Then Click review link
+    When Click review link
     Then Rate the output brief- Paid Media
     And Click 'Send for secondary review' button
 
     When Click user name
     Then Click 'Sign out'
 
-#     -------SOR----------
-    Then Click on username/email id "shahbaz@amuratech.com"
-    Then Click on password "amura!@#"
+#     -------------SOR----------
+    When Click on username/email id "shahbaz@amuratech.com"
+    And Click on password "amura!@#"
     Then Click on sign in button
-    Then Click on task sidebar
+    When Click on task sidebar
     And Click Paid Media
     Then Click on assigned to me
-    Then Select newest
+    And Select newest
     And Click on apply
-    When Click on Edit
-    Then Click 'Approve or Reject the output'
+    And Click on Edit
+    When Click 'Approve or Reject the output'
     And Enter Comments "Testing the paid media task delivered for an assignment"
     Then Click 'Accept and Mark Delivered' button
 
 #     ---------Ready to go live-------
-  Scenario: Validate Mark as Read y to go Live
+  Scenario: Validate Mark as Ready to go Live
     When Click 'View Project' link
     Then Click 'Mark as ready to go live'
 

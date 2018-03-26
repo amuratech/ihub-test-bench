@@ -18,7 +18,7 @@ public class AddNewProjectPage extends BasePage {
     UIElement purpose = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_campaign_assignment_purpose\"]");
     UIElement websiteDesign = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_assignment\"]/div[8]/div[1]/div/div/div[1]");
     UIElement checkBox = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"client_campaign_assignment_brief_meeting\"]");
-    UIElement save = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_assignment\"]/div[12]/input");
+    UIElement save = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_campaign_assignment\"]/div[13]/input");
     UIElement project = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[contains(text(),'Project')]");
     UIElement client = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"assignment-form-modal\"]/div/div/div[2]/div/div/div[1]");
     UIElement addProject = new UIElement(UIType.Link, UILocatorType.Xpath,"//*[@id=\"assignment-form-modal\"]/div/div/div[3]/a");

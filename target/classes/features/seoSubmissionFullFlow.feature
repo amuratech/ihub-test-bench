@@ -53,7 +53,7 @@ Feature: SEO Submission- Full Flow
     When Click review link
     Then Rate the input- SEO Submission Input
     When Accept
-    Then Select 'Due date'
+#    Then Select 'Due date'
     And Select assignee for seo
 #    And Select 'Start date'
     And Click assign button

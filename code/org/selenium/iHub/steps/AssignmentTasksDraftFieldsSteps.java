@@ -22,4 +22,8 @@ public class AssignmentTasksDraftFieldsSteps {
     public void selectTimeSlotAssignmentMediaPlan(){
         dp.selectTimeSlotAssignmentMediaPlan();
     }
+
 }
+
+
+

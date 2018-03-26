@@ -19,7 +19,7 @@ public class LoginPage extends BasePage{
 
 
     public void launchTheUrl(String arg0) {
-        tDriver.myget("http://staging.work.withamura.com");
+        tDriver.myget("http://staging.work.withamura.com/users/sign_in");
     }
 //    http://104.236.156.35
 

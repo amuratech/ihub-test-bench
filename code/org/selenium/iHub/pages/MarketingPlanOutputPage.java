@@ -10,9 +10,9 @@ import org.selenium.iHub.utitlities.UIType;
 public class MarketingPlanOutputPage extends BasePage {
 
 
-    UIElement growthStrategy = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_marketing_plan_output\"]/div[1]/div/div/div[2]/div/div[3]/div[2]");
-    UIElement socialStrategy = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_marketing_plan_output\"]/div[2]/div/div/div[2]/div/div[3]/div[2]");
-    UIElement seoStrategy = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_marketing_plan_output\"]/div[3]/div/div/div[2]/div/div[3]/div[2]");
+    UIElement growthStrategy = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_marketing_plan_output\"]/div[1]/div/div/div/div[3]/div[2]");
+    UIElement socialStrategy = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_marketing_plan_output\"]/div[2]/div/div/div/div[3]/div[2]");
+    UIElement seoStrategy = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_marketing_plan_output\"]/div[3]/div/div/div/div[3]/div[2]");
     UIElement save = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_marketing_plan_output\"]/div[4]/input");
     UIElement refDoc = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"page-content-wrapper\"]/div[2]/div/div[1]/div[2]/div/div/div[3]/div/input");
     UIElement rateOutput = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_marketing_review\"]/div[9]/div/div/a[4]");

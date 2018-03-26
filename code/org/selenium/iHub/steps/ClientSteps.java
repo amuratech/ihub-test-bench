@@ -12,10 +12,12 @@ public class ClientSteps {
 
     ClientPage cp;
 
-    public ClientSteps(){cp = new ClientPage();}
+    public ClientSteps() {
+        cp = new ClientPage();
+    }
 
     @Then("^Click on clients$")
-    public void clickOnClients(){
+    public void clickOnClients() {
         cp.clickOnClients();
 
     }
@@ -41,5 +43,4 @@ public class ClientSteps {
     }
 
 
-
-}
+    }

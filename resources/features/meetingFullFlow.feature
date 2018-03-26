@@ -16,4 +16,4 @@ Feature: Meeting Full Flow
     And Select Attendees
     Then Click 'Save' button- Meeting
     And Click 'Schedule this meeting' link
-    And Mark as conducted
+    And Click 'Mark as conducted'

@@ -12,7 +12,7 @@ public class SeoAuditInputPage extends BasePage {
     UIElement suffURL = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_seo_review_review_fields_attributes_5_correct_true\"]");
     UIElement suffReq = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_seo_review_review_fields_attributes_6_correct_true\"]");
     UIElement accept = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_seo_review\"]/div[9]/a");
-    UIElement rate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_seo_review\"]/div[8]/div/div/a[5]");
+    UIElement rate = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"new_client_seo_review\"]/div[9]/div/div/a[4]");
     UIElement url = new UIElement(UIType.Button, UILocatorType.Xpath,"//*[@id=\"client_seo_audit_url\"]");
 
     public void clickOnSaveAndPublishSeoaudit() {
